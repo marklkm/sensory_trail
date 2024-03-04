@@ -170,83 +170,24 @@
       <!-- About Page -->
       <section id="about">
         <h1>The Sensory Trail</h1>
-        <!-- Silder -->
-        <div class="container mt-4 mb-4">
-          <div
-            id="carouseGarden"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <!-- Indicators -->
-            <ol class="carousel-indicators"></ol>
-            <!-- Slides -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="images/garden-slide-1.png"
-                  class="d-block w-100"
-                  alt="First slide is the main entrance to Trinity Botanic College Garden. Showing a open gate to the gardens."
-                  loading="lazy"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/garden-slide-2.png"
-                  class="d-block w-100"
-                  alt="Second slide is the attractive Mackaya bella flower which has an important historical association with Trinity College Botanic Garden."
-                  loading="lazy"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/garden-slide-3.png"
-                  class="d-block w-100"
-                  alt="Third slide shows a flint sign on a gravel ground propped against small tree stump and the sign says Have a look at our tree trail."
-                  loading="lazy"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/garden-slide-4.png"
-                  class="d-block w-100"
-                  alt="Fourth slide shows a flint sign on gravel ground and the sign reads Tree trail continues here West Arboretum."
-                  loading="lazy"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/garden-slide-5.png"
-                  class="d-block w-100"
-                  alt="Fifth slide"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <!-- Controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselGarden"
-              data-bs-slide="prev"
-            >
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselGarden"
-              data-bs-slide="next"
-            >
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <!-- End Slider -->
+
+<!-- Main top image -->
+<!-- Full-Width Image Section with Overlay Text -->
+<div class="container-fluid p-0 mt-3">
+  <div class="bg-image" style="position: relative;">
+    <img src="images/garden-slide-1.png" class="img-fluid" alt="Main entrance of the Trinity College Botanic Garden" />
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
+      <h1>Trinity College Botanic Garden</h1>
+      <p>The Sensory Trail</p>
+    </div>
+  </div>
+</div>
+
+
         <!-- Sensory Trail Page -->
         <section class="mt-4" id="sensorytrail">
-          <h2>Sensory Trail</h2>
           <p>
-            The Sensory Trail is the work of one student's summer internship
+            <span class="bg-danger text-white p-1">The Sensory Trail</span> is the work of one student's summer internship
             project at Trinity Botanic Garden to create a guide to some of the
             Garden's sensory elements for the benefit and well-being of students
             and staff. The trail currently has 18 stops: locations, plants and
@@ -254,7 +195,7 @@
             sensory elements of each. The locations of the 18 Sensory Trail
             stops are set out below on an interactive map and each has a
             descriptive text and audio guide. Visitors are invited to explore as
-            many or few of the stops as they wish and in any order
+            many or few of the stops as they wish and in any order.
           </p>
           <p>
             The stops along the Sensory Trail cover all seasons, but some are
@@ -365,6 +306,9 @@
                 <p>
                  Some general information about the Trinity College Botanic Garden Sensory Trail.
                 </p>
+                <p>Click on the <span class="visually-hidden">dropdown icon</span><i class="bi bi-chevron-down" aria-hidden="true"></i> to get more information.</p>
+
+
               </div>
             </div>
           </div>
@@ -2086,7 +2030,7 @@
                     </h5>
                   </div>
                   <div class="modal-body">
-                    <h5>
+                    <h5>F
                       Location: The Long House Glasshouse/Greenhouse | Map
                       Marker #18
                     </h5>
@@ -2219,9 +2163,6 @@
                 <h4><\/h4>
                 ${descriptionHTML}
                 <img src='${photo}' width='280px' style="margin-top: 10px;"><br>
-                <audio controls style="width: 100%; margin-top: 10px;">
-                    <source src='${audio}' type='audio/mpeg'>
-                <\/audio>
             <\/div>`;
       }
 
@@ -2515,7 +2456,7 @@
       var phs = [
         "<h5>Trinity disAbility Hub<\/h5>",
         "<hr class='hr'/>",
-        "Located at Trinity College Dublin, the Trinity disAbility Hub is home to the disAbility Service in Printing House Square. The Trinity disAbility Hub embodies the university's forward-thinking approach to disability, inclusivity, and sustainability.",
+        "Trinity disAbility Hub is home to the Trinity disAbility Service in Printing House Square.",
       ];
 
       var markerphs = L.marker([53.31262, -6.25893], { icon: phsIcon })
@@ -3000,7 +2941,7 @@
 
       var descriptions29 = [
         "<h5>Trinity College Botanic Garden<\/h5>",
-        "Trinity College Botanic Garden is an historic multi-acre botanic garden at Trinity Hall, Dartry, Dublin 6 which supports botanical teaching and research in conservation biology, taxonomy, physiological ecology, pollination biology and plant response to climate change.",
+        "Trinity College Botanic Garden at Trinity Hall, Dartry, Dublin 6.",
       ];
 
       var marker29 = L.marker([53.312633, -6.259977], { icon: botanicIcon })
@@ -3020,7 +2961,7 @@
 
       var descriptions30 = [
         "<h5>Trinity Hall<\/h5>",
-        "Trinity Hall is the main extramural hall of residence for students of Trinity College in Dublin, Republic of Ireland. It is located on Dartry Road in Dartry near Rathmines, about three miles south of the college.",
+        "Trinity Hall is the main extramural hall of residence for students of Trinity College in Dublin.",
       ];
 
       /*  Coords for Trinity Hall 53.3122576,-6.2627061 */
@@ -3093,7 +3034,7 @@
   */
       var descriptions34 = [
         "<h5>Trinity College Dublin<\/h5>",
-        "Located in a beautiful campus in the heart of Dublin's city centre, Trinity College Dublin is Ireland's highest ranked university. It is home to 20,000 undergraduate and postgraduate students across all the major disciplines in the arts and humanities, and in business, law, engineering, science, and health sciences. ",
+        "Located in a beautiful campus in the heart of Dublin's city centre, Trinity College Dublin is Ireland's highest ranked university. ",
       ];
 
       var marker34 = L.marker([53.312651, -6.259313], {
