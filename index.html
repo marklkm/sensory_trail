@@ -658,43 +658,6 @@
   </div>
 </div>
 
-<!-- Other Icons Sections-->
-<div class="container mt-5 mb-5">
-  <div class="row text-center">
-    <h2>Other Icons</h2>
-    <!-- Glasshouse Icon -->
-    <div class="col">
-      <div class="icon-container">
-        <img src="images/glasshouse.png" alt="Glasshouse icon" class="img-fluid">
-        <strong>All Seasons</strong>
-      </div>
-    </div>
-    <!-- Logseat Icon -->
-    <div class="col">
-      <div class="icon-container">
-        <img src="images/logseaticon.png" alt="Logseat icon" class="img-fluid">
-        <strong>Logseat Icon</strong>
-      </div>
-    </div>
-    <!-- Autumn Icon -->
-    <div class="col">
-      <div class="icon-container">
-        <img src="images/autumnicon.png" alt="Autumn icon" class="img-fluid">
-        <strong>Autumn</strong>
-      </div>
-    </div>
-    <!-- Winter Icon -->
-    <div class="col">
-      <div class="icon-container">
-        <img src="images/wintericon.png" alt="Winter icon" class="img-fluid">
-        <strong>Winter</strong>
-      </div>
-    </div>
-  </div>
-</div>
-
-      
-
       <!-- Sensory Stops Page -->
       <section id="stops" class="mt-4">
         <h1>Sensory Stops</h1>
@@ -754,7 +717,7 @@
                   </div>
                   <div class="modal-body">
                     <h5>Location: The Rockery | Map Marker #1</h5>
-                    <p> <img src="images/summericon.png" width="150" height="150" alt="summer icon"/></p>
+                    <p> Summer: <img src="images/summericon.png" width="150" height="150" alt="summer icon"/></p>
                     <hr class="hr" />
                     <p>
                       As you walk through the front gate, on your left you will
@@ -828,7 +791,7 @@
                   </div>
                   <div class="modal-body">
                     <h5>Location: The Walled Garden | Map Marker #2</h5>
-                    <p> <img src="images/summericon.png" width="150" height="150" alt="summer icon"/></p>
+                    <p> Summer: <img src="images/summericon.png" width="150" height="150" alt="summer icon"/></p>
                     <hr class="hr" />
                     <p>
                       Located in a small hut in the Walled Garden, you can peep in the windows and watch honey bees
@@ -904,7 +867,7 @@
                   </div>
                   <div class="modal-body">
                     <h5>Location: The Cycad House | Map Marker #3</h5>
-                    <p>  <img src="images/glasshouse.png" width="150" height="150" alt="glasshouse icon"/></p>
+                    <p>  All Seasons - Glasshouse: <img src="images/glasshouse.png" width="150" height="150" alt="glasshouse icon"/></p>
                     <hr class="hr" />
                     <p>
                       Cycad house is filled with living fossils and some of
@@ -986,6 +949,7 @@
                   </div>
                   <div class="modal-body">
                     <h5>Location: The Irish House | Map Marker #4</h5>
+                    <p> All Seasons - Glasshouse: <img src="images/glasshouse.png" width="150" height="150" alt="summer icon"/></p>
                     <hr class="hr" />
                     <p>
                       The Gardens contain approximately 4,000 plant species from
@@ -1063,6 +1027,7 @@
                   </div>
                   <div class="modal-body">
                     <h5>Location: The Long Greenhouse | Map Marker #5</h5>
+                    <p> All Seasons - Glasshouse: <img src="images/glasshouse.png" width="150" height="150" alt="summer icon"/></p>
                     <hr class="hr" />
                     <p>
                       In the Long House greenhouse you will find the collection
@@ -2141,11 +2106,11 @@
     <script>
       // Initialize the map
       // Provost's Garden 53.34360 / -6.25778
-      var map = L.map("map").setView([53.312263396, -6.25992187], 19);
+      var map = L.map("map").setView([53.312263396, -6.25992187], 20);
 
       // Add a tile layer (OpenStreetMap)
       L.tileLayer(
-        "https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=fa39f1df414d4dc1ab5bf1323d4b6d09",
+        "https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=fa39f1df414d4dc1ab5bf1323d4b6d09",
         {
           attribution:
             'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap<\/a> contributors, Tiles &copy; <a href="https://www.thunderforest.com/">Thunderforest<\/a>',
