@@ -3150,6 +3150,8 @@ map1.addControl(new mapboxgl.NavigationControl());
         });
       });
     </script>
+
+    
     <script>
       const contrastButton = document.getElementById("toggle-contrast");
       const fontSizeButton = document.getElementById("toggle-font-size");
@@ -3164,29 +3166,7 @@ map1.addControl(new mapboxgl.NavigationControl());
       });
     </script>
 
-    <!-- Map Options Menu Script -->
-    <script>
-      document.getElementById('mapOptions').addEventListener('change', function() {
-        var selectedOption = this.value;
-        
-        switch(selectedOption) {
-          case 'allStops':
-            // Logic to show all stops
-            console.log('Showing all stops');
-            break;
-          case 'quietSpaces':
-            // Logic to show quiet spaces
-            console.log('Showing quiet spaces');
-            break;
-          case 'sensoryStops':
-            // Logic to show sensory stops
-            console.log('Showing sensory stops');
-            break;
-          default:
-            console.log('No option selected');
-        }
-      });
-    </script>
+
     
   </body>
 </html>
