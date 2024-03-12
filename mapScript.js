@@ -35,215 +35,44 @@ function onMarkerHover(e) {
 
 /* MAP ICONS */
 
-var flowerIcon = L.icon({
-  iconUrl: "images/quiet_space.png",
-  shadowUrl: "",
+// Function to create icons dynamically
+function createIcon(iconUrl, iconSize = [80, 80]) {
+  return L.icon({
+    iconUrl: iconUrl,
+    iconSize: iconSize,
+    shadowUrl: "",
+  });
+}
 
-  iconSize: [30, 30], // size of the icon
-});
-
-var gardenIcon = L.icon({
-  iconUrl: "images/garden_marker.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var arboretumIcon = L.icon({
-  iconUrl: "images/arboretum.png",
-  shadowUrl: "",
-
-  iconSize: [80, 80], // size of the icon
-});
-
-var officeIcon = L.icon({
-  iconUrl: "images/office.png",
-  shadowUrl: "",
-
-  iconSize: [120, 120], // size of the icon
-});
-
-var busIcon = L.icon({
-  iconUrl: "images/140_bus.png",
-  shadowUrl: "",
-
-  iconSize: [200, 200], // size of the icon
-});
-
-var cowperIcon = L.icon({
-  iconUrl: "images/cowper_luas.png",
-  shadowUrl: "",
-
-  iconSize: [200, 200], // size of the icon
-});
-
-var greenhouseIcon = L.icon({
-  iconUrl: "images/greenhouse.png",
-  shadowUrl: "",
-
-  iconSize: [80, 80], // size of the icon
-});
-
-var phsIcon = L.icon({
-  iconUrl: "images/phsicon.png",
-  shadowUrl: "",
-
-  iconSize: [150, 150], // size of the icon
-});
-
-var oneIcon = L.icon({
-  iconUrl: "images/one.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var twoIcon = L.icon({
-  iconUrl: "images/two.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var threeIcon = L.icon({
-  iconUrl: "images/three.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var fourIcon = L.icon({
-  iconUrl: "images/four.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var fiveIcon = L.icon({
-  iconUrl: "images/five.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var sixIcon = L.icon({
-  iconUrl: "images/six.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var sevenIcon = L.icon({
-  iconUrl: "images/seven.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var eightIcon = L.icon({
-  iconUrl: "images/eight.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var nineIcon = L.icon({
-  iconUrl: "images/nine.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var tenIcon = L.icon({
-  iconUrl: "images/ten.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var elevenIcon = L.icon({
-  iconUrl: "images/eleven.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var twelveIcon = L.icon({
-  iconUrl: "images/twelve.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var thirteenIcon = L.icon({
-  iconUrl: "images/thirteen.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var fourteenIcon = L.icon({
-  iconUrl: "images/fourteen.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var fifteenIcon = L.icon({
-  iconUrl: "images/fifteen.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var sixteenIcon = L.icon({
-  iconUrl: "images/sixteen.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var seventeenIcon = L.icon({
-  iconUrl: "images/seventeen.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var eighteenIcon = L.icon({
-  iconUrl: "images/eighteen.png",
-  shadowUrl: "",
-
-  iconSize: [70, 70], // size of the icon
-});
-
-var botanicIcon = L.icon({
-  iconUrl: "images/botanic_gardens.png",
-  shadowUrl: "",
-
-  iconSize: [200, 200], // size of the icon
-});
-
-var trinityhallIcon = L.icon({
-  iconUrl: "images/trinity_hall.png",
-  shadowUrl: "",
-
-  iconSize: [200, 200], // size of the icon
-});
-
-var trinitycollegeIcon = L.icon({
-  iconUrl: "images/trinity_college.png",
-  shadowUrl: "",
-
-  iconSize: [200, 200], // size of the icon
-});
-
-var catIcon = L.icon({
-  iconUrl: "images/cat.png",
-  shadowUrl: "",
-
-  iconSize: [100, 100], // size of the icon
-});
+// Dynamic icon creation
+const oneIcon = createIcon("images/one.png");
+const twoIcon = createIcon("images/two.png");
+const threeIcon = createIcon("images/three.png");
+const fourIcon = createIcon("images/four.png");
+const fiveIcon = createIcon("images/five.png");
+const sixIcon = createIcon("images/six.png");
+const sevenIcon = createIcon("images/seven.png");
+const eightIcon = createIcon("images/eight.png");
+const nineIcon = createIcon("images/nine.png");
+const tenIcon = createIcon("images/ten.png");
+const elevenIcon = createIcon("images/eleven.png");
+const twelveIcon = createIcon("images/twelve.png");
+const thirteenIcon = createIcon("images/thirteen.png");
+const fourteenIcon = createIcon("images/fourteen.png");
+const fifteenIcon = createIcon("images/fifteen.png");
+const sixteenIcon = createIcon("images/sixteen.png");
+const seventeenIcon = createIcon("images/seventeen.png");
+const eighteenIcon = createIcon("images/eighteen.png");
+const nineteenIcon = createIcon("images/nineteen.png");
+const flowerIcon = createIcon("images/quiet_space.png");
+const officeIcon = createIcon("images/office.png");
+const busIcon = createIcon("images/140_bus.png");
+const cowperIcon = createIcon("images/cowper_luas.png");
+const greenhouseIcon = createIcon("images/greenhouse.png");
+const phsIconIcon = createIcon("images/phsicon.png");
+const botanicIcon = createIcon("images/botanic_gardens.png");
+const trinityhallIconIcon = createIcon("images/trinity_hall.png");
+const trinitycollegeIcon = createIcon("images/trinity_college.png");
 
 /* END OF MAP ICONS */
 
