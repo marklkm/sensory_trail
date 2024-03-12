@@ -35,3 +35,83 @@ html, body {
     height: 30vh; /* Smaller height on small devices */
   }
 }
+
+
+/* General Styles */
+.custom-popup .leaflet-popup-content {
+  width: auto !important; /* Adjust width as needed */
+}
+
+.navbar,
+ul,
+li,
+.nav-item {
+  font-size: large;
+  color: black !important;
+  font-weight: bold;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.navbar .sticky-top {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: #af315d !important;
+}
+
+.accordion-button {
+  color: black !important;
+  font-size: 20px !important;
+}
+
+p {
+  font-size: 19px;
+}
+
+img.stops {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover; /* This will ensure the images cover the entire space without distortion */
+}
+
+.frame {
+  width: 800px;
+  padding: 15px; /* Adjust the width of the frame */
+  background-color: #000; /* Black frame */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow to the frame */
+  display: inline-block;
+  border-radius: 0px; /* Optional: Round the corners of the frame */
+}
+
+.matting {
+  padding: 10px; /* Adjust the width of the matting */
+  background-color: #fff; /* White matting */
+}
+
+.frame img {
+  display: block;
+  width: 100%; /* Make the image fill the matting */
+  height: auto;
+}
+
+h6 {
+  font-weight: bold;
+}
