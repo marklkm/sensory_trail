@@ -78,7 +78,7 @@ const trinitycollegeIcon = createIcon("images/trinity_college.png");
 
 /* MAP DESCRIPTIONS */
 
-/* #1 DESCRIPTIONS */
+/* # 1 DESCRIPTION */
 
 var descriptions1 = ["<h6>Sensory Stop 1: Lavender</h6>"];
 
@@ -97,7 +97,7 @@ var marker1 = L.marker([53.31246, -6.25951], { icon: oneIcon })
     e.target.closeTooltip();
   });
 
-/* #2 DESCRIPTION */
+/* # 2 DESCRIPTION */
 
 var descriptions2 = ["<h6>Sensory Stop 2: Bees</h6>"];
 

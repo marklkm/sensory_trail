@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Trinity Sensory Trail</title>
-    <link rel="shortcut icon" href="images/trinity_botanic_logo.jpg" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,6 +22,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/a11y.js@2.2.1"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
 
     <!-- JS ally -->
     <script>
@@ -40,13 +40,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img
-            src="images/garden-nav-icon.png"
-            alt="Botanic Garden logo"
-            width="200"
-            height="150"
-            class="d-inline-block align-text-top"
-          />
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/garden-nav-icon.png" class="lazyload img-fluid" alt="Botanic Garden logo" />
+
           <!-- Sensory Trail -->
         </a>
         <!-- Toggle button for mobile menu -->
@@ -91,10 +86,10 @@
 <!-- Full-Width Image Section with Overlay Text -->
 <div class="container-fluid p-0 mt-3">
   <div class="bg-image" style="position: relative;">
-    <img src="images/garden-slide-1.png" class="img-fluid" alt="Main entrance of the Trinity College Botanic Garden" />
+    <img src="path/to/low-quality-image-placeholder.jpg" data-src="images/garden-slide-1.png" class="lazyload img-fluid" alt="Main entrance of Botanic Garden" />
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
       <h1>Trinity College Botanic Garden</h1>
-      <p>The Sensory Trail</p>
+      <p>Sensory Trail</p>
     </div>
   </div>
 </div>
@@ -254,7 +249,8 @@
                   during the Christmas holiday period - opening hours are listed
                   below. Occasionally members of the public are invited in for
                   events, and details of these can be found on the Calendar of
-                  Events page on the Trinity College Botanic Garden website.
+                  Events page on the Trinity College Botanic Garden website. Trinity College Dublin's 
+                  Botanic Garden sits on a 1.5 hectare site by Palmerston Park. 
                 </p>
                 <p>
                   Getting to the Gardens is easy with a leap card. The 140 bus
@@ -293,7 +289,7 @@
                       <img
                         src="images/qr_code_botanic_gardens.png"
                         alt="QR Code icon for Trinity College Botanic Garden."
-                        class="img-fluid w-50"
+                        class="img-fluid w-50 lazyload"
                         loading="lazy"
                       />
                     </div>
@@ -425,6 +421,51 @@
             </div>
           </div>
 
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSeven"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSeven"
+              >
+              <i class="bi bi-info-circle-fill"></i> &nbsp; Contact Information &amp; Social Media
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseSeven"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="container mt-3 mb-3">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a href="https://twitter.com/TCBotanicGarden" target="_blank" rel="noopener noreferrer" aria-label="Follow TCBotanicGarden on Twitter" class="d-inline-flex align-items-center">
+                        <i class="bi bi-twitter me-2"></i>@TCBotanicGarden
+                      </a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                      <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+                      <span class="flex-grow-1">Phone:</span>
+                      <a href="tel:+0114972070" class="stretched-link">(01) 4972070</a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                      <a href="mailto:botanicgarden@tcd.ie" class="d-flex align-items-center" aria-label="Send email to botanicgarden@tcd.ie">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        botanicgarden@tcd.ie
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
 <!-- Seasons Section -->
 <div class="container mt-5 mb-5">
@@ -482,7 +523,7 @@
             <img
               src="images/lavender.png"
               alt="Sensory Stop 1 is purple lavender."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image1Modal"
               loading="lazy"
@@ -556,7 +597,7 @@
             <img
               src="images/bees.png"
               alt="Sensory Stop 2 is a bumble bee on a plant."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image2Modal"
               loading="lazy"
@@ -632,7 +673,7 @@
             <img
               src="images/ancient_plants.png"
               alt="Sensory Stop 3 is a number of ancient plants, including cycads, inside a greenhouse."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image3Modal"
               loading="lazy"
@@ -714,7 +755,7 @@
             <img
               src="images/local_exotic_plants.png"
               alt="Sensory Stop 4 is a number of plants inside Stove House, the long greenhouse, there are local and exotic plants."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image4Modal"
               loading="lazy"
@@ -792,7 +833,7 @@
             <img
               src="images/aloe_vera.png"
               alt="Sensory stop 5 is aloe vera."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image5Modal"
               loading="lazy"
@@ -872,7 +913,7 @@
             <img
               src="images/teas_trees.png"
               alt="Sensory Stop 6 is Teas and Trees and there is a Gingko tree."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image6Modal"
               loading="lazy"
@@ -950,7 +991,7 @@
             <img
               src="images/fiddleheads.png"
               alt="Sensory Stop 7 is Fiddleheads on Ferns in the Stove House Greenhouse."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image7Modal"
               loading="lazy"
@@ -1016,7 +1057,7 @@
             <img
               src="images/catnip.png"
               alt="Sensory Stop 8 is some catnip."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image8Modal"
               loading="lazy"
@@ -1087,7 +1128,7 @@
             <img
               src="images/wintersweet.png"
               alt="Sensory Stop 9 is some Wintersweet."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image9Modal"
               loading="lazy"
@@ -1154,7 +1195,7 @@
             <img
               src="images/witch_hazel.png"
               alt="Sensory Stop 10 is some colourful With Hazel."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image10Modal"
               loading="lazy"
@@ -1224,7 +1265,7 @@
             <img
               src="images/frost_on_grass.png"
               alt="Sensory Stop 11 is frost on grass showing some grass and fallen leaves covered in frost."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image11Modal"
               loading="lazy"
@@ -1288,7 +1329,7 @@
             <img
               src="images/summer_storms.png"
               alt="Sensory Stop 12 is summer storms shows the roof of one of the glasshouses in the Trinity Botanic Gardens, where trees and leaves can be see through the glass."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image12Modal"
               loading="lazy"
@@ -1366,7 +1407,7 @@
             <img
               src="images/tree_canopy.png"
               alt="Sensory Stop 13 shows a tree canopy of a Black Walnut tree."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image13Modal"
               loading="lazy"
@@ -1440,7 +1481,7 @@
             <img
               src="images/wild_garlic.png"
               alt="Sensory Stop 14 shows some wild garlic in the Botanic Gardens."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image14Modal"
               loading="lazy"
@@ -1524,7 +1565,7 @@
             <img
               src="images/fruit_trees.png"
               alt="Sensory Stop 15 shows some fruit trees with raspberries in the foreground."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image15Modal"
               loading="lazy"
@@ -1604,7 +1645,7 @@
             <img
               src="images/babys_tears.png"
               alt="Sensory Stop 16 shows a green plant, commonly known as Baby's tears."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image16Modal"
               loading="lazy"
@@ -1686,7 +1727,7 @@
             <img
               src="images/snowdrops.png"
               alt="Sensory Stop 17 shows Snowdrops in the Botanic Gardens."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image17Modal"
               loading="lazy"
@@ -1761,7 +1802,7 @@
             <img
               src="images/log_seat.png"
               alt="Sensory Stop 18 shows a single log seat inside the Longhouse Glasshouse in the Trinity College Botanic Garden. The log seat is surrounded by various plants and trees."
-              class="img-fluid"
+              class="img-fluid lazyload"
               data-bs-toggle="modal"
               data-bs-target="#image18Modal"
               loading="lazy"
@@ -1846,13 +1887,6 @@
         <div id="map" style="width: 100%; height: 1200px"></div>
       </section>
           
-      <!-- Way finder map 
-
-    <section id="" class="mt-4">
-        <h1>Another map</h1>
-        <p>Gardens to the Copwer Luas Stop</p>
-        <div id="map1"></div>
-    </section> -->
           
       <!-- Way Finding Video -->
       <section id="sensory_video" class="mt-4 mb-4">
@@ -1869,6 +1903,8 @@
           ></iframe>
         </div>
       </section>
+
+      <!-- Back to top of page button -->
       <button
         id="backToTop"
         class="btn btn-primary position-fixed bottom-0 end-0 m-3"
@@ -1877,6 +1913,8 @@
       >
         ↑ TOP
       </button>
+
+      
     </div>
     <!-- Footer -->
     <footer class="bg-light text-center text-secondary py-3">
@@ -1896,24 +1934,6 @@
         });
       });
     </script>
-
-    
-<!-- Contrast buttons for accessibility -->
-    <script>
-      const contrastButton = document.getElementById("toggle-contrast");
-      const fontSizeButton = document.getElementById("toggle-font-size");
-      const bodyElement = document.body;
-
-      contrastButton.addEventListener("click", () => {
-        bodyElement.classList.toggle("high-contrast");
-      });
-
-      fontSizeButton.addEventListener("click", () => {
-        bodyElement.classList.toggle("large-font");
-      });
-    </script>
-
-
     
   </body>
 </html>
