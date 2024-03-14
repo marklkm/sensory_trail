@@ -80,7 +80,7 @@
     <div class="container mt-5 mb-4">
       <!-- About Page -->
       <section id="about">
-        <h1>The Sensory Trail</h1>
+        <h1>Sensory Trail</h1>
 
 <!-- Main top image -->
 <!-- Full-Width Image Section with Overlay Text -->
@@ -1925,15 +1925,33 @@
         
             
        
-<!-- JS ally onload -->
     <script>
-      // Initialize a11y.js after the page has loaded
       document.addEventListener("DOMContentLoaded", function () {
         a11y.setup({
-          // Configuration options
+          reportMode: 'console', // 'console', 'dom', or 'alert'
+          highlightIssues: true,
+          autoFix: true,
+          ruleset: 'WCAG2.1_AA',
+          ignoreRules: ['color-contrast'], // Example of ignoring specific rules
+          focusTracking: true,
+          contrastRatio: 4.5,
+          fontSize: '14px',
+          roleAssignment: true,
+          liveRegionMonitoring: true
         });
       });
     </script>
+
+<script>
+  try {
+    console.log("loaded ally.js in version", ally.version);
+    console.log("focusable elements", ally.query.focusable());
+  } catch (error) {
+    console.error("Error loading or executing ally.js functions", error);
+  }
+</script>
+
+    
     
   </body>
 </html>

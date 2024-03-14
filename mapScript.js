@@ -1,4 +1,4 @@
-// Initialize the map
+// Initialize the main map here
 // Provost's Garden 53.34360 / -6.25778
 var map = L.map("map").setView([53.312263396, -6.25992187], 20);
 
@@ -71,7 +71,7 @@ const cowperIcon = createIcon("images/cowper_luas.png");
 const greenhouseIcon = createIcon("images/greenhouse.png");
 const phsIconIcon = createIcon("images/phsicon.png");
 const botanicIcon = createIcon("images/botanic_gardens.png");
-const trinityhallIconIcon = createIcon("images/trinity_hall.png");
+/* const trinityhallIcon = createIcon("images/trinity_hall.png"); */
 const trinitycollegeIcon = createIcon("images/trinity_college.png");
 
 /* END OF MAP ICONS */
@@ -119,8 +119,8 @@ var marker2 = L.marker([53.312252179, -6.259313009], { icon: twoIcon })
 /* #5 DESCRIPTION */
 
 var descriptions5 = [
-  "<h5>140 Bus Stop </h5>",
-  "The 140 bus runs every ten minutes from outside Trinity via Rathmines to Dartry. Stay on the bus until the very last stop and the Gardens are a three-minute walk away.",
+  "<h5>140 Bus - Stop 1025</h5>",
+  "The 140 bus runs every ten minutes from outside Trinity via Rathmines to Dartry. Get off the bus at stop 1025 for Trinity Hall, the Gardens are a three-minute walk away.",
 ];
 
 /* coords for 140 Bus 53.3115217,-6.2625868 */
@@ -505,6 +505,7 @@ var descriptions30 = [
 ];
 
 /*  Coords for Trinity Hall 53.3122576,-6.2627061 */
+/* 
 var marker30 = L.marker([53.312197, -6.261359], { icon: trinityhallIcon })
   .addTo(map)
   .bindPopup(
@@ -519,6 +520,7 @@ var marker30 = L.marker([53.312197, -6.261359], { icon: trinityhallIcon })
   .on("mouseout", function (e) {
     e.target.closeTooltip();
   });
+  */
 
 /* #34 DESCRIPTION */
 
