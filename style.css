@@ -42,6 +42,14 @@ html, body {
   width: auto !important; /* Adjust width as needed */
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-toggler {
+  filter: invert(100%);
+}
+
 .navbar,
 ul,
 li,
