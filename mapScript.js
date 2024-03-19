@@ -1,14 +1,15 @@
 // Initialize the main map here
 // Provost's Garden 53.34360 / -6.25778
+// Physiology Square 53.34330 / -6.25247
 var map = L.map("map").setView([53.312263396, -6.25992187], 20);
 
 // Add a tile layer (OpenStreetMap)
 L.tileLayer(
-  "https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=fa39f1df414d4dc1ab5bf1323d4b6d09",
+  "https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=fa39f1df414d4dc1ab5bf1323d4b6d09",
   {
     attribution:
       'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, Tiles &copy; <a href="https://www.thunderforest.com/">Thunderforest</a>',
-    maxZoom: 19,
+    maxZoom: 20,
   }
 ).addTo(map);
 
@@ -124,7 +125,7 @@ var descriptions5 = [
 ];
 
 /* coords for 140 Bus 53.3115217,-6.2625868 */
-var marker5 = L.marker([53.312362, -6.26094], { icon: busIcon })
+var marker5 = L.marker([53.31263, -6.26021], { icon: busIcon })
   .addTo(map)
   .bindPopup(
     createPopup(descriptions5, "images/140_bustop.png", "audio/140 Bus.mp3"),
@@ -139,7 +140,7 @@ var marker5 = L.marker([53.312362, -6.26094], { icon: busIcon })
 
 var descriptions6 = ["<h5>Cowper Luas Stop</h5>"];
 
-var marker6 = L.marker([53.312769, -6.259642], { icon: cowperIcon })
+var marker6 = L.marker([53.31271, -6.25999], { icon: cowperIcon })
   .addTo(map)
   .bindPopup(
     createPopup(
@@ -529,7 +530,7 @@ var descriptions34 = [
   "Located in a beautiful campus in the heart of Dublin's city centre, Trinity College Dublin is Ireland's highest ranked university. ",
 ];
 
-var marker34 = L.marker([53.312651, -6.259313], {
+var marker34 = L.marker([53.31267, -6.26005], {
   icon: trinitycollegeIcon,
 })
   .addTo(map)

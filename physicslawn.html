@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Physics Lawn Tree Stops</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      .marker {
+        background-image: url("images/arboretum.png"); /* Replace with your marker icon URL */
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    </style>
+    <!-- JS Scripts-->
+
+    <script src="mapScriptPhysicsLawn.js" defer></script>
+    <script src="mapSetupPhysicsLawn.js" defer></script>
+    <script src="lazysizes.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/ally.js/1.4.1/ally.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/a11y.js@2.2.1"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- JS ally -->
+
+    <script>
+      console.log("loaded ally.js in version", ally.version);
+      console.log("focusable elements", ally.query.focusable());
+    </script>
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar with Logo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            data-src="/Users/marklikeman/Documents/botanic-garden-sensory-trail/images/Trinitylogo–White.png"
+            class="lazyload img-fluid"
+            alt="Trinity College Dublin logo"
+            width="350"
+            height="350"
+          />
+          <!-- Sensory Trail --></a
+        >
+        <!-- Toggle button for mobile menu -->
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#physicslawn">| Physics Lawn |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#treespecies">| Tree Species |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map_page">| Physics Lawn Map |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#physicslawn_video"
+                >| Physics Lawn Video |</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Pages Container -->
+    <div class="container mt-5 mb-4">
+      <!-- About Page -->
+      <section id="about">
+        <h1>Physics Lawn</h1>
+        <!-- Main top image -->
+        <!-- Full-Width Image Section with Overlay Text -->
+        <div class="container-fluid p-0 mt-3">
+          <div class="bg-image" style="position: relative">
+            <img
+              src="path/to/low-quality-image-placeholder.jpg"
+              data-src="images/Mark_Loughran.avif"
+              class="lazyload img-fluid"
+              alt="Main entrance of Botanic Garden"
+            />
+            <div
+              style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+              "
+            >
+              <!--<h1>Trinity College Botanic Garden</h1>
+      <p>Sensory Trail</p>-->
+            </div>
+          </div>
+        </div>
+        <!-- Sensory Trail Page -->
+        <section class="mt-4" id="physicslawn">
+          <p>
+            <strong> The Physics Lawn </strong>
+            is the idea of John Parnell Jnr. People can scan a QR code outside
+            the rear gates to bring up the map and allow them to browse the
+            trees, beds, pond etc. If you hover the tree number / tree marker it
+            will display species information, size, carbon stored and a picture.
+          </p>
+        </section>
+
+        <h3>Partnerships and Internships</h3>
+
+        <p>Add some information about Partnerships and internships.</p>
+
+        <h3>Projects</h3>
+
+        <p>Add some information about projects.</p>
+
+        <!-- Accordion Dropdown Menu -->
+        <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                <h3>General Information</h3>
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+            >
+              <div class="accordion-body">
+                <p>
+                  Some general information about the Physics Lawn Tree Stops.
+                </p>
+
+                <p>
+                  Click on the <span class="visually-hidden">dropdown icon</span
+                  ><i class="bi bi-chevron-down" aria-hidden="true"></i> to get
+                  more information.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-person-wheelchair"
+                  viewbox="0 0 16 16"
+                >
+                  <path
+                    d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z"
+                  ></path>
+                </svg>
+                &nbsp; Physical Access
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p>
+                  The Physics Lawn is not wheelchair accessible or fully
+                  accessible.
+                </p>
+
+                <p>
+                  <b>PLEASE NOTE</b> that most of the surfaces at Trinity
+                  College Dublin are a mixture of concrete, cobbles stones,
+                  gravel, grass, and may be more difficult to traverse for
+                  visitors with limited mobility. We are currently working to
+                  make the Trinity College Dublin campus easily accessible to
+                  everyone.
+                </p>
+                <div class="container mt-4 mb-4">
+                  <div class="row">
+                    <!-- Column for QR Code -->
+                    <div class="col-md-5">
+                      <!-- Replace with your QR code image -->
+                      <img
+                        src="images/estates-and-facilities-qr-code.png"
+                        alt="QR Code icon for Trinity Estates and Facilities website"
+                        class="img-fluid w-50 lazyload"
+                        loading="lazy"
+                      />
+                    </div>
+                    <!-- Column for Text -->
+                    <div class="col-md-7 text-start">
+                      <h4>Scan the QR Code</h4>
+                      <p>
+                        Scan the QR Code for the Trinity College Dublin -
+                        Estates & Facilities website.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                <i class="bi bi-tree-fill"></i> &nbsp; Tree Species
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p>Add information about Tree Species.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                <i class="bi bi-geo-alt-fill"></i> &nbsp; Location
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p>Add tree location information.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFive"
+              >
+                <img
+                  src="images/table.png"
+                  alt="Description of the image"
+                  class="img-fluid"
+                  width="28"
+                />
+                &nbsp; Seating Areas
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p>
+                  A square ring of benches around a large green area that sits
+                  between the Fitzgerald and Chemistry buildings.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSeven"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSeven"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter-x"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                  />
+                </svg>
+                &nbsp; Contact Info. & Social Media
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseSeven"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="container mt-3 mb-3">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      Twitter X:
+                      <a
+                        href="https://twitter.com/TrinitySustain1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Follow the Trinity Sustainability Network on Twitter X"
+                        class="d-inline-flex align-items-center"
+                        >@TrinitySustain1</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      Phone:
+                      <a href="tel:+35318964000" class="stretched-link"
+                        >(01) 896 4000</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      Email:
+                      <a
+                        href="mailto:estatesandfacilities@tcd.ie"
+                        class="d-flex align-items-center"
+                        aria-label="Send email to estatesandfacilities@tcd.ie"
+                        >estatesandfacilities@tcd.ie</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Seasons Section -->
+          <div class="container mt-5 mb-5">
+            <div class="row text-center">
+              <h2>Tree Species Icons</h2>
+              <!-- Carbon Stored Icon -->
+              <div class="col">
+                <div class="icon-container">
+                  <img
+                    src="images/springicon.png"
+                    alt="Spring icon"
+                    class="img-fluid"
+                  />
+                  <strong>Carbon Stored</strong>
+                </div>
+              </div>
+              <!-- Tree Age Icon -->
+              <div class="col">
+                <div class="icon-container">
+                  <img
+                    src="images/summericon.png"
+                    alt="Summer icon"
+                    class="img-fluid"
+                  />
+                  <strong>Tree Age</strong>
+                </div>
+              </div>
+              <!-- Tree Size Icon -->
+              <div class="col">
+                <div class="icon-container">
+                  <img
+                    src="images/autumnicon.png"
+                    alt="Autumn icon"
+                    class="img-fluid"
+                  />
+                  <strong>Tree Size</strong>
+                </div>
+              </div>
+              <!-- Tree Species Icon -->
+              <div class="col">
+                <div class="icon-container">
+                  <img
+                    src="images/wintericon.png"
+                    alt="Winter icon"
+                    class="img-fluid"
+                  />
+                  <strong>Tree Species</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tree Species Stops -->
+          <section id="treespecies" class="mt-4">
+            <h1>Physics Lawn Tree Species and Tree Numbers</h1>
+            <p>
+              Click on the each of the images to get a full description of the
+              Tree Species.
+            </p>
+            <div class="row mt-5">
+              <!-- #1 Tree Number 0 - Sequoiadendron gigantium -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 0<br />
+                  Tree Species: Sequoiadendron gigantium
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image1Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-1-Lavender.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image1Modal"
+                  tabindex="-1"
+                  aria-labelledby="image1ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          Tree Number 0 - Sequoiadendron gigantium
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- # 2 Tree Number 192: Malus-->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 192<br />
+                  Tree Species: Malus
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image2Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-2-Bees.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image2Modal"
+                  tabindex="-1"
+                  aria-labelledby="image2ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image2ModalLabel">
+                          Tree Number 192: Malus
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- #3 Tree Number 193: Malus -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 193<br />
+                  Tree Species: Malus
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placehoder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image3Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-3-Ancient-Plants.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image3Modal"
+                  tabindex="-1"
+                  aria-labelledby="image3ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image3ModalLabel">
+                          Tree Number 193: Malus
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tree Number 194: Malus -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 194<br />
+                  Tree Species: Malus
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placehoder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image4Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-4-Local-Exotic-Plants.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image4Modal"
+                  tabindex="-1"
+                  aria-labelledby="image4ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          Tree Number 194: Malus
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tree Number 195: Tilia Platyphyllos -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 195<br />
+                  Tree Species: Tilia Platyphyllos
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image5Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-5-Aloe-Vera.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image5Modal"
+                  tabindex="-1"
+                  aria-labelledby="image5ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image5ModalLabel">
+                          Tree Number 195: Tilia Platyphyllos
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tree Number 531: Ilex aquifolium -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 531<br />
+                  Tree Species: Ilex aquifolium
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image6Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-6-Teas-Trees.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image6Modal"
+                  tabindex="-1"
+                  aria-labelledby="image6ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image6ModalLabel">
+                          Tree Number 531: Ilex aquifolium
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tree Number 532: Ilex aquifolium -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 532<br />
+                  Tree Species: Ilex aquifolium
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image7Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-7-Fiddleheads-Ferns.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image7Modal"
+                  tabindex="-1"
+                  aria-labelledby="image7ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image7ModalLabel">
+                          Tree Number 532: Ilex aquifolium
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 196 Quercus Robur Purpurea -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 196<br />
+                  Tree Species: Quercus Robur Purpurea
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image8Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-8-Catnip.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image8Modal"
+                  tabindex="-1"
+                  aria-labelledby="image8ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image8ModalLabel">
+                          196 Quercus Robur Purpurea
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 197 Halesia Monticola -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 197<br />
+                  Tree Species: Halesia Monticol
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image9Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-9-Wintersweet.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image9Modal"
+                  tabindex="-1"
+                  aria-labelledby="image9ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          197 Halesia Monticola
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 37 Prunus Subhertella Autumnalis -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 37<br />
+                  Tree Species: Subhertella Autumnalis
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image10Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-10-Witch-Hazel.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade justify-content-center align-items-cente"
+                  id="image10Modal"
+                  tabindex="-1"
+                  aria-labelledby="image10ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image10ModalLabel">
+                          37 Prunus Subhertella Autumnalis
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 78 Fraxinus Ornus -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 78<br />
+                  Tree Species: Fraxinus Ornus
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Sensory Stop 11 is frost on grass showing some grass and fallen leaves covered in frost."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image11Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-11-Frost-on-grass.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image11Modal"
+                  tabindex="-1"
+                  aria-labelledby="image11ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          78 Fraxinus Ornus
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 198 Acer Platanoides Crimson King -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 198<br />
+                  Tree Species: Acer Platanoides Crimson King
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image12Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory-Stop-12-Summer-Storms.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image12Modal"
+                  tabindex="-1"
+                  aria-labelledby="image12ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image12ModalLabel">
+                          Acer Platanoides Crimson King
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 199 Prunus Avium Plena -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 199<br />
+                  Tree Species: Prunus Avium Plena
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image13Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2013%20Tree%20Canopies.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image13Modal"
+                  tabindex="-1"
+                  aria-labelledby="image13ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1Modal3Label">
+                          199 Prunus Avium Plena
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 206 Fraxinus Angustifolia Subsp Oxycarpa -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number 206<br />
+                  Tree Species: Fraxinus Angustifolia Subsp Oxycarpa
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image14Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2014%20Wild%20Garlic.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image14Modal"
+                  tabindex="-1"
+                  aria-labelledby="image14ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image14ModalLabel">
+                          206 Fraxinus Angustifolia Subsp Oxycarpa
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 207 Tilia Tomentosa -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 207<br />
+                  Tree Species: Tilia Tomentosa
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image15Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2015%20Fruit%20Trees.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image15Modal"
+                  tabindex="-1"
+                  aria-labelledby="image15ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image15ModalLabel">
+                          207 Tilia Tomentosa
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 208 Sorbus Aria -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 208<br />
+                  Sorbus Aria
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image16Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2016%20Baby%E2%80%99s%20Tears.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image16Modal"
+                  tabindex="-1"
+                  aria-labelledby="image16ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          208 Sorbus Aria
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 209 Fraxinus Excelsior -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 209<br />
+                  Tree Species: Fraxinus Excelsior
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image17Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2017%20Snowdrops.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image17Modal"
+                  tabindex="-1"
+                  aria-labelledby="image17ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image17ModalLabel">
+                          209 Fraxinus Excelsior
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 534 Acer Japonicum Aconitifolium -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 534<br />
+                  Tree Species: Acer Japonicum Aconitifolium
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Sensory Stop 18 shows a single log seat inside the Longhouse Glasshouse in the Trinity College Botanic Garden. The log seat is surrounded by various plants and trees."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image18Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2018%20Leaf%20color%20changes.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image18Modal"
+                  tabindex="-1"
+                  aria-labelledby="image18ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image18ModalLabel">
+                          534 Acer Japonicum Aconitifolium
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 210 Betula Papyrifera -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 210<br />
+                  Tree Species: Betula Papyrifera
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder text"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image16Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2016%20Baby%E2%80%99s%20Tears.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image16Modal"
+                  tabindex="-1"
+                  aria-labelledby="image16ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          210 Betula Papyrifera
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  191 Aesculus Carnea -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 191<br />
+                  Tree Species: Aesculus Carnea
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder text"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image16Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2016%20Baby%E2%80%99s%20Tears.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image16Modal"
+                  tabindex="-1"
+                  aria-labelledby="image16ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          191 Aesculus Carnea
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 82 Morua -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Tree Number: 82<br />
+                  Tree Species: Morus
+                </h5>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt="Placeholder image"
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image16Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Sensory%20Stop%2016%20Baby%E2%80%99s%20Tears.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image16Modal"
+                  tabindex="-1"
+                  aria-labelledby="image16ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          82 Morua
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Location: Physics Lawn</h5>
+                        <hr class="hr" />
+                        <h5>Tree Size: Add tree size</h5>
+                        <hr class="hr" />
+                        <h5>Carbon Stored: Add carbon stored.</h5>
+
+                        <hr class="hr" />
+                        <p>Add some text / species information.</p>
+                        <div class="d-flex justify-content-center">
+                          <img
+                            src="https://placehold.co/600x400"
+                            alt="Placeholder image"
+                            class="img-fluid"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Map Page -->
+          <section id="map_page" class="mt-4">
+            <h1>Physics Lawn Map</h1>
+            <p>
+              This map shows the Physics Lawn Tree Stops located at Physics Lawn
+              / Physiology Square on the Trinity College Dublin Campus.
+            </p>
+            <p>
+              Click on the <b>Tree Map Markers</b> to get a description of each
+              the Tree Species , as well as an audio description.
+            </p>
+            <div id="map" style="width: 100%; height: 1200px"></div>
+          </section>
+          <!-- Way Finding Video -->
+          <section id="physicslawn_video" class="mt-4 mb-4">
+            <h1>Physics Lawn Video</h1>
+            <p>This is a a video about the Physics Lawn Tree Stops.</p>
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://placehold.co/3840x2160.mp4?text=Physics+Lawn"
+                title="YouTube - TCD Sense and Trinity College Botanic Garden Sensory Trail"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+
+          <!-- User Feedback Section -->
+
+          <section class="container mt-5 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <h2 class="text-center mb-4">We Value Your Feedback</h2>
+                <p class="text-center mb-4">
+                  Your opinions and experiences are important to us. Please take
+                  a moment to share your feedback to help us improve the Physics
+                  Lawn Tree Stops and Map.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="GOOGLE_FORM_LINK_HERE"
+                    target="_blank"
+                    class="btn btn-primary"
+                    role="button"
+                    aria-label="Link to feedback form"
+                  >
+                    <i class="bi bi-pencil-square me-2"></i>Give Feedback
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Back to top of page button -->
+          <button
+            onclick="topFunction()"
+            id="myBtn"
+            title="Go to top"
+            class="btn btn-primary position-fixed bottom-0 end-0 m-3"
+            style="display: none; z-index: 1030"
+          >
+            <i class="bi bi-arrow-up"></i> Top
+          </button>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-light text-center text-secondary py-3">
+          <div class="container">
+            <p>© 2024 Trinity College Dublin - Physics Lawn Tree Stops</p>
+          </div>
+        </footer>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            a11y.setup({
+              reportMode: "console", // 'console', 'dom', or 'alert'
+              highlightIssues: true,
+              autoFix: true,
+              ruleset: "WCAG2.1_AA",
+              ignoreRules: ["color-contrast"], // Example of ignoring specific rules
+              focusTracking: true,
+              contrastRatio: 4.5,
+              fontSize: "14px",
+              roleAssignment: true,
+              liveRegionMonitoring: true,
+            });
+          });
+        </script>
+        <script>
+          try {
+            console.log("loaded ally.js in version", ally.version);
+            console.log("focusable elements", ally.query.focusable());
+          } catch (error) {
+            console.error(
+              "Error loading or executing ally.js functions",
+              error
+            );
+          }
+        </script>
+
+        <!-- Top of Page Button -->
+        <script>
+          //Get the button
+          var mybutton = document.getElementById("myBtn");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+            scrollFunction();
+          };
+
+          function scrollFunction() {
+            if (
+              document.body.scrollTop > 20 ||
+              document.documentElement.scrollTop > 20
+            ) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+          }
+        </script>
+      </section>
+    </div>
+  </body>
+</html>
