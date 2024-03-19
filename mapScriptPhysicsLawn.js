@@ -83,7 +83,7 @@ var marker1 = L.marker([53.34348, -6.252478], { icon: oneIcon })
   .bindPopup(
     createPopup(
       description1,
-      "images/arboretum.png",
+      "images/sequoiadendron-gigantium.png",
       "audio/Sensory-Stop-1-Lavender.mp3"
     ),
     { className: "custom-popup" }
