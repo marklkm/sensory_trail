@@ -47,7 +47,7 @@ function createIcon(iconUrl, iconSize = [80, 80]) {
 }
 
 // Dynamic icon creation
-const oneIcon = createIcon("images/arboretumicon.png");
+const oneIcon = createIcon("images/treeoneicon.png");
 const twoIcon = createIcon("images/arboretumicon.png");
 const threeIcon = createIcon("images/arboretumicon.png");
 const fourIcon = createIcon("images/arboretumicon.png");
