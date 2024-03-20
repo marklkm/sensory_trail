@@ -76,14 +76,14 @@ const physicslawnIcon = createIcon("images/physicslawnicon.png");
 
 /* # 1 Tree */
 
-var description1 = ["<h6>Tree Number 0: Sequoiadendron gigantium</h6>"];
+var description1 = ["<h6>Tree Number 0: Sequoiadendron giganteum</h6>"];
 
 var marker1 = L.marker([53.34348, -6.252478], { icon: oneIcon })
   .addTo(map)
   .bindPopup(
     createPopup(
       description1,
-      "images/arboretum.png",
+      "images/giant_redwood.png",
       "audio/Sensory-Stop-1-Lavender.mp3"
     ),
     { className: "custom-popup" }
