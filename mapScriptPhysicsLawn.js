@@ -6,7 +6,7 @@ var map = L.map("map").setView([53.3433, -6.25247], 20);
 
 // Add a tile layer (OpenStreetMap)
 L.tileLayer(
-  "https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=fa39f1df414d4dc1ab5bf1323d4b6d09",
+  "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=fa39f1df414d4dc1ab5bf1323d4b6d09",
   {
     attribution:
       'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, Tiles &copy; <a href="https://www.thunderforest.com/">Thunderforest</a>',
