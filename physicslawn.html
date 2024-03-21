@@ -55,35 +55,37 @@
   </head>
   <body>
     <!-- Navbar with Logo -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/trinity_logo.png" class="lazyload img-fluid" alt="Trinity College Dublin logo" width="350" height="350" />
-      <!-- Tree Stops Trail -->
-    </a>
-    <!-- Toggle button for mobile menu -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon mb-2"></span>
-    </button>
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#physicslawn">| Physics Lawn |</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#treespecies">| Tree Species |</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#map_page">| Physics Lawn Map |</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#physicslawn_video">| Physics Lawn Video |</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/trinity_logo.png" class="lazyload img-fluid" alt="Trinity College Dublin logo" width="350" height="350" />
+          <!-- Tree Stops Trail -->
+        </a>
+        <!-- Toggle button for mobile menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mb-2"></span>
+          <span class="visually-hidden">Menu (click to expand or collapse)</span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#physicslawn">| Physics Lawn |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#treespecies">| Tree Species |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map_page">| Physics Lawn Map |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#physicslawn_video">| Physics Lawn Video |</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
 
     <!-- Pages Container -->
     <div class="container mt-5 mb-4">
@@ -231,6 +233,61 @@
               </div>
             </div>
           </div>
+
+<!-- R data graphs -->
+<div class="accordion-item">
+  <h2 class="accordion-header text-dark">
+    <button
+      class="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#panelsStayOpen-collapseRData"
+      aria-expanded="false"
+      aria-controls="panelsStayOpen-collapseRData"
+    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+      <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"/>
+    </svg>
+      &nbsp; Tree Data &amp; Information
+    </button>
+  </h2>
+  <div
+    id="panelsStayOpen-collapseRData"
+    class="accordion-collapse collapse"
+  >
+    <div class="accordion-body">
+      <p>
+        The Physics Lawn is not wheelchair accessible or fully
+        accessible.
+      </p>
+      <p>
+        <b>PLEASE NOTE</b> that most of the surfaces at Trinity
+        College Dublin are a mixture of concrete, cobbles stones,
+        gravel, grass, and may be more difficult to traverse for
+        visitors with limited mobility. We are currently working to
+        make the Trinity College Dublin campus easily accessible to
+        everyone.
+      </p>
+      <div class="container mt-4 mb-4">
+        <div class="row">
+          <!-- Column for QR Code -->
+          <div class="col-12">
+            <!-- Replace with your QR code image -->
+            <img
+              src="images/total_CO2_sequestration_by_tree_species.png"
+              alt="Total CO2 Sequestered by tree species"
+              class="img-fluid w-100 lazyload"
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of R data graphs -->
+
           <div class="accordion-item">
             <h2 class="accordion-header text-dark">
               <button
