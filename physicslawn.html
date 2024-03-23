@@ -2111,6 +2111,9 @@
                   <option value="marker21">
                     Tree Number 82: Morus - Mulberry
                   </option>
+                  <option value="marker22">
+                    Physics Lawn
+                  </option>
                   <!-- Add more options for other markers here -->
                 </select>
               </div>
@@ -2160,68 +2163,71 @@
 
           <!-- section  "Encyclopedia of Trinity College Trees, Shrubs & Vines" -->
 
-          <section class="container my-5">
-            <h2 class="text-center mb-4">Encyclopedia of Trinity College Trees, Shrubs & Vines</h2>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="scientific-tab" data-bs-toggle="tab" data-bs-target="#scientific" type="button" role="tab" aria-controls="scientific" aria-selected="true">Scientific Name</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="common-tab" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="common" aria-selected="false">Common Name</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab" aria-controls="family" aria-selected="false">Family Name</button>
-              </li>
-            </ul>
+          <div class="tab-content" id="encyclopediaContent">
+            <!-- Previous tabs content -->
           
-            <!-- Tab panes -->
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="scientific" role="tabpanel" aria-labelledby="scientific-tab">
-                <!-- Alphabet filters -->
-                <div class="d-flex flex-wrap justify-content-center my-3">
-                  <!-- Replace # with actual links or JavaScript functions to filter content -->
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">A</a>
-                  <!-- Add buttons for B to Z -->
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">B</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">C</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">D</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">E</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">F</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">G</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">H</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">I</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">J</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">K</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">L</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">M</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">N</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">O</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">P</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">Q</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">R</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">S</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">T</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">U</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">V</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">W</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">X</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">Y</a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm m-1">Z</a>
+            <!-- Scientific Name Tab -->
+            <div class="tab-pane fade show active" id="scientificName" role="tabpanel" aria-labelledby="scientificName-tab">
+              <div class="container mt-3">
+                <h2>Scientific Name</h2>
+                <!-- Alphabet navigation -->
+                <nav aria-label="Tree alphabet">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <!-- Alphabet pills -->
+                    <!-- Other letters -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="j-tab" data-bs-toggle="pill" data-bs-target="#j" type="button" role="tab" aria-controls="j" aria-selected="false">J</button>
+                    </li>
+                    <!-- Other letters -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="k-tab" data-bs-toggle="pill" data-bs-target="#k" type="button" role="tab" aria-controls="k" aria-selected="false">K</button>
+                    </li>
+                  </ul>
+                </nav>
+          
+                <!-- Content for each letter -->
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- Content for letter J -->
+                  <div class="tab-pane fade" id="j" role="tabpanel" aria-labelledby="j-tab">
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="images/juglans-nigra.jpg" class="img-fluid rounded-start" alt="Juglans nigra - Black Walnut">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Juglans nigra - Black Walnut</h5>
+                            <p class="card-text">This month we are highlighting Juglans nigra, or Black Walnut. This Black Walnut is 25 metres tall, has a girth of 2.62 metres and stores an estimated 2,617 kilograms of carbon. It can store up to 6,000 kilograms when it matures.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Other letters content -->
+                      <!-- Content for letter K -->
+                      <div class="tab-pane fade" id="k" role="tabpanel" aria-labelledby="k-tab">
+                        <div class="card mb-3">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="images/juglans-nigra.jpg" class="img-fluid rounded-start" alt="Juglans nigra - Black Walnut">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Juglans nigra - Black Walnut</h5>
+                                <p class="card-text">This month we are highlighting Juglans nigra, or Black Walnut. This Black Walnut is 25 metres tall, has a girth of 2.62 metres and stores an estimated 2,617 kilograms of carbon. It can store up to 6,000 kilograms when it matures.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
-                <!-- Content for 'A' or selected letter -->
-                <p>Content for Scientific Names starting with 'A'.</p>
-              </div>
-              <div class="tab-pane fade" id="common" role="tabpanel" aria-labelledby="common-tab">
-                <!-- Similar structure for Common Name -->
-                <p>Content for Common Names.</p>
-              </div>
-              <div class="tab-pane fade" id="family" role="tabpanel" aria-labelledby="family-tab">
-                <!-- Similar structure for Family Name -->
-                <p>Content for Family Names.</p>
               </div>
             </div>
-          </section>
+            <!-- Other tabs content -->
+          </div>
+          
           
 
             <!-- End of section  "Encyclopedia of Trinity College Trees, Shrubs & Vines" -->
@@ -2642,6 +2648,11 @@
           if (selectedMarker === "marker21") {
             map.setView(marker21.getLatLng(), 20);
             marker21.openPopup();
+          }
+
+          if (selectedMarker === "marker22") {
+            map.setView(marker22.getLatLng(), 20);
+            marker22.openPopup();
           }
         });
     </script>

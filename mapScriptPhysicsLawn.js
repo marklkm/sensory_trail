@@ -20,10 +20,10 @@ function createPopup(descriptionArray, photo, audio) {
     .map((desc) => `<p>${desc}<\/p>`)
     .join("");
   return `
-        <div style="max-width: 300px;">
+        <div style="max-width: 500px;">
             <h4><\/h4>
             ${descriptionHTML}
-            <img src='${photo}' width='150px' style="margin-top: 10px;"><br>
+            <img src='${photo}' width='250px' style="margin-top: 10px;"><br>
         <\/div>`;
 }
 
@@ -477,8 +477,9 @@ var marker21 = L.marker([53.34341, -6.252514], { icon: twentyoneIcon })
 
 /* # Physics Lawn Icon */
 
-var description22 = ["<h6>Physics Lawn</h6>"];
-
+var description22 = [
+  "<h5>Physics Lawn</h5><p>This is the Physics Lawn area.</p>",
+];
 var marker22 = L.marker([53.34335, -6.25231], { icon: physicslawnIcon })
   .addTo(map)
   .bindPopup(
