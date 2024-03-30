@@ -63,7 +63,7 @@
         </a>
         <!-- Toggle button for mobile menu -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon mb-2"></span>
+          <span class="navbar-toggler-icon mb-3 mt-3"></span>
           <span class="visually-hidden">Menu (click to expand or collapse)</span>
         </button>
         <!-- Navbar links -->
@@ -273,12 +273,31 @@
           <!-- Column for QR Code -->
           <div class="col-12">
             <!-- Replace with your QR code image -->
+            <h2>Species Distribution Analysis</h2>
+            <p>The aim of this visualisation was to conduct a Species Distribution Analysis, which examines how different 
+              tree species are distributed across various locations on the Physics Lawn. A proportional bar chart was chosen 
+              for its ability to visually represent both the count and the relative proportion of each 
+              tree species within each location, making it easier to compare the species distribution across different areas.</p>
             <img
-              src="images/total_CO2_sequestration_by_tree_species.png"
-              alt="Total CO2 Sequestered by tree species"
+              src="images/Tree Species Distribution on Physics Lawn.png"
+              alt="Tree Species Distribution on Physics Lawn"
               class="img-fluid w-100 lazyload"
               loading="lazy"
             />
+
+            <h2>Distribution of Tree Heights</h2>
+              <p>The "Distribution of Tree Heights" graph provides a visual representation 
+                of how the heights of trees, measured in meters, are spread across the dataset. 
+                It illustrates the range of tree heights, from the shortest to the tallest, 
+                and shows the most common height ranges among the trees. This summary helps understand 
+                the diversity of tree sizes within the area studied, indicating whether most trees are young 
+                and shorter, mature, and taller, or a mix of both.</p>
+            <img
+            src="images/Distribution of Tree Heights.png"
+            alt="TDistribution of Tree Heights chart."
+            class="img-fluid w-100 lazyload"
+            loading="lazy"
+          />
           </div>
 
         </div>
@@ -287,7 +306,7 @@
   </div>
 </div>
 <!-- End of R data graphs -->
-
+       <!-- Tree Species  -->
           <div class="accordion-item">
             <h2 class="accordion-header text-dark">
               <button
@@ -310,6 +329,7 @@
               </div>
             </div>
           </div>
+          <!-- Location -->
           <div class="accordion-item">
             <h2 class="accordion-header text-dark">
               <button
@@ -332,6 +352,7 @@
               </div>
             </div>
           </div>
+          <!-- Seating Areas -->
           <div class="accordion-item">
             <h2 class="accordion-header text-dark">
               <button
@@ -363,6 +384,35 @@
               </div>
             </div>
           </div>
+          <!-- Rules -->
+          <div class="accordion-item">
+            <h2 class="accordion-header text-dark">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                <i class="bi bi-info-square-fill"></i>&nbsp; Rules
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>
+                  Some general rules for visting the Physics Lawn area, and other areas on the Trinity College Dublin campus.
+                </p>
+                <!-- List of rules -->
+                <ul>
+                  <li>Respect the trees and the many other visitors who are learning here.</li>
+                  <li>To preserve the health and beauty of the trees, students and visitors may not pick, 
+                    pull, or climb on the trees. Students and visitors may gently touch plant parts to feel 
+                    texture and smell scents. Students and visitors may collect plant material that has fallen to the ground.</li>
+                    <li>Walking in plant beds or mulched areas is not allowed.</li>
+                    <li>Balls, frisbees, and other sports equipment are not allowed.</li>
+                  <li>No pets allowed in the garden areas.</li>
+                  <li>Follow the posted guidelines for plant care and maintenance.</li>
+                  <li>Use the benches responsibly and leave them as you found them.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info. & Social Media -->
           <div class="accordion-item">
             <h2 class="accordion-header text-dark">
               <button
@@ -2159,30 +2209,129 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section>  
 
-          <!-- section  "Encyclopedia of Trinity College Trees, Shrubs & Vines" -->
+          <!-- section  "List of Trinity College Dublin Trees. -->
 
           <div class="tab-content" id="encyclopediaContent">
             <!-- Previous tabs content -->
+            
           
             <!-- Scientific Name Tab -->
             <div class="tab-pane fade show active" id="scientificName" role="tabpanel" aria-labelledby="scientificName-tab">
               <div class="container mt-3">
+                
                 <h2>Scientific Name</h2>
                 <!-- Alphabet navigation -->
                 <nav aria-label="Tree alphabet">
                   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <!-- Alphabet pills -->
-                    <!-- Other letters -->
+                     <!-- A letter -->
+                      <li class="nav-item" role="presentation">
+                         <button class="nav-link" id="A-tab" data-bs-toggle="pill" data-bs-target="#A" type="button" role="tab" aria-controls="A" aria-selected="false">A</button>
+                      </li>
+                       <!-- B letter -->
+                       <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="B-tab" data-bs-toggle="pill" data-bs-target="#B" type="button" role="tab" aria-controls="B" aria-selected="false">B</button>
+                     </li>
+                    <!-- C letter -->
+                    <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="C-tab" data-bs-toggle="pill" data-bs-target="#C" type="button" role="tab" aria-controls="C" aria-selected="false">C</button>
+                    </li>
+                    <!-- D letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="D-tab" data-bs-toggle="pill" data-bs-target="#D" type="button" role="tab" aria-controls="D" aria-selected="false">D</button>
+                    </li>
+                     <!-- E letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="E-tab" data-bs-toggle="pill" data-bs-target="#E" type="button" role="tab" aria-controls="E" aria-selected="false">E</button>
+                    </li>
+                     <!-- F letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="F-tab" data-bs-toggle="pill" data-bs-target="#F" type="button" role="tab" aria-controls="F" aria-selected="false">F</button>
+                    </li>
+                     <!-- G letter -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="G-tab" data-bs-toggle="pill" data-bs-target="#G" type="button" role="tab" aria-controls="G" aria-selected="false">G</button>
+                      <!-- H letter -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="H-tab" data-bs-toggle="pill" data-bs-target="#H" type="button" role="tab" aria-controls="H" aria-selected="false">H</button>
+                        </li>
+                                     <!-- I letter -->
+                                     <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="I-tab" data-bs-toggle="pill" data-bs-target="#I" type="button" role="tab" aria-controls="I" aria-selected="false">I</button>
+                                   </li>
+                    <!-- J letter -->
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="j-tab" data-bs-toggle="pill" data-bs-target="#j" type="button" role="tab" aria-controls="j" aria-selected="false">J</button>
                     </li>
-                    <!-- Other letters -->
+                    <!-- K letter  -->
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="k-tab" data-bs-toggle="pill" data-bs-target="#k" type="button" role="tab" aria-controls="k" aria-selected="false">K</button>
                     </li>
+                    <!-- L letter  -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="L-tab" data-bs-toggle="pill" data-bs-target="#L" type="button" role="tab" aria-controls="L" aria-selected="false">L</button>
+                    </li>
+                                        <!-- M letter  -->
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="M-tab" data-bs-toggle="pill" data-bs-target="#M" type="button" role="tab" aria-controls="M" aria-selected="false">M</button>
+                                        </li>
+                                              <!-- N letter  -->
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="N-tab" data-bs-toggle="pill" data-bs-target="#N" type="button" role="tab" aria-controls="N" aria-selected="false">N</button>
+                  <!-- O letter  -->
+                     <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="O-tab" data-bs-toggle="pill" data-bs-target="#O" type="button" role="tab" aria-controls="O" aria-selected="false">O</button>
+                          </li>
+                                            <!-- P letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="P-tab" data-bs-toggle="pill" data-bs-target="#P" type="button" role="tab" aria-controls="P" aria-selected="false">P</button>
+                         </li>
+                                                                     <!-- Q letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Q-tab" data-bs-toggle="pill" data-bs-target="#Q" type="button" role="tab" aria-controls="Q" aria-selected="false">Q</button>
+                         </li>
+                                                                                              <!-- R letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="R-tab" data-bs-toggle="pill" data-bs-target="#R" type="button" role="tab" aria-controls="R" aria-selected="false">R</button>
+                         </li>
+                        </li>
+                        <!-- S letter  -->
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="S-tab" data-bs-toggle="pill" data-bs-target="#S" type="button" role="tab" aria-controls="S" aria-selected="false">S</button>
+</li>
+                        <!-- T letter  -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="T-tab" data-bs-toggle="pill" data-bs-target="#T" type="button" role="tab" aria-controls="T" aria-selected="false">T</button>
+                          </li>
+                           <!-- U letter  -->
+                           <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="U-tab" data-bs-toggle="pill" data-bs-target="#U" type="button" role="tab" aria-controls="U" aria-selected="false">U</button>
+                            </li>    
+                             <!-- V letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="V-tab" data-bs-toggle="pill" data-bs-target="#V" type="button" role="tab" aria-controls="V" aria-selected="false">V</button>
+                              </li>   
+                            <!-- W letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="W-tab" data-bs-toggle="pill" data-bs-target="#W" type="button" role="tab" aria-controls="W" aria-selected="false">W</button>
+                              </li>    
+                            <!-- X letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="X-tab" data-bs-toggle="pill" data-bs-target="#X" type="button" role="tab" aria-controls="X" aria-selected="false">X</button>
+                              </li> 
+                             <!-- Y letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Y-tab" data-bs-toggle="pill" data-bs-target="#Y" type="button" role="tab" aria-controls="Y" aria-selected="false">Y</button>
+                              </li>    
+                             <!-- Z letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Z-tab" data-bs-toggle="pill" data-bs-target="#Z" type="button" role="tab" aria-controls="Z" aria-selected="false">Z</button>
+                              </li>             
                   </ul>
+
+                  
                 </nav>
           
                 <!-- Content for each letter -->
@@ -2222,6 +2371,24 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- Content for letter L -->
+                      <div class="tab-pane fade" id="L" role="tabpanel" aria-labelledby="L-tab">
+                        <div class="card mb-3">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="images/juglans-nigra.jpg" class="img-fluid rounded-start" alt="Juglans nigra - Black Walnut">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Juglans nigra - Black Walnut</h5>
+                                <p class="card-text">This month we are highlighting Juglans nigra, or Black Walnut. This Black Walnut is 25 metres tall, has a girth of 2.62 metres and stores an estimated 2,617 kilograms of carbon. It can store up to 6,000 kilograms when it matures.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -2231,6 +2398,378 @@
           
 
             <!-- End of section  "Encyclopedia of Trinity College Trees, Shrubs & Vines" -->
+
+
+            <!-- TEST TABS -->
+
+            <section class="container my-5">
+              <h2 class="text-center mb-4">List of Trinity College Dublin Trees</h2>
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="scientific-tab" data-bs-toggle="tab" data-bs-target="#scientific" type="button" role="tab" aria-controls="scientific" aria-selected="true">Scientific Name</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="common-tab" data-bs-toggle="tab" data-bs-target="#common" type="button" role="tab" aria-controls="common" aria-selected="false">Common Name</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab" aria-controls="family" aria-selected="false">Family Name</button>
+                </li>
+              </ul>
+            
+              <!-- Tab panes -->
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="scientific" role="tabpanel" aria-labelledby="scientific-tab">
+
+                  <!-- Content for 'A' or selected letter -->
+                  <p>Content for Scientific Names starting with 'A'.</p>
+                                  <!-- Alphabet navigation -->
+                <nav aria-label="Tree alphabet">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <!-- Alphabet pills -->
+                     <!-- A letter -->
+                      <li class="nav-item mt-3 mb-3" role="presentation">
+                         <button class="nav-link" id="A-tab" data-bs-toggle="pill" data-bs-target="#A" type="button" role="tab" aria-controls="A" aria-selected="false">A</button>
+                      </li>
+                       <!-- B letter -->
+                       <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="B-tab" data-bs-toggle="pill" data-bs-target="#B" type="button" role="tab" aria-controls="B" aria-selected="false">B</button>
+                     </li>
+                    <!-- C letter -->
+                    <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="C-tab" data-bs-toggle="pill" data-bs-target="#C" type="button" role="tab" aria-controls="C" aria-selected="false">C</button>
+                    </li>
+                    <!-- D letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="D-tab" data-bs-toggle="pill" data-bs-target="#D" type="button" role="tab" aria-controls="D" aria-selected="false">D</button>
+                    </li>
+                     <!-- E letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="E-tab" data-bs-toggle="pill" data-bs-target="#E" type="button" role="tab" aria-controls="E" aria-selected="false">E</button>
+                    </li>
+                     <!-- F letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="F-tab" data-bs-toggle="pill" data-bs-target="#F" type="button" role="tab" aria-controls="F" aria-selected="false">F</button>
+                    </li>
+                     <!-- G letter -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="G-tab" data-bs-toggle="pill" data-bs-target="#G" type="button" role="tab" aria-controls="G" aria-selected="false">G</button>
+                      <!-- H letter -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="H-tab" data-bs-toggle="pill" data-bs-target="#H" type="button" role="tab" aria-controls="H" aria-selected="false">H</button>
+                        </li>
+                                     <!-- I letter -->
+                                     <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="I-tab" data-bs-toggle="pill" data-bs-target="#I" type="button" role="tab" aria-controls="I" aria-selected="false">I</button>
+                                   </li>
+                    <!-- J letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="j-tab" data-bs-toggle="pill" data-bs-target="#j" type="button" role="tab" aria-controls="j" aria-selected="false">J</button>
+                    </li>
+                    <!-- K letter  -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="k-tab" data-bs-toggle="pill" data-bs-target="#k" type="button" role="tab" aria-controls="k" aria-selected="false">K</button>
+                    </li>
+                    <!-- L letter  -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="L-tab" data-bs-toggle="pill" data-bs-target="#L" type="button" role="tab" aria-controls="L" aria-selected="false">L</button>
+                    </li>
+                                        <!-- M letter  -->
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="M-tab" data-bs-toggle="pill" data-bs-target="#M" type="button" role="tab" aria-controls="M" aria-selected="false">M</button>
+                                        </li>
+                                              <!-- N letter  -->
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="N-tab" data-bs-toggle="pill" data-bs-target="#N" type="button" role="tab" aria-controls="N" aria-selected="false">N</button>
+                  <!-- O letter  -->
+                     <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="O-tab" data-bs-toggle="pill" data-bs-target="#O" type="button" role="tab" aria-controls="O" aria-selected="false">O</button>
+                          </li>
+                                            <!-- P letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="P-tab" data-bs-toggle="pill" data-bs-target="#P" type="button" role="tab" aria-controls="P" aria-selected="false">P</button>
+                         </li>
+                                                                     <!-- Q letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Q-tab" data-bs-toggle="pill" data-bs-target="#Q" type="button" role="tab" aria-controls="Q" aria-selected="false">Q</button>
+                         </li>
+                                                                                              <!-- R letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="R-tab" data-bs-toggle="pill" data-bs-target="#R" type="button" role="tab" aria-controls="R" aria-selected="false">R</button>
+                         </li>
+                        </li>
+                        <!-- S letter  -->
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="S-tab" data-bs-toggle="pill" data-bs-target="#S" type="button" role="tab" aria-controls="S" aria-selected="false">S</button>
+</li>
+                        <!-- T letter  -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="T-tab" data-bs-toggle="pill" data-bs-target="#T" type="button" role="tab" aria-controls="T" aria-selected="false">T</button>
+                          </li>
+                           <!-- U letter  -->
+                           <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="U-tab" data-bs-toggle="pill" data-bs-target="#U" type="button" role="tab" aria-controls="U" aria-selected="false">U</button>
+                            </li>    
+                             <!-- V letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="V-tab" data-bs-toggle="pill" data-bs-target="#V" type="button" role="tab" aria-controls="V" aria-selected="false">V</button>
+                              </li>   
+                            <!-- W letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="W-tab" data-bs-toggle="pill" data-bs-target="#W" type="button" role="tab" aria-controls="W" aria-selected="false">W</button>
+                              </li>    
+                            <!-- X letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="X-tab" data-bs-toggle="pill" data-bs-target="#X" type="button" role="tab" aria-controls="X" aria-selected="false">X</button>
+                              </li> 
+                             <!-- Y letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Y-tab" data-bs-toggle="pill" data-bs-target="#Y" type="button" role="tab" aria-controls="Y" aria-selected="false">Y</button>
+                              </li>    
+                             <!-- Z letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Z-tab" data-bs-toggle="pill" data-bs-target="#Z" type="button" role="tab" aria-controls="Z" aria-selected="false">Z</button>
+                              </li>             
+                  </ul>
+
+                  
+                </nav>
+
+                </div>
+                <div class="tab-pane fade" id="common" role="tabpanel" aria-labelledby="common-tab">
+                  <!-- Similar structure for Common Name -->
+                  <p>Content for Common Names.</p>
+                                  <!-- Alphabet navigation -->
+                <nav aria-label="Tree alphabet">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <!-- Alphabet pills -->
+                     <!-- A letter -->
+                      <li class="nav-item" role="presentation">
+                         <button class="nav-link" id="A-tab" data-bs-toggle="pill" data-bs-target="#A" type="button" role="tab" aria-controls="A" aria-selected="false">A</button>
+                      </li>
+                       <!-- B letter -->
+                       <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="B-tab" data-bs-toggle="pill" data-bs-target="#B" type="button" role="tab" aria-controls="B" aria-selected="false">B</button>
+                     </li>
+                    <!-- C letter -->
+                    <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="C-tab" data-bs-toggle="pill" data-bs-target="#C" type="button" role="tab" aria-controls="C" aria-selected="false">C</button>
+                    </li>
+                    <!-- D letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="D-tab" data-bs-toggle="pill" data-bs-target="#D" type="button" role="tab" aria-controls="D" aria-selected="false">D</button>
+                    </li>
+                     <!-- E letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="E-tab" data-bs-toggle="pill" data-bs-target="#E" type="button" role="tab" aria-controls="E" aria-selected="false">E</button>
+                    </li>
+                     <!-- F letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="F-tab" data-bs-toggle="pill" data-bs-target="#F" type="button" role="tab" aria-controls="F" aria-selected="false">F</button>
+                    </li>
+                     <!-- G letter -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="G-tab" data-bs-toggle="pill" data-bs-target="#G" type="button" role="tab" aria-controls="G" aria-selected="false">G</button>
+                      <!-- H letter -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="H-tab" data-bs-toggle="pill" data-bs-target="#H" type="button" role="tab" aria-controls="H" aria-selected="false">H</button>
+                        </li>
+                                     <!-- I letter -->
+                                     <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="I-tab" data-bs-toggle="pill" data-bs-target="#I" type="button" role="tab" aria-controls="I" aria-selected="false">I</button>
+                                   </li>
+                    <!-- J letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="j-tab" data-bs-toggle="pill" data-bs-target="#j" type="button" role="tab" aria-controls="j" aria-selected="false">J</button>
+                    </li>
+                    <!-- K letter  -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="k-tab" data-bs-toggle="pill" data-bs-target="#k" type="button" role="tab" aria-controls="k" aria-selected="false">K</button>
+                    </li>
+                    <!-- L letter  -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="L-tab" data-bs-toggle="pill" data-bs-target="#L" type="button" role="tab" aria-controls="L" aria-selected="false">L</button>
+                    </li>
+                                        <!-- M letter  -->
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="M-tab" data-bs-toggle="pill" data-bs-target="#M" type="button" role="tab" aria-controls="M" aria-selected="false">M</button>
+                                        </li>
+                                              <!-- N letter  -->
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="N-tab" data-bs-toggle="pill" data-bs-target="#N" type="button" role="tab" aria-controls="N" aria-selected="false">N</button>
+                  <!-- O letter  -->
+                     <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="O-tab" data-bs-toggle="pill" data-bs-target="#O" type="button" role="tab" aria-controls="O" aria-selected="false">O</button>
+                          </li>
+                                            <!-- P letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="P-tab" data-bs-toggle="pill" data-bs-target="#P" type="button" role="tab" aria-controls="P" aria-selected="false">P</button>
+                         </li>
+                                                                     <!-- Q letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Q-tab" data-bs-toggle="pill" data-bs-target="#Q" type="button" role="tab" aria-controls="Q" aria-selected="false">Q</button>
+                         </li>
+                                                                                              <!-- R letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="R-tab" data-bs-toggle="pill" data-bs-target="#R" type="button" role="tab" aria-controls="R" aria-selected="false">R</button>
+                         </li>
+                        </li>
+                        <!-- S letter  -->
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="S-tab" data-bs-toggle="pill" data-bs-target="#S" type="button" role="tab" aria-controls="S" aria-selected="false">S</button>
+</li>
+                        <!-- T letter  -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="T-tab" data-bs-toggle="pill" data-bs-target="#T" type="button" role="tab" aria-controls="T" aria-selected="false">T</button>
+                          </li>
+                           <!-- U letter  -->
+                           <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="U-tab" data-bs-toggle="pill" data-bs-target="#U" type="button" role="tab" aria-controls="U" aria-selected="false">U</button>
+                            </li>    
+                             <!-- V letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="V-tab" data-bs-toggle="pill" data-bs-target="#V" type="button" role="tab" aria-controls="V" aria-selected="false">V</button>
+                              </li>   
+                            <!-- W letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="W-tab" data-bs-toggle="pill" data-bs-target="#W" type="button" role="tab" aria-controls="W" aria-selected="false">W</button>
+                              </li>    
+                            <!-- X letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="X-tab" data-bs-toggle="pill" data-bs-target="#X" type="button" role="tab" aria-controls="X" aria-selected="false">X</button>
+                              </li> 
+                             <!-- Y letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Y-tab" data-bs-toggle="pill" data-bs-target="#Y" type="button" role="tab" aria-controls="Y" aria-selected="false">Y</button>
+                              </li>    
+                             <!-- Z letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Z-tab" data-bs-toggle="pill" data-bs-target="#Z" type="button" role="tab" aria-controls="Z" aria-selected="false">Z</button>
+                              </li>             
+                  </ul>
+
+                  
+                </nav>
+                </div>
+                <div class="tab-pane fade" id="family" role="tabpanel" aria-labelledby="family-tab">
+                  <!-- Similar structure for Family Name -->
+                  <p>Content for Family Names.</p>
+                                  <!-- Alphabet navigation -->
+                <nav aria-label="Tree alphabet">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <!-- Alphabet pills -->
+                     <!-- A letter -->
+                      <li class="nav-item" role="presentation">
+                         <button class="nav-link" id="A-tab" data-bs-toggle="pill" data-bs-target="#A" type="button" role="tab" aria-controls="A" aria-selected="false">A</button>
+                      </li>
+                       <!-- B letter -->
+                       <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="B-tab" data-bs-toggle="pill" data-bs-target="#B" type="button" role="tab" aria-controls="B" aria-selected="false">B</button>
+                     </li>
+                    <!-- C letter -->
+                    <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="C-tab" data-bs-toggle="pill" data-bs-target="#C" type="button" role="tab" aria-controls="C" aria-selected="false">C</button>
+                    </li>
+                    <!-- D letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="D-tab" data-bs-toggle="pill" data-bs-target="#D" type="button" role="tab" aria-controls="D" aria-selected="false">D</button>
+                    </li>
+                     <!-- E letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="E-tab" data-bs-toggle="pill" data-bs-target="#E" type="button" role="tab" aria-controls="E" aria-selected="false">E</button>
+                    </li>
+                     <!-- F letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="F-tab" data-bs-toggle="pill" data-bs-target="#F" type="button" role="tab" aria-controls="F" aria-selected="false">F</button>
+                    </li>
+                     <!-- G letter -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="G-tab" data-bs-toggle="pill" data-bs-target="#G" type="button" role="tab" aria-controls="G" aria-selected="false">G</button>
+                      <!-- H letter -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="H-tab" data-bs-toggle="pill" data-bs-target="#H" type="button" role="tab" aria-controls="H" aria-selected="false">H</button>
+                        </li>
+                                     <!-- I letter -->
+                                     <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="I-tab" data-bs-toggle="pill" data-bs-target="#I" type="button" role="tab" aria-controls="I" aria-selected="false">I</button>
+                                   </li>
+                    <!-- J letter -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="j-tab" data-bs-toggle="pill" data-bs-target="#j" type="button" role="tab" aria-controls="j" aria-selected="false">J</button>
+                    </li>
+                    <!-- K letter  -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="k-tab" data-bs-toggle="pill" data-bs-target="#k" type="button" role="tab" aria-controls="k" aria-selected="false">K</button>
+                    </li>
+                    <!-- L letter  -->
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="L-tab" data-bs-toggle="pill" data-bs-target="#L" type="button" role="tab" aria-controls="L" aria-selected="false">L</button>
+                    </li>
+                                        <!-- M letter  -->
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="M-tab" data-bs-toggle="pill" data-bs-target="#M" type="button" role="tab" aria-controls="M" aria-selected="false">M</button>
+                                        </li>
+                                              <!-- N letter  -->
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="N-tab" data-bs-toggle="pill" data-bs-target="#N" type="button" role="tab" aria-controls="N" aria-selected="false">N</button>
+                  <!-- O letter  -->
+                     <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="O-tab" data-bs-toggle="pill" data-bs-target="#O" type="button" role="tab" aria-controls="O" aria-selected="false">O</button>
+                          </li>
+                                            <!-- P letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="P-tab" data-bs-toggle="pill" data-bs-target="#P" type="button" role="tab" aria-controls="P" aria-selected="false">P</button>
+                         </li>
+                                                                     <!-- Q letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Q-tab" data-bs-toggle="pill" data-bs-target="#Q" type="button" role="tab" aria-controls="Q" aria-selected="false">Q</button>
+                         </li>
+                                                                                              <!-- R letter  -->
+                     <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="R-tab" data-bs-toggle="pill" data-bs-target="#R" type="button" role="tab" aria-controls="R" aria-selected="false">R</button>
+                         </li>
+                        </li>
+                        <!-- S letter  -->
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="S-tab" data-bs-toggle="pill" data-bs-target="#S" type="button" role="tab" aria-controls="S" aria-selected="false">S</button>
+</li>
+                        <!-- T letter  -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="T-tab" data-bs-toggle="pill" data-bs-target="#T" type="button" role="tab" aria-controls="T" aria-selected="false">T</button>
+                          </li>
+                           <!-- U letter  -->
+                           <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="U-tab" data-bs-toggle="pill" data-bs-target="#U" type="button" role="tab" aria-controls="U" aria-selected="false">U</button>
+                            </li>    
+                             <!-- V letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="V-tab" data-bs-toggle="pill" data-bs-target="#V" type="button" role="tab" aria-controls="V" aria-selected="false">V</button>
+                              </li>   
+                            <!-- W letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="W-tab" data-bs-toggle="pill" data-bs-target="#W" type="button" role="tab" aria-controls="W" aria-selected="false">W</button>
+                              </li>    
+                            <!-- X letter  -->
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="X-tab" data-bs-toggle="pill" data-bs-target="#X" type="button" role="tab" aria-controls="X" aria-selected="false">X</button>
+                              </li> 
+                             <!-- Y letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Y-tab" data-bs-toggle="pill" data-bs-target="#Y" type="button" role="tab" aria-controls="Y" aria-selected="false">Y</button>
+                              </li>    
+                             <!-- Z letter  -->
+                             <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="Z-tab" data-bs-toggle="pill" data-bs-target="#Z" type="button" role="tab" aria-controls="Z" aria-selected="false">Z</button>
+                              </li>             
+                  </ul>
+
+                  
+                </nav>
+                </div>
+              </div>
+            </section>
+            
+            <!-- END TEST TABS -->
 
           <!-- Tree of the month section -->
           <section class="container my-5">
