@@ -213,6 +213,10 @@
           <div class="col-lg-4 mt-4 mb-4">
         
             <img src="images/tcdsense-beacons-qr-code.svg" class="img-fluid" alt="QR Code linking to the TCD Sense Map">
+            <p>
+              Or you can view the <a href="https://beacons.ai/tcdsense" target="_blank" rel="nonopener"> TCD Sense Beacons page</a>.
+            </p>
+            
            </div>
   
           <p>As well as a teaching and research facility,
@@ -1939,59 +1943,59 @@
       aria-label="Select Tree"
       id="treeSelector"
     >
-      <option selected>Choose a tree...</option>
+      <option selected>Choose a Sensory Stop ...</option>
       <option value="marker1">
         Sensory Stop 1 - Lavender
       </option>
       <option value="marker2">
         Sensory Stop 2 - Bees
       </option>
-      <option value="marker3">
+      <option value="marker12">
         Sensory Stop 3 - Ancient Plants
       </option>
-      <option value="marker4">
+      <option value="marker13">
         Sensory Stop 4 - Exotic Plants
       </option>
-      <option value="marker5">
+      <option value="marker14">
         Sensory Stop 5 - Aloe Vera
       </option>
-      <option value="marker6">
+      <option value="marker15">
         Sensory Stop 6 - Teas & Trees
       </option>
-      <option value="marker7">
+      <option value="marker16">
         Sensory Stop 7 - Fiddleheads on Ferns
       </option>
-      <option value="marker8">
+      <option value="marker17">
         Sensory Stop 8 - Catnip
       </option>
-      <option value="marker9">
+      <option value="marker18">
         Sensory Stop 9 - Wintersweet
       </option>
-      <option value="marker10">
+      <option value="marker19">
         Sensory Stop 10 - Witch Hazel
       </option>
-      <option value="marker11">
+      <option value="marker20">
         Sensory Stop 11 - Frost on Grass
       </option>
-      <option value="marker12">
+      <option value="marker21">
         Sensory Stop 12 - Summer Storms
       </option>
-      <option value="marker13">
+      <option value="marker22">
         Sensory Stop 13 - Tree Canopies
       </option>
-      <option value="marker14">
+      <option value="marker23">
         Sensory Stop 14 - Wild Garlic
       </option>
-      <option value="marker15">
+      <option value="marker24">
         Sensory Stop 15 - Fruit Trees
       </option>
-      <option value="marker16">
+      <option value="marker25">
         Sensory Stop 16 - Baby's Tears
       </option>
-      <option value="marker17">
+      <option value="marker26">
         Sensory Stop 17 - Snowdrops
       </option>
-      <option value="marker18">
+      <option value="marker27">
         Sensory Stop 18 - Log Seat
       </option>
       <!-- Add more options for other markers here -->
@@ -2084,6 +2088,109 @@ document.getElementById("topButton").addEventListener("click", function() {
     console.error("Error loading or executing ally.js functions", error);
   }
 </script>
+
+
+    <!-- Script for selecting the tree numbers and tree species from drop down options -->
+    <script>
+      document
+        .getElementById("treeSelector")
+        .addEventListener("change", function (e) {
+          var selectedMarker = e.target.value;
+
+          // Logic to zoom in and open the popup for the selected marker
+          
+          // 1. Lavender (marker1)
+          if (selectedMarker === "marker1") {
+            map.setView(marker1.getLatLng(), 20); // Zoom into the marker. Adjust zoom level as necessary.
+            marker1.openPopup();
+          }
+          // 2. Bees (marker2)
+          if (selectedMarker === "marker2") {
+            map.setView(marker2.getLatLng(), 20);
+            marker2.openPopup();
+          }
+          // 3. Ancient plants (marker12)
+          if (selectedMarker === "marker12") {
+            map.setView(marker12.getLatLng(), 20);
+            marker12.openPopup();
+          }
+          // 4. local exotic plants (marker13)
+          if (selectedMarker === "marker13") {
+            map.setView(marker13.getLatLng(), 20);
+            marker13.openPopup();
+          }
+          // 5. Aloe Vera (marker14)
+          if (selectedMarker === "marker14") {
+            map.setView(marker14.getLatLng(), 20);
+            marker14.openPopup();
+          }
+          // 6. Teas and trees (marker15)
+          if (selectedMarker === "marker15") {
+            map.setView(marker15.getLatLng(), 20);
+            marker15.openPopup();
+          }
+          // 7. Fiddle heads on ferns (marker16)
+          if (selectedMarker === "marker16") {
+            map.setView(marker16.getLatLng(), 20);
+            marker16.openPopup();
+          }
+          // 8. Catnip (marker17)
+          if (selectedMarker === "marker17") {
+            map.setView(marker17.getLatLng(), 20);
+            marker17.openPopup();
+          }
+          // 9. Wintersweet (marker18)
+          if (selectedMarker === "marker18") {
+            map.setView(marker18.getLatLng(), 20);
+            marker18.openPopup();
+          }
+          // 10. Witch Hazel (marker19)
+          if (selectedMarker === "marker19") {
+            map.setView(marker19.getLatLng(), 20);
+            marker19.openPopup();
+          }
+          // 11. Frost on grass (marker20)
+          if (selectedMarker === "marker20") {
+            map.setView(marker20.getLatLng(), 20);
+            marker20.openPopup();
+          }
+          // 12. Summer Storms (marker21)
+          if (selectedMarker === "marker21") {
+            map.setView(marker21.getLatLng(), 20);
+            marker21.openPopup();
+          }
+          // 13. Tree canopies (marker22)
+          if (selectedMarker === "marker22") {
+            map.setView(marker22.getLatLng(), 20);
+            marker22.openPopup();
+          }
+          // 14. Wild garlic (marker23)
+          if (selectedMarker === "marker23") {
+            map.setView(marker23.getLatLng(), 20);
+            marker23.openPopup();
+          }
+          // 15. Fruit treesv(marker24)
+          if (selectedMarker === "marker24") {
+            map.setView(marker24.getLatLng(), 20);
+            marker24.openPopup();
+          }
+          // 16. Baby's tears (marker25)
+          if (selectedMarker === "marker25") {
+            map.setView(marker25.getLatLng(), 20);
+            marker25.openPopup();
+          }
+          // 17. Snowdrops (marker26)
+          if (selectedMarker === "marker26") {
+            map.setView(marker26.getLatLng(), 20);
+            marker26.openPopup();
+          }
+          // 18. Log seat (marker27)
+          if (selectedMarker === "marker27") {
+            map.setView(marker27.getLatLng(), 20);
+            marker25.openPopup();
+          }
+        });
+    </script>
 
     
     
