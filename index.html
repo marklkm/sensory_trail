@@ -33,6 +33,25 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- CSS style for top of page button -->
+    <style>
+      /* Optional: Hide the button by default and only show after scrolling down 100px */
+#topButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed to the bottom right corner */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    z-index: 99; /* Makes sure it sits on top of other content */
+}
+
+/* Style modifications if needed */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    </style>
+
 
   </head>
   <body>
@@ -1905,14 +1924,10 @@
       </section>
 
       <!-- Back to top of page button -->
-      <button
-        id="backToTop"
-        class="btn btn-primary position-fixed bottom-0 end-0 m-3"
-        style="z-index: 9999; display: none"
-        onclick="scrollToTop()"
-      >
-        ↑ TOP
-      </button>
+      <button type="button" class="btn btn-primary btn-lg" id="topButton" aria-label="Go to top of page" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+        <i class="bi bi-arrow-up-circle-fill"></i> Top
+    </button>
+    
 
       
     </div>
@@ -1942,6 +1957,28 @@
       });
     </script>
   -->
+
+<!-- JS script for top of page button -->
+
+<script>
+  document.addEventListener("scroll", function() {
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    var button = document.getElementById("topButton");
+    if (scrollPosition > 100) {
+        button.style.display = "block"; // Show the button
+    } else {
+        button.style.display = "none"; // Hide the button
+    }
+});
+
+document.getElementById("topButton").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Optional: for smooth scrolling
+    });
+});
+
+</script>
 
 <script>
   try {
