@@ -457,7 +457,7 @@ var marker26 = L.marker([53.312, -6.2602224], {
 
 /* #27 DESCRIPTION */
 
-var descriptions27 = ["<h5>Sensory Stop 18 - The Long House Glasshouse</h5>"];
+var descriptions27 = ["<h5>Sensory Stop 18 - Log Seat</h5>"];
 
 var marker27 = L.marker([53.31249, -6.25999], {
   icon: eighteenIcon,
