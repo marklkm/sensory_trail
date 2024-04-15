@@ -131,3 +131,42 @@ h6 {
   background-color: #007bff; /* Primary blue color */
   border-color: #007bff; /* Border color if needed */
 }
+
+
+/* CSS for overlays for Seasonal icons */
+
+/* Container holding the icon and the overlay */
+.icon-container {
+  position: relative;
+  cursor: pointer; /* Indicates that the element is interactive */
+}
+
+/* Style for the overlay */
+.overlay {
+  position: absolute; /* Overlay will cover the image */
+  top: 0; 
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text color */
+  display: flex; /* Use Flexbox for centering content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  opacity: 0; /* Make overlay invisible initially */
+  transition: opacity 0.5s; /* Smooth transition for the overlay */
+  font-size: 20px; /* Increase font size for readability */
+  text-align: center;
+}
+
+/* Show the overlay when the container is hovered or focused */
+.icon-container:hover .overlay,
+.icon-container:focus-within .overlay {
+  opacity: 1; /* Make overlay visible */
+}
+
+/* Accessibility: Outline when focused */
+.overlay:focus {
+  outline: 2px solid #fff; /* White outline for high contrast on focus */
+  outline-offset: -2px;
+}
