@@ -123,3 +123,11 @@ img.stops {
 h6 {
   font-weight: bold;
 }
+
+
+/* feedback section */
+/* Optional: Additional styling to enhance visibility and aesthetics */
+.btn-primary {
+  background-color: #007bff; /* Primary blue color */
+  border-color: #007bff; /* Border color if needed */
+}
