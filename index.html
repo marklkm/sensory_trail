@@ -51,6 +51,21 @@
 }
 
     </style>
+    
+<!-- accessibility style buttons -->
+<style>
+  .high-contrast {
+    background-color: black !important;
+    color: white !important;
+  }
+  
+  .high-contrast a {
+    color: yellow !important;
+  }
+  
+  /* Add other high-contrast styles as needed */
+</style>
+
 
 
   </head>
@@ -114,8 +129,10 @@
 </div>
 
 
+
         <!-- Sensory Trail Page -->
         <section class="mt-4" id="sensorytrail">
+
           <p>
             <span class="bg-danger text-white p-1">The Sensory Trail</span> is the work of one student's summer internship
             project at Trinity Botanic Garden to create a guide to some of the
@@ -2302,6 +2319,23 @@ document.getElementById("topButton").addEventListener("click", function() {
           }
         });
     </script>
+
+
+<!-- Accessibility buttons -->
+<script>
+  // Function to toggle high contrast
+  function toggleHighContrast() {
+    document.body.classList.toggle('high-contrast');
+  }
+
+  // Function to increase font size
+  function increaseFontSize() {
+    // Get the current font size
+    let currentSize = parseInt(window.getComputedStyle(document.body).fontSize);
+    // Increase font size
+    document.body.style.fontSize = `${currentSize + 1}px`;
+  }
+</script>
 
     
     
