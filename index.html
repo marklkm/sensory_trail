@@ -8,12 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
     <!-- JS Scripts-->
     <script src="mapScript.js" defer></script>
@@ -22,7 +33,6 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/a11y.js@2.2.1"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    
 
     <!-- JS ally -->
     <script>
@@ -36,45 +46,48 @@
     <!-- CSS style for top of page button -->
     <style>
       /* Optional: Hide the button by default and only show after scrolling down 100px */
-#topButton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed to the bottom right corner */
-    bottom: 20px; /* 20px from the bottom */
-    right: 20px; /* 20px from the right */
-    z-index: 99; /* Makes sure it sits on top of other content */
-}
+      #topButton {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed to the bottom right corner */
+        bottom: 20px; /* 20px from the bottom */
+        right: 20px; /* 20px from the right */
+        z-index: 99; /* Makes sure it sits on top of other content */
+      }
 
-/* Style modifications if needed */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
+      /* Style modifications if needed */
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
     </style>
-    
-<!-- accessibility style buttons -->
-<style>
-  .high-contrast {
-    background-color: black !important;
-    color: white !important;
-  }
-  
-  .high-contrast a {
-    color: yellow !important;
-  }
-  
-  /* Add other high-contrast styles as needed */
-</style>
 
+    <!-- accessibility style buttons -->
+    <style>
+      .high-contrast {
+        background-color: black !important;
+        color: white !important;
+      }
 
+      .high-contrast a {
+        color: yellow !important;
+      }
 
+      /* Add other high-contrast styles as needed */
+    </style>
   </head>
   <body>
     <!-- Navbar with Logo -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="images/TCBG-main-logo.png" class="lazyload img-fluid" alt="Botanic Garden logo" width="300" height="300" />
+          <img
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+            data-src="images/TCBG-main-logo.png"
+            class="lazyload img-fluid"
+            alt="Botanic Garden logo"
+            width="300"
+            height="300"
+          />
 
           <!-- Sensory Trail -->
         </a>
@@ -116,33 +129,45 @@
       <section id="about">
         <h1>The Sensory Trail</h1>
 
-<!-- Main top image -->
-<!-- Full-Width Image Section with Overlay Text -->
-<div class="container-fluid p-0 mt-3">
-  <div class="bg-image" style="position: relative;">
-    <img src="images/golden-catkins-low-quality.jpeg" data-src="images/golden-catkins.jpeg" class="lazyload img-fluid" alt="Cascade-of-golden-catkins in Botanic Garden" />
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
-      <!--<h1>Trinity College Botanic Garden</h1>
+        <!-- Main top image -->
+        <!-- Full-Width Image Section with Overlay Text -->
+        <div class="container-fluid p-0 mt-3">
+          <div class="bg-image" style="position: relative">
+            <img
+              src="images/golden-catkins-low-quality.jpeg"
+              data-src="images/golden-catkins.jpeg"
+              class="lazyload img-fluid"
+              alt="Cascade-of-golden-catkins in Botanic Garden"
+            />
+            <div
+              style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+              "
+            >
+              <!--<h1>Trinity College Botanic Garden</h1>
       <p>Sensory Trail</p>-->
-    </div>
-  </div>
-</div>
-
-
+            </div>
+          </div>
+        </div>
 
         <!-- Sensory Trail Page -->
         <section class="mt-4" id="sensorytrail">
-
           <p>
-            <span class="bg-danger text-white p-1">The Sensory Trail</span> is the work of one student's summer internship
-            project at Trinity Botanic Garden to create a guide to some of the
-            Garden's sensory elements for the benefit and well-being of students
-            and staff. The trail currently has 18 stops: locations, plants and
-            aspects at which to pause, observe and tune in to the different
-            sensory elements of each. The locations of the 18 Sensory Trail
-            stops are set out below on an interactive map and each has a
-            descriptive text and audio guide. Visitors are invited to explore as
-            many or few of the stops as they wish and in any order.
+            <span class="bg-danger text-white p-1">The Sensory Trail</span> is
+            the work of one student's summer internship project at Trinity
+            Botanic Garden to create a guide to some of the Garden's sensory
+            elements for the benefit and well-being of students and staff. The
+            trail currently has 18 stops: locations, plants and aspects at which
+            to pause, observe and tune in to the different sensory elements of
+            each. The locations of the 18 Sensory Trail stops are set out below
+            on an interactive map and each has a descriptive text and audio
+            guide. Visitors are invited to explore as many or few of the stops
+            as they wish and in any order.
           </p>
           <p>
             The stops along the Sensory Trail cover all seasons, but some are
@@ -219,32 +244,36 @@
           residences in Dartry and is now included in the
           <a href="https://tcdsensemap.ie/" target="_blank" rel="nonopener"
             >TCD Sense Map </a
-          >(opens in a new tab). </p>
-          
-       
-          <div class="col-md-8 mt-4 mb-4">
-            <img src="images/tcdsensemap-trinitycollegebotanicgardens.png" class="img-fluid mb-4 d-block mx-auto" alt="Trinity College Botanic Garden, showing diverse plant species and layout for educational purposes">
-          </div>
-          
-
-          <p>
-            Or you can view the <a href="https://beacons.ai/tcdsense" target="_blank" rel="nonopener"> TCD Sense Beacons page</a> to
-            learn more about the TCD Sense Project and the TCD Sense Map.
-          </p>
-
-
-  
-          <p>As well as a teaching and research facility,
-          the Garden provides a unique off-campus resource of quiet, reflective
-          space for students and staff to escape the busyness of campus life.
+          >(opens in a new tab).
         </p>
-        
+
+        <div class="col-md-8 mt-4 mb-4">
+          <img
+            src="images/tcdsensemap-trinitycollegebotanicgardens.png"
+            class="img-fluid mb-4 d-block mx-auto"
+            alt="Trinity College Botanic Garden, showing diverse plant species and layout for educational purposes"
+          />
+        </div>
+
+        <p>
+          Or you can view the
+          <a href="https://beacons.ai/tcdsense" target="_blank" rel="nonopener">
+            TCD Sense Beacons page</a
+          >
+          to learn more about the TCD Sense Project and the TCD Sense Map.
+        </p>
+
+        <p>
+          As well as a teaching and research facility, the Garden provides a
+          unique off-campus resource of quiet, reflective space for students and
+          staff to escape the busyness of campus life.
+        </p>
+
         <p>
           We hope everyone will enjoy the many sensory experiences offered in
           Trinity's private garden space.
         </p>
 
-      
         <!-- Accordion Dropdown Menu -->
         <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -266,11 +295,14 @@
             >
               <div class="accordion-body">
                 <p>
-                 Some general information about the Trinity College Botanic Garden Sensory Trail.
+                  Some general information about the Trinity College Botanic
+                  Garden Sensory Trail.
                 </p>
-                <p>Click on the <span class="visually-hidden">dropdown icon</span><i class="bi bi-chevron-down" aria-hidden="true"></i> to get more information.</p>
-
-
+                <p>
+                  Click on the <span class="visually-hidden">dropdown icon</span
+                  ><i class="bi bi-chevron-down" aria-hidden="true"></i> to get
+                  more information.
+                </p>
               </div>
             </div>
           </div>
@@ -284,9 +316,19 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo"
               >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-wheelchair" viewBox="0 0 16 16">
-                <path d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z"/>
-              </svg> &nbsp; Physical Access
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-person-wheelchair"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z"
+                  />
+                </svg>
+                &nbsp; Physical Access
               </button>
             </h2>
             <div
@@ -295,13 +337,17 @@
             >
               <div class="accordion-body">
                 <p>
-                  The Gardens are, at present, not wheelchair accessible or fully accessible.</p>
-                  <p>The Gardens are available to visit all year round, except
+                  The Gardens are, at present, not wheelchair accessible or
+                  fully accessible.
+                </p>
+                <p>
+                  The Gardens are available to visit all year round, except
                   during the Christmas holiday period - opening hours are listed
                   below. Occasionally members of the public are invited in for
                   events, and details of these can be found on the Calendar of
-                  Events page on the Trinity College Botanic Garden website. Trinity College Dublin's 
-                  Botanic Garden sits on a 1.5 hectare site by Palmerston Park. 
+                  Events page on the Trinity College Botanic Garden website.
+                  Trinity College Dublin's Botanic Garden sits on a 1.5 hectare
+                  site by Palmerston Park.
                 </p>
                 <p>
                   Getting to the Gardens is easy with a leap card. The 140 bus
@@ -357,7 +403,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="accordion-item">
             <h2 class="accordion-header text-dark">
               <button
@@ -368,31 +414,33 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseThree"
               >
-              <i class="bi bi-heart"></i>  &nbsp; Sensory Information
+                <i class="bi bi-heart"></i> &nbsp; Sensory Information
               </button>
             </h2>
             <div
               id="panelsStayOpen-collapseThree"
               class="accordion-collapse collapse"
             >
-            <div class="accordion-body">
-              <p>
-                <strong>Sensory Classification: Quiet Space.</strong> The Botanic Garden is a quiet and 
-                peaceful space for the college community to enjoy nature and an incredible collection of plants. During term time, 
-                some areas may be slightly busy when the Gardens are being used for teaching, but the majority of the time, they are
-                 quiet and peaceful. Visitors are welcome to walk the grounds, explore the glasshouses, or rest, read, and relax with nature. 
-                 Detailed sensory information is included in the Sensory Trail of the Gardens.<br /><br />
+              <div class="accordion-body">
+                <p>
+                  <strong>Sensory Classification: Quiet Space.</strong> The
+                  Botanic Garden is a quiet and peaceful space for the college
+                  community to enjoy nature and an incredible collection of
+                  plants. During term time, some areas may be slightly busy when
+                  the Gardens are being used for teaching, but the majority of
+                  the time, they are quiet and peaceful. Visitors are welcome to
+                  walk the grounds, explore the glasshouses, or rest, read, and
+                  relax with nature. Detailed sensory information is included in
+                  the Sensory Trail of the Gardens.<br /><br />
 
-                 <strong>What is Sensory Processing?</strong>
-                 Sensory processing is the means by which individuals obtain information about the world an their own bodies.
-                 (Brown, Steffen-Sanchez, Nicholson, 2019). We all have different sensory needs that can change 
-                 depending on neurotype, energy levels, mood, context, and mechanism of perception.
-              </p>
-
-             
-            </div>
-            
-
+                  <strong>What is Sensory Processing?</strong>
+                  Sensory processing is the means by which individuals obtain
+                  information about the world an their own bodies. (Brown,
+                  Steffen-Sanchez, Nicholson, 2019). We all have different
+                  sensory needs that can change depending on neurotype, energy
+                  levels, mood, context, and mechanism of perception.
+                </p>
+              </div>
             </div>
           </div>
           <div class="accordion-item">
@@ -405,7 +453,7 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseFour"
               >
-              <i class="bi bi-battery-full"></i>  &nbsp; Charging Points
+                <i class="bi bi-battery-full"></i> &nbsp; Charging Points
               </button>
             </h2>
             <div
@@ -414,8 +462,8 @@
             >
               <div class="accordion-body">
                 <p>
-                 There are no charging
-                  points available at Trinity College Botanic Gardens.
+                  There are no charging points available at Trinity College
+                  Botanic Gardens.
                 </p>
               </div>
             </div>
@@ -430,7 +478,7 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseFive"
               >
-              <i class="bi bi-people"></i>  &nbsp; Seating Areas
+                <i class="bi bi-people"></i> &nbsp; Seating Areas
               </button>
             </h2>
             <div
@@ -439,9 +487,9 @@
             >
               <div class="accordion-body">
                 <p>
-                  Five outdoor benches seating 20
-                  people in total. Two tree stump seats in walled garden. One
-                  tree stump seat inside each of the main glasshouses.
+                  Five outdoor benches seating 20 people in total. Two tree
+                  stump seats in walled garden. One tree stump seat inside each
+                  of the main glasshouses.
                 </p>
               </div>
             </div>
@@ -456,7 +504,7 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseSix"
               >
-              <i class="bi bi-house"></i> &nbsp; Opening Hours
+                <i class="bi bi-house"></i> &nbsp; Opening Hours
               </button>
             </h2>
             <div
@@ -489,7 +537,8 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseSeven"
               >
-              <i class="bi bi-info-circle-fill"></i> &nbsp; Contact Info. &amp; Social Media
+                <i class="bi bi-info-circle-fill"></i> &nbsp; Contact Info.
+                &amp; Social Media
               </button>
             </h2>
             <div
@@ -500,1674 +549,1906 @@
                 <div class="container mt-3 mb-3">
                   <ul class="list-group">
                     <li class="list-group-item">
-                      <a href="https://twitter.com/TCBotanicGarden" target="_blank" rel="noopener noreferrer" aria-label="Follow TCBotanicGarden on Twitter" class="d-inline-flex align-items-center">
+                      <a
+                        href="https://twitter.com/TCBotanicGarden"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Follow TCBotanicGarden on Twitter"
+                        class="d-inline-flex align-items-center"
+                      >
                         <i class="bi bi-twitter me-2"></i>@TCBotanicGarden
                       </a>
                     </li>
-                    
+
                     <li class="list-group-item">
-                      <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+                      <i
+                        class="bi bi-telephone-fill me-2"
+                        aria-hidden="true"
+                      ></i>
                       <span class="flex-grow-1">Phone:</span>
-                      <a href="tel:+0114972070" class="stretched-link">(01) 4972070</a>
+                      <a href="tel:+0114972070" class="stretched-link"
+                        >(01) 4972070</a
+                      >
                     </li>
-                    
+
                     <li class="list-group-item">
-                      <a href="mailto:botanicgarden@tcd.ie" class="d-flex align-items-center" aria-label="Send email to botanicgarden@tcd.ie">
+                      <a
+                        href="mailto:botanicgarden@tcd.ie"
+                        class="d-flex align-items-center"
+                        aria-label="Send email to botanicgarden@tcd.ie"
+                      >
                         <i class="bi bi-envelope-fill me-2"></i>
                         botanicgarden@tcd.ie
                       </a>
                     </li>
-                    
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
-
-<!-- Seasons Section -->
-<!-- START -->
-<div class="container mt-5 mb-5">
-  <div class="row text-center">
-    <h2 class="w-100">Seasonal Icons</h2>
-    <!-- Each icon with overlay -->
-    <div class="col-6 col-md-3">
-      <div class="icon-container position-relative">
-        <img src="images/springicon.png" alt="Spring icon" class="img-fluid">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" tabindex="0" aria-label="More about Spring">
-          <strong>Spring</strong>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="icon-container position-relative">
-        <img src="images/summericon.png" alt="Summer icon" class="img-fluid">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" tabindex="0" aria-label="More about Summer">
-          <strong>Summer</strong>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="icon-container position-relative">
-        <img src="images/autumnicon.png" alt="Autumn icon" class="img-fluid">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" tabindex="0" aria-label="More about Autumn">
-          <strong>Autumn</strong>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="icon-container position-relative">
-        <img src="images/wintericon.png" alt="Winter icon" class="img-fluid">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" tabindex="0" aria-label="More about Winter">
-          <strong>Winter</strong>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- END -->
-
-
-<!-- END -->
-
-      <!-- Sensory Stops Page -->
-      <section id="stops" class="mt-4">
-        <h1>Sensory Stops</h1>
-        
-        <p>
-          Click on the each of the images to get a full description of the
-          Sensory Stops.
-        </p>
-        <p>
-          <strong>NOTE:</strong> Be mindful that some of the sensory stops are
-          seasonal, and will be updated from time to time.
-        </p>
-        <div class="row mt-5">
-          <!-- Stop 1 - Lavender -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 1<br />
-              Lavender
-            </h5>
-            <img
-              src="images/lavender.png"
-              alt="Sensory Stop 1 is purple lavender."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image1Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-1-Lavender.mp3"
-                    type="audio/mpeg"
+          <!-- Seasons Section -->
+          <!-- START -->
+          <div class="container mt-5 mb-5">
+            <div class="row text-center">
+              <h2 class="w-100">Seasonal Icons</h2>
+              <!-- Each icon with overlay -->
+              <div class="col-6 col-md-3">
+                <div class="icon-container position-relative">
+                  <img
+                    src="images/springicon.png"
+                    alt="Spring icon"
+                    class="img-fluid"
                   />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image1Modal"
-              tabindex="-1"
-              aria-labelledby="image1ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image1ModalLabel">
-                      Sensory Stop 1 - Lavender
-                    </h5>
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                    tabindex="0"
+                    aria-label="More about Spring"
+                  >
+                    <strong>Spring</strong>
                   </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Rockery | Map Marker #1</h5>
-                    <p> Summer: <img src="images/summericon.png" width="150" height="150" alt="summer icon"/></p>
-                    <hr class="hr" />
-                    <p>
-                      As you walk through the front gate, on your left you will
-                      find a small rockery and a large patch of lavender.
-                      Lavender smells the strongest when it is flowering in
-                      spring and summer. Are there any flowers on the lavender
-                      plant when you visit? Research has found that the smell of
-                      lavender can have calming effects on humans and other
-                      animals and has also been found to reduce anxiety and
-                      decrease stress. How are you feeling today? Do you feel
-                      any different after smelling lavender for a moment or two?
-                      If you like the smell, break a small sprig off the
-                      lavender and carry it round with you while you explore the
-                      gardens.
-                    </p>
-                    <img
-                      src="images/lavender.png"
-                      alt="Sensory Stop 1 is purple lavender."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="icon-container position-relative">
+                  <img
+                    src="images/summericon.png"
+                    alt="Summer icon"
+                    class="img-fluid"
+                  />
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                    tabindex="0"
+                    aria-label="More about Summer"
+                  >
+                    <strong>Summer</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="icon-container position-relative">
+                  <img
+                    src="images/autumnicon.png"
+                    alt="Autumn icon"
+                    class="img-fluid"
+                  />
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                    tabindex="0"
+                    aria-label="More about Autumn"
+                  >
+                    <strong>Autumn</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="icon-container position-relative">
+                  <img
+                    src="images/wintericon.png"
+                    alt="Winter icon"
+                    class="img-fluid"
+                  />
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                    tabindex="0"
+                    aria-label="More about Winter"
+                  >
+                    <strong>Winter</strong>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Stop 2 - Bees -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 2<br />
-              Bees
-            </h5>
-            <img
-              src="images/bees.png"
-              alt="Sensory Stop 2 is a bumble bee on a plant."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image2Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-2-Bees.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image2Modal"
-              tabindex="-1"
-              aria-labelledby="image2ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image2ModalLabel">
-                      Sensory Stop 2 - Bees
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
+          <!-- END -->
 
-                    <h5>Location: The Walled Garden | Map Marker #2</h5>
-                    <p> Summer: <img src="images/summericon.png" width="150" height="150" alt="summer icon"/></p>
-                    <hr class="hr" />
-                    <p>
-                      Located in a small hut in the Walled Garden, you can peep in the windows and watch honey bees
-                      crawling in and out their hive and listen to the faint
-                      buzzing. These are one of the main pollinators for the
-                      gardens and the reason the trees in the Gardens are so
-                      full of fruit every autumn. Note how you feel when you
-                      watch bees. Some people find watching beehives calming and
-                      hypnotic, others feel uncomfortable and nervous. How does
-                      watching and listening to the bees affect you? If you
-                      enjoy watching the bees and you are visiting in summer
-                      months, look for the tall plant with pale yellow flowers
-                      (meadow rue) by the entrance to the South Arboretum. and
-                      you should find it teeming with white-tailed bumble bees.
-                      Take a moment to watch the bees flit from flower to flower
-                      and listen to their gentle buzzing.
-                    </p>
-                    <img
-                      src="images/bees.png"
-                      alt="Sensory Stop 2 is a bumble bee on a plant."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
+          <!-- END -->
+
+          <!-- Sensory Stops Page -->
+          <section id="stops" class="mt-4">
+            <h1>Sensory Stops</h1>
+
+            <p>
+              Click on the each of the images to get a full description of the
+              Sensory Stops.
+            </p>
+            <p>
+              <strong>NOTE:</strong> Be mindful that some of the sensory stops
+              are seasonal, and will be updated from time to time.
+            </p>
+            <div class="row mt-5">
+              <!-- Stop 1 - Lavender -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 1<br />
+                  Lavender
+                </h5>
+                <img
+                  src="images/lavender.png"
+                  alt="Sensory Stop 1 is purple lavender."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image1Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-1-Lavender.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image1Modal"
+                  tabindex="-1"
+                  aria-labelledby="image1ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          Sensory Stop 1 - Lavender
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Rockery | Map Marker #1</h5>
+                        <p>
+                          Summer:
+                          <img
+                            src="images/summericon.png"
+                            width="150"
+                            height="150"
+                            alt="summer icon"
+                          />
+                        </p>
+                        <hr class="hr" />
+                        <p>
+                          As you walk through the front gate, on your left you
+                          will find a small rockery and a large patch of
+                          lavender. Lavender smells the strongest when it is
+                          flowering in spring and summer. Are there any flowers
+                          on the lavender plant when you visit? Research has
+                          found that the smell of lavender can have calming
+                          effects on humans and other animals and has also been
+                          found to reduce anxiety and decrease stress. How are
+                          you feeling today? Do you feel any different after
+                          smelling lavender for a moment or two? If you like the
+                          smell, break a small sprig off the lavender and carry
+                          it round with you while you explore the gardens.
+                        </p>
+                        <img
+                          src="images/lavender.png"
+                          alt="Sensory Stop 1 is purple lavender."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 2 - Bees -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 2<br />
+                  Bees
+                </h5>
+                <img
+                  src="images/bees.png"
+                  alt="Sensory Stop 2 is a bumble bee on a plant."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image2Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source src="audio/Stop-2-Bees.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image2Modal"
+                  tabindex="-1"
+                  aria-labelledby="image2ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image2ModalLabel">
+                          Sensory Stop 2 - Bees
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Walled Garden | Map Marker #2</h5>
+                        <p>
+                          Summer:
+                          <img
+                            src="images/summericon.png"
+                            width="150"
+                            height="150"
+                            alt="summer icon"
+                          />
+                        </p>
+                        <hr class="hr" />
+                        <p>
+                          Located in a small hut in the Walled Garden, you can
+                          peep in the windows and watch honey bees crawling in
+                          and out their hive and listen to the faint buzzing.
+                          These are one of the main pollinators for the gardens
+                          and the reason the trees in the Gardens are so full of
+                          fruit every autumn. Note how you feel when you watch
+                          bees. Some people find watching beehives calming and
+                          hypnotic, others feel uncomfortable and nervous. How
+                          does watching and listening to the bees affect you? If
+                          you enjoy watching the bees and you are visiting in
+                          summer months, look for the tall plant with pale
+                          yellow flowers (meadow rue) by the entrance to the
+                          South Arboretum. and you should find it teeming with
+                          white-tailed bumble bees. Take a moment to watch the
+                          bees flit from flower to flower and listen to their
+                          gentle buzzing.
+                        </p>
+                        <img
+                          src="images/bees.png"
+                          alt="Sensory Stop 2 is a bumble bee on a plant."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 3 - Ancient Plants -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 3<br />
+                  Ancient Plants
+                </h5>
+                <img
+                  src="images/ancient_plants.png"
+                  alt="Sensory Stop 3 is a number of ancient plants, including cycads, inside a greenhouse."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image3Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-3-Ancient-Plants.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image3Modal"
+                  tabindex="-1"
+                  aria-labelledby="image3ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image3ModalLabel">
+                          Sensory Stop 3 - Ancient Plants
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Cycad House | Map Marker #3</h5>
+                        <p>
+                          All Seasons - Glasshouse:
+                          <img
+                            src="images/glasshouse.png"
+                            width="150"
+                            height="150"
+                            alt="glasshouse icon"
+                          />
+                        </p>
+                        <hr class="hr" />
+                        <p>
+                          Cycad house is filled with living fossils and some of
+                          these plants evolved more than 250 million years ago.
+                          How do you feel standing amongst plants that were a
+                          popular food with vegetarian dinosaurs? What does it
+                          smell like in the house? Cycads reproduce via cones
+                          which are either male or female, and male cones which
+                          contain the pollen use different scents to attract and
+                          repel pollinators. What does the house smell like to
+                          you on your visit? Carefully (they can be sharp) touch
+                          some of the leaves. Mature leaves are tough, smooth
+                          and often very sharp to deter herbivores. Look around
+                          and see if you can spot any cycads growing new leaves.
+                          What do they feel like? New leaves on cycads are feel
+                          much softer / velvety. This house can be visited all
+                          year but the greenhouse is heated in winter to protect
+                          these tropical trees from the cold, making it the
+                          perfect place to visit if the winter blues have you
+                          feeling down. You can visit the heated greenhouse,
+                          listen to the rain on the roof, smell the trees, touch
+                          the plants and enjoy some outside time in the warm.
+                        </p>
+                        <img
+                          src="images/ancient_plants.png"
+                          alt="Sensory Stop 3 is a number of ancient plants, including cycads, inside a greenhouse."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 4 - Local and Exotic Plants -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 4<br />
+                  Exotic Plants
+                </h5>
+                <img
+                  src="images/local_exotic_plants.png"
+                  alt="Sensory Stop 4 is a number of plants inside Stove House, the long greenhouse, there are local and exotic plants."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image4Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-4-Exotic-and-Native-Plants.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image4Modal"
+                  tabindex="-1"
+                  aria-labelledby="image4ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          Sensory Stop 4 - Exotic Plants
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Irish House | Map Marker #4</h5>
+                        <p>
+                          All Seasons - Glasshouse:
+                          <img
+                            src="images/glasshouse.png"
+                            width="150"
+                            height="150"
+                            alt="summer icon"
+                          />
+                        </p>
+                        <hr class="hr" />
+                        <p>
+                          The Gardens contain approximately 4,000 plant species
+                          from every corner of the world, meaning that you do
+                          not need to travel further than the Gardens to meet
+                          some unusual plants you would rarely see in Dublin.
+                          Stove house, the long greenhouse and the cycad house
+                          contain tropical plants that thrive in the heat.
+                          Sensory information of exotic plants can invoke many
+                          feelings. If you are feeling homesick, you can search
+                          for familiar plants from your home country and enjoy
+                          looking at them, touching them or smelling them. If
+                          you are stressed from writing or marking essays you
+                          can wander around the exotic plants and reminisce
+                          about past holidays or plan your next. Missing your
+                          home in the countryside? Go and visit the Irish
+                          greenhouse. Which plants from which region are your
+                          favourite? How do they make you feel? If you could
+                          travel anywhere in the world, where would you go?
+                        </p>
+                        <img
+                          src="images/local_exotic_plants.png"
+                          alt="Sensory Stop 4 is number of plants inside Stove House, the long greenhouse, there are local and exotic plants."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 5 - Aloe Vera -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 5<br />
+                  Aloe Vera
+                </h5>
+                <img
+                  src="images/aloe_vera.png"
+                  alt="Sensory stop 5 is aloe vera."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image5Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-5-Aloe-Vera-Plant.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image5Modal"
+                  tabindex="-1"
+                  aria-labelledby="image5ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image5ModalLabel">
+                          Sensory Stop 5 - Aloe Vera
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Long Greenhouse | Map Marker #5</h5>
+                        <p>
+                          All Seasons - Glasshouse:
+                          <img
+                            src="images/glasshouse.png"
+                            width="150"
+                            height="150"
+                            alt="summer icon"
+                          />
+                        </p>
+                        <hr class="hr" />
+                        <p>
+                          In the Long House greenhouse you will find the
+                          collection of Aloe plants. One of these plants, the
+                          Aloe vera, has been designated to let visitors take a
+                          section of leaf from and explore the tactile sensory
+                          aspects of this plant. Do not take a leaf from the
+                          wrong aloe vera plant – if unsure always ask one of
+                          the staff! How does the liquid inside the leaf smell?
+                          Some describe it as a savoury smell, similar to garlic
+                          or an onion. Do you like the smell? Many people are
+                          aware that the sap inside this plant can soothe
+                          sunburn, but it’s also a very effective moisturiser
+                          for dry skin and a historical treatment for acne. Some
+                          people enjoy rubbing Aloe on their hands as a sensory
+                          stimulant for touch and smell. Please note: If you
+                          decide to use this as a moisturiser / spot treatment
+                          you do so at your own risk, allergic reactions are
+                          possible and if you get aloe vera in your eye it can
+                          be very painful! So approach this sensory station with
+                          caution and take care of yourself.
+                        </p>
+                        <img
+                          src="images/aloe_vera.png"
+                          alt="Sensory Stop 5 is aloe vera."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 6 - Teas & Trees -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 6<br />
+                  Teas & Trees
+                </h5>
+                <img
+                  src="images/teas_trees.png"
+                  alt="Sensory Stop 6 is Teas and Trees and there is a Gingko tree."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image6Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-6-Teas-and-Trees.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image6Modal"
+                  tabindex="-1"
+                  aria-labelledby="image6ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image6ModalLabel">
+                          Sensory Stop 6 - Teas & Trees
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Arboretum | Map Marker #6</h5>
+                        <hr class="hr" />
+                        <p>
+                          Herbal teas have many different flavours and tastes
+                          but they also have many other properties such as
+                          boosting the immune system, aiding digestion and
+                          hydration. Many of the plants and trees in the gardens
+                          have historically been used to brew different herbal
+                          teas. Mulberry tea for example has properties which
+                          reduce inflammation, regulate blood sugar and improve
+                          heart health. Tea made from pine needles is high in
+                          vitamins C and A which aid your immune system,
+                          eyesight and skin and hair regeneration. Gingko tea is
+                          high in antioxidants and some research shows that tea
+                          made from Gingko trees reduces symptoms of psychiatric
+                          disorders and dementia. Gingko tea may also improve
+                          brain function and reduce anxiety and / or depression.
+                          If you are feeling curious, there are plenty of simple
+                          recipes online for you to research how to brew tea
+                          from these plants. You are welcome to harvest a few
+                          leaves to try making your own tea at home.
+                        </p>
+                        <img
+                          src="images/teas_trees.png"
+                          alt="Sensory Stop 6 is Teas and Trees and there is a Gingko tree."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 7 - Fiddleheads on Ferns -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 7<br />
+                  Fiddleheads on Ferns
+                </h5>
+                <img
+                  src="images/fiddleheads.png"
+                  alt="Sensory Stop 7 is Fiddleheads on Ferns in the Stove House Greenhouse."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image7Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-7-Fiddleheads-on-Ferns.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image7Modal"
+                  tabindex="-1"
+                  aria-labelledby="image7ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image7ModalLabel">
+                          Sensory Stop 7 - Fiddleheads on Ferns
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Stove House | Map Marker #7</h5>
+                        <hr class="hr" />
+                        <p>
+                          In the Stove House and Long House glass houses you can
+                          sometimes see fiddleheads growing on the ferns. These
+                          are very young fronds that haven't unfurled yet and
+                          they look completely different to the rest of the
+                          plant. What do they remind you of? How do they feel to
+                          touch?
+                        </p>
+                        <img
+                          src="images/fiddleheads.png"
+                          alt="Sensory Stop 7 is Fiddleheads on Ferns in the Stove House Greenhouse."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 8 - Catnip -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 8<br />
+                  Catnip
+                </h5>
+                <img
+                  src="images/catnip.png"
+                  alt="Sensory Stop 8 is some catnip."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image8Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source src="audio/Stop-8-Catnip.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image8Modal"
+                  tabindex="-1"
+                  aria-labelledby="image8ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image8ModalLabel">
+                          Sensory Stop 8 - Catnip
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>
+                          Location: Outside the Botanic Garden Office | Map
+                          Marker #8
+                        </h5>
+                        <hr class="hr" />
+                        <p>
+                          Catnip is not just for cats. While it won't have the
+                          same psychological effects on humans as it does on
+                          cats, it has a unique minty smell and pretty purple
+                          flowers in summer. Catnip and Lavender belong to the
+                          same family but they smell different. Do you like the
+                          smell? Rub some leaves between your fingers - can you
+                          tell the difference between lavender and catnip by
+                          smell alone?
+                        </p>
+                        <img
+                          src="images/catnip.png"
+                          alt="Sensory Stop 8 is some catnip."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 9 - Wintersweet -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 9<br />
+                  Wintersweet
+                </h5>
+                <img
+                  src="images/wintersweet.png"
+                  alt="Sensory Stop 9 is some Wintersweet."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image9Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-9-Wintersweet.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image9Modal"
+                  tabindex="-1"
+                  aria-labelledby="image9ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          Sensory Stop 9 - Wintersweet
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Walled Garden | Map Marker #9</h5>
+                        <hr class="hr" />
+                        <p>
+                          Chimonanthus praecox (wintersweet) flowers in January
+                          and February. Look out for the pretty yellow flowers
+                          blooming on the tree near the Irish House in the
+                          middle of winter. The flowers smell quite strongly, so
+                          you are likely to smell it before you see it! What do
+                          they smell like to you?
+                        </p>
+                        <img
+                          src="images/wintersweet.png"
+                          alt="Sensory Stop 9 is some Wintersweet."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 10 - Witch Hazel -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 10<br />
+                  Witch Hazel
+                </h5>
+                <img
+                  src="images/witch_hazel.png"
+                  alt="Sensory Stop 10 is some colourful With Hazel."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image10Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-10-Witch-Hazel.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade justify-content-center align-items-cente"
+                  id="image10Modal"
+                  tabindex="-1"
+                  aria-labelledby="image10ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image10ModalLabel">
+                          Sensory Stop 10 - Witch Hazel
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Walled Garden | Map Marker #10</h5>
+                        <hr class="hr" />
+                        <p>
+                          Throughout history witch hazel has been used as a
+                          treatment for many skin conditions such as stretch
+                          marks and acne, due to its exceptional
+                          anti-inflammatory properties. Break off a leaf and
+                          sniff it. Some describe it as fresh and lemon scented.
+                          Witch hazel concoctions are available to purchase
+                          commercially, however if you are unable to afford it,
+                          you can research online how to forage and prepare acne
+                          treatments from witch hazel you have foraged yourself.
+                        </p>
+                        <img
+                          src="images/witch_hazel.png"
+                          alt="Sensory Stop 10 is some colourful With Hazel."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 11 - Frost on Grass -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 11<br />
+                  Frost on Grass
+                </h5>
+                <img
+                  src="images/frost_on_grass.png"
+                  alt="Sensory Stop 11 is frost on grass showing some grass and fallen leaves covered in frost."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image11Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-11-Frost-on-Grass.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image11Modal"
+                  tabindex="-1"
+                  aria-labelledby="image11ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          Sensory Stop 11 - Frost on Grass
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Aboretum | Map Marker #11</h5>
+                        <hr class="hr" />
+                        <p>
+                          Listen to the crunch sound as you walk on grass,
+                          admire the crystals and colour.
+                        </p>
+                        <img
+                          src="images/frost_on_grass.png"
+                          alt="Sensory Stop 11 is frost on grass showing some grass and fallen leaves covered in frost."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 12 - Summer Storms -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 12<br />
+                  Summer Storms
+                </h5>
+                <img
+                  src="images/summer_storms.png"
+                  alt="Sensory Stop 12 is summer storms shows the roof of one of the glasshouses in the Trinity Botanic Gardens, where trees and leaves can be see through the glass."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image12Modal"
+                  loading="lazy"
+                />
+
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-12-Shelter-from-Summer-Storms.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image12Modal"
+                  tabindex="-1"
+                  aria-labelledby="image12ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image12ModalLabel">
+                          Sensory Stop 12 - Summer Storms
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Irish House | Map Marker #12</h5>
+                        <hr class="hr" />
+                        <p>
+                          The Irish House, the Long House and the Australia
+                          House are coolest in the summer, making them an ideal
+                          space to spend time in during rainy days. One plant in
+                          the Irish House, Equisetum hyemale (horsetail), is a
+                          living fossil which evolved tens of millions of years
+                          ago. Equisetum has tiny leaves that are joined at the
+                          colourful stripes on the stem. Take a moment and look
+                          at how differently shaped this plant is to many others
+                          at the gardens. Most plants have curves created by the
+                          stem and leaf shapes, this plant is linear and
+                          vertical. What do the contrasting colours remind you
+                          of? Stroke the stem. Does it feel rough or smooth?
+                          Does this plant remind you of any other plants at the
+                          Gardens? You will find tree stump seats in the Long
+                          House where you can sit and wait for the storm to pass
+                          while you smell the rain and listen to the sound on
+                          the roof.
+                        </p>
+                        <img
+                          src="images/summer_storms.png"
+                          alt="Sensory Stop 12 is summer storms shows the roof of one of the glasshouses in the Trinity Botanic Gardens, where trees and leaves can be see through the glass."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 13 - Tree Canopies -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 13<br />
+                  Tree Canopies
+                </h5>
+                <img
+                  src="images/tree_canopy.png"
+                  alt="Sensory Stop 13 shows a tree canopy of a Black Walnut tree."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image13Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-13-Tree-Canopies.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image13Modal"
+                  tabindex="-1"
+                  aria-labelledby="image13ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1Modal3Label">
+                          Sensory Stop 13 - Tree Canopies
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The South Arboretum | Map Marker #13</h5>
+                        <hr class="hr" />
+                        <p>
+                          The South Arboretum is full of trees and is a cool
+                          shady spot, ideal for hiding from the sun on a hot
+                          summer day. If it is warm and dry try lying on the
+                          grass under the Black Walnut tree and looking up at
+                          the canopy, watching the leaves move in the wind
+                          across this sky. This activity can be a very grounding
+                          exercise, so if you feel like your head is spinning,
+                          your thoughts are racing or you are struggling to
+                          concentrate then it is worth trying this. When you are
+                          lying on the grass pay careful attention to the
+                          sensory information around you. What does the ground
+                          feel like on your back? Can you hear the birds or the
+                          leaves rustling in the breeze? What colour is the sky
+                          today? Can you smell the wild garlic?
+                        </p>
+                        <img
+                          src="images/tree_canopy.png"
+                          alt="Sensory Stop 13 shows a tree canopy of a Black Walnut tree."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 14 - Wild Garlic -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 14<br />
+                  Wild Garlic
+                </h5>
+                <img
+                  src="images/wild_garlic.png"
+                  alt="Sensory Stop 14 shows some wild garlic in the Botanic Gardens."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image14Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-14-Wild-Garlic.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image14Modal"
+                  tabindex="-1"
+                  aria-labelledby="image14ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image14ModalLabel">
+                          Sensory Stop 14 - Wild Garlic
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The South Arboretum | Map Marker #14</h5>
+                        <hr class="hr" />
+                        <p>
+                          In spring and early summer you will find wild garlic
+                          growing in the South Arboretum. Search for it in the
+                          spring under the trees near the bluebells. What does
+                          the smell remind you of? Garlic contains Allicin, a
+                          sulphur compound, and some find the smell relaxing
+                          and, whilst not proven, an old remedy for insomnia is
+                          to put a garlic clove under your pillow as the smell
+                          is said to relax people. Why not sit down on the bench
+                          in the corner of the Arboretum while you decide if you
+                          like the smell from the wild garlic or not? When
+                          picked at the right time, the entire plant is edible
+                          including the leaves, stalks, bulbs and flowers. Past
+                          visitors to the gardens have harvested this and used
+                          it in a variety of recipes including pesto, lasagne,
+                          and as a herb in many other recipes. As well as being
+                          a sensory stimulant, eating garlic has other benefits
+                          for physical health as it boosts the immune system and
+                          can help reduce high blood pressure and high
+                          cholesterol. If you catch the common cold, eating
+                          garlic is thought to hasten the recovery time.
+                          Visitors are allowed to collect wild garlic if they
+                          wish, but please note if you decide to consume it you
+                          do so at your own risk and it is your responsibility
+                          to ensure that you are not allergic and that it is
+                          washed and prepared correctly.
+                        </p>
+                        <img
+                          src="images/wild_garlic.png"
+                          alt="Sensory Stop 14 shows some wild garlic in the Botanic Gardens."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 15 - Fruit Trees -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 15<br />
+                  Fruit Trees
+                </h5>
+                <img
+                  src="images/fruit_trees.png"
+                  alt="Sensory Stop 15 shows some fruit trees with raspberries in the foreground."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image15Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-15-Fruit-Trees.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image15Modal"
+                  tabindex="-1"
+                  aria-labelledby="image15ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image15ModalLabel">
+                          Sensory Stop 15 - Fruit Trees
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>
+                          Location: Lawn and the Walled Garden| Map Marker #15
+                        </h5>
+                        <hr class="hr" />
+                        <p>
+                          Dotted around the lawn are fruit trees including a
+                          pear tree and two apple trees, one which produces
+                          exceptional eating apples, and the other exceptional
+                          cooking apples. In the spring these trees are filled
+                          with fragrant blossom, in the summer you can see baby
+                          apples beginning to grow and in the autumn the trees
+                          are full of fruit. We encourage you to visit these
+                          trees and engage with the visual and scented stimuli
+                          they provide across the seasons. No one will stop you
+                          harvesting fruit from these trees, stewed apples and
+                          poached pears are a delicious way to incorporate
+                          vitamin C and healthy fibre into your diet. Foraging
+                          local apples and pears has many benefits, both for
+                          individuals and the environment, but any food gathered
+                          is consumed at your own risk. Wash everything
+                          thoroughly before eating and do not consume anything
+                          unless you are 100% sure the fruit is edible. TCD is
+                          not liable for any adverse effects from eating fruit
+                          grown at the Gardens.
+                        </p>
+                        <img
+                          src="images/fruit_trees.png"
+                          alt="Sensory Stop 15 shows some fruit trees with raspberries in the foreground."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 16 - Baby's Tears -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 16<br />
+                  Baby's Tears
+                </h5>
+                <img
+                  src="images/babys_tears.png"
+                  alt="Sensory Stop 16 shows a green plant, commonly known as Baby's tears."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image16Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-16-Babys-Tears.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image16Modal"
+                  tabindex="-1"
+                  aria-labelledby="image16ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image1ModalLabel">
+                          Sensory Stop 16 - Baby's Tears
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Walled Garden | Map Marker #16</h5>
+                        <hr class="hr" />
+                        <p>
+                          In the east of the gardens, near Liz's bench, you will
+                          find instead of grass covering the ground here there
+                          is another plant, commonly known as Baby's tears.
+                          Soleirolia soleirolii is in the nettle family but it
+                          won't sting you, it is actually very soft to touch and
+                          cushiony to sit on. Can you see any flowers? This
+                          flowers between May and August but the flowers are so
+                          tiny you might not be able to see them. If it's a nice
+                          day, take your shoes off and walk around the Baby's
+                          Tears barefoot. Many people find walking outside with
+                          bare feet is a very grounding experience and soothes
+                          anxiety. Part of this is because when you are walking
+                          barefoot outside you watch carefully where you step
+                          meaning your eyes are absorbing a lot of green light
+                          waves. Green environments are soothing and research
+                          shows they can induce a reduction in the human
+                          heartrate which has a calming influence on the body.
+                          In addition to this, there are pressure points under
+                          your feet that connect with the eye nervous system,
+                          and pressure on these points can ease eyestrain. So
+                          sensory information received by walking around
+                          barefoot outside might actually improve another of
+                          your senses - eyesight.
+                        </p>
+                        <img
+                          src="images/babys_tears.png"
+                          alt="Sensory Stop 16 shows a green plant, commonly known as Baby's tears."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 17 - Snowdops -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 17<br />
+                  Snowdrops
+                </h5>
+                <img
+                  src="images/snowdrops.png"
+                  alt="Sensory Stop 17 shows Snowdrops in the Botanic Gardens."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image17Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-17-Snowdrops.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image17Modal"
+                  tabindex="-1"
+                  aria-labelledby="image17ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image17ModalLabel">
+                          Sensory Stop 17 (same location as Sensory Stop 13) -
+                          Snowdrops
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>Location: The Arboretum | Map Marker #17</h5>
+                        <hr class="hr" />
+                        <p>
+                          Snowdrops contain a compound called galanthamine which
+                          is used in modern pharmaceuticals to manage
+                          Alzheimer’s disease and is also used to relieve
+                          traumatic injuries to the nervous system. A lectin
+                          (carbohydrate-binding protein) in common snowdrops
+                          called GNA is being studied for its potential use
+                          against HIV. The same lectin is an effective
+                          insecticide against a variety of pests, including
+                          beetles, butterflies, moths, and aphids. Research has
+                          suggested that the GNA gene could be engineered into
+                          crops such as rice and tomatoes to increase their
+                          resistance to pests. Snowdrops should not be eaten as
+                          they contain a poisonous compound, lycorine, which can
+                          cause diarrhoea, nausea, and vomiting.
+                        </p>
+                        <img
+                          src="images/snowdrops.png"
+                          alt="Sensory Stop 17 shows Snowdrops in the Botanic Gardens."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stop 18 - Log Seat -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-center">
+                  Sensory Stop 18<br />
+                  Log Seat
+                </h5>
+                <img
+                  src="images/log_seat.png"
+                  alt="Sensory Stop 18 shows a single log seat inside the Longhouse Glasshouse in the Trinity College Botanic Garden. The log seat is surrounded by various plants and trees."
+                  class="img-fluid lazyload"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image18Modal"
+                  loading="lazy"
+                />
+                <h6 class="text-center mt-2">
+                  Click on the image for a text description
+                </h6>
+                <div class="container mt-5">
+                  <h6 class="text-center">Listen to the Audio:</h6>
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 100px"
+                  >
+                    <audio controls="">
+                      <source
+                        src="audio/Stop-18-Log-Seat.mp3"
+                        type="audio/mpeg"
+                      />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+                <!-- Image Modal -->
+                <div
+                  class="modal fade"
+                  id="image18Modal"
+                  tabindex="-1"
+                  aria-labelledby="image18ModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="image18ModalLabel">
+                          Sensory Stop 18 - Leaf Colour Changes
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Close button at the top right of the modal body -->
+                        <button
+                          type="button"
+                          class="btn-close position-absolute top-0 end-0"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                        ></button>
+
+                        <h5>
+                          F Location: The Long House Glasshouse/Greenhouse | Map
+                          Marker #18
+                        </h5>
+                        <p>
+                          <img
+                            src="images/logseaticon.png"
+                            width="150"
+                            height="150"
+                            alt="logseat icon"
+                          />
+                        </p>
+                        <hr class="hr" />
+                        <p>
+                          While enjoying the colors, some may not know exactly
+                          why the leaves change their color. As temperatures
+                          cool, some plants stop making chlorophyll, the green
+                          pigment found in almost all plants. It acts like a
+                          solar panel, capturing energy from sunlight. The cells
+                          of the plant then use this energy to produce sugars to
+                          feed the plant. As days shorten from fall into winter,
+                          there is less sunlight for the chlorophyll to absorb.
+                          For example, it would take too much energy for trees
+                          to keep their leaves healthy, so in winter, deciduous
+                          trees drop their leaves and go into a state of
+                          dormancy.
+                        </p>
+                        <img
+                          src="images/log_seat.png"
+                          alt="Sensory Stop 18 shows a single log seat inside the Longhouse Glasshouse in the Trinity College Botanic Garden. The log seat is surrounded by various plants and trees."
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Stop 3 - Ancient Plants -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 3<br />
-              Ancient Plants
-            </h5>
-            <img
-              src="images/ancient_plants.png"
-              alt="Sensory Stop 3 is a number of ancient plants, including cycads, inside a greenhouse."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image3Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-3-Ancient-Plants.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image3Modal"
-              tabindex="-1"
-              aria-labelledby="image3ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image3ModalLabel">
-                      Sensory Stop 3 - Ancient Plants
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
+          </section>
 
-                    <h5>Location: The Cycad House | Map Marker #3</h5>
-                    <p>  All Seasons - Glasshouse: <img src="images/glasshouse.png" width="150" height="150" alt="glasshouse icon"/></p>
-                    <hr class="hr" />
-                    <p>
-                      Cycad house is filled with living fossils and some of
-                      these plants evolved more than 250 million years ago. How
-                      do you feel standing amongst plants that were a popular
-                      food with vegetarian dinosaurs? What does it smell like in
-                      the house? Cycads reproduce via cones which are either
-                      male or female, and male cones which contain the pollen
-                      use different scents to attract and repel pollinators.
-                      What does the house smell like to you on your visit?
-                      Carefully (they can be sharp) touch some of the leaves.
-                      Mature leaves are tough, smooth and often very sharp to
-                      deter herbivores. Look around and see if you can spot any
-                      cycads growing new leaves. What do they feel like? New
-                      leaves on cycads are feel much softer / velvety. This
-                      house can be visited all year but the greenhouse is heated
-                      in winter to protect these tropical trees from the cold,
-                      making it the perfect place to visit if the winter blues
-                      have you feeling down. You can visit the heated
-                      greenhouse, listen to the rain on the roof, smell the
-                      trees, touch the plants and enjoy some outside time in the
-                      warm.
-                    </p>
-                    <img
-                      src="images/ancient_plants.png"
-                      alt="Sensory Stop 3 is a number of ancient plants, including cycads, inside a greenhouse."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
+          <!-- Map Page -->
+          <section id="map_page" class="mt-4">
+            <h1>Sensory Trail Map</h1>
+
+            <p>
+              This map shows the Sensory Trail Stops for Trinity College Botanic
+              Garden.
+            </p>
+            <p>
+              Click on the <b>Map Markers</b> to get a description of each the
+              Sensory Stops (numbered 1 to 18) , as well as an audio
+              description.
+            </p>
+
+            <!-- Tree Map Selection -->
+            <section id="mapSelection" class="mt-4 mb-4">
+              <div class="container">
+                <h3>Alternatively you can select a Sensory Stop on the Map</h3>
+                <p>
+                  Use the dropdown to focus on a specific sensory stop the map.
+                </p>
+                <select
+                  class="form-select"
+                  aria-label="Select Tree"
+                  id="treeSelector"
+                >
+                  <option selected>Choose a Sensory Stop ...</option>
+                  <option value="marker1">Sensory Stop 1 - Lavender</option>
+                  <option value="marker2">Sensory Stop 2 - Bees</option>
+                  <option value="marker12">
+                    Sensory Stop 3 - Ancient Plants
+                  </option>
+                  <option value="marker13">
+                    Sensory Stop 4 - Exotic Plants
+                  </option>
+                  <option value="marker14">Sensory Stop 5 - Aloe Vera</option>
+                  <option value="marker15">
+                    Sensory Stop 6 - Teas & Trees
+                  </option>
+                  <option value="marker16">
+                    Sensory Stop 7 - Fiddleheads on Ferns
+                  </option>
+                  <option value="marker17">Sensory Stop 8 - Catnip</option>
+                  <option value="marker18">Sensory Stop 9 - Wintersweet</option>
+                  <option value="marker19">
+                    Sensory Stop 10 - Witch Hazel
+                  </option>
+                  <option value="marker20">
+                    Sensory Stop 11 - Frost on Grass
+                  </option>
+                  <option value="marker21">
+                    Sensory Stop 12 - Summer Storms
+                  </option>
+                  <option value="marker22">
+                    Sensory Stop 13 - Tree Canopies
+                  </option>
+                  <option value="marker23">
+                    Sensory Stop 14 - Wild Garlic
+                  </option>
+                  <option value="marker24">
+                    Sensory Stop 15 - Fruit Trees
+                  </option>
+                  <option value="marker25">
+                    Sensory Stop 16 - Baby's Tears
+                  </option>
+                  <option value="marker26">Sensory Stop 17 - Snowdrops</option>
+                  <option value="marker27">Sensory Stop 18 - Log Seat</option>
+                  <!-- Add more options for other markers here -->
+                </select>
+              </div>
+            </section>
+
+            <div id="map" style="width: 100%; height: 1200px"></div>
+          </section>
+
+          <!-- Way Finding Video -->
+          <section id="sensory_video" class="mt-4 mb-4">
+            <h1>Sensory Trail Video</h1>
+            <p>
+              This is a a video of the Trinity College Botanic Garden Sensory
+              Trail Stops.
+            </p>
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://youtube.com/embed/Ak0r6lwWcks"
+                title="YouTube - TCD Sense and Trinity College Botanic Garden Sensory Trail"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+
+          <section aria-labelledby="feedback-heading">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2 id="feedback-heading">Feedback</h2>
+                  <p>
+                    We value your feedback on the Trinity College Botanic Garden
+                    Sensory Trail. Please use the link below to access our
+                    feedback form and tell us about your experience.
+                  </p>
+                  <a
+                    href="https://your-google-form-link"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open feedback form for Trinity College Botanic Garden Sensory Trail in a new tab"
+                  >
+                    Provide Feedback
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Stop 4 - Local and Exotic Plants -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 4<br />
-              Exotic Plants
-            </h5>
-            <img
-              src="images/local_exotic_plants.png"
-              alt="Sensory Stop 4 is a number of plants inside Stove House, the long greenhouse, there are local and exotic plants."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image4Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-4-Exotic-and-Native-Plants.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image4Modal"
-              tabindex="-1"
-              aria-labelledby="image4ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image1ModalLabel">
-                      Sensory Stop 4 - Exotic Plants
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
+          </section>
 
-                    <h5>Location: The Irish House | Map Marker #4</h5>
-                    <p> All Seasons - Glasshouse: <img src="images/glasshouse.png" width="150" height="150" alt="summer icon"/></p>
-                    <hr class="hr" />
-                    <p>
-                      The Gardens contain approximately 4,000 plant species from
-                      every corner of the world, meaning that you do not need to
-                      travel further than the Gardens to meet some unusual
-                      plants you would rarely see in Dublin. Stove house, the
-                      long greenhouse and the cycad house contain tropical
-                      plants that thrive in the heat. Sensory information of
-                      exotic plants can invoke many feelings. If you are feeling
-                      homesick, you can search for familiar plants from your
-                      home country and enjoy looking at them, touching them or
-                      smelling them. If you are stressed from writing or marking
-                      essays you can wander around the exotic plants and
-                      reminisce about past holidays or plan your next. Missing
-                      your home in the countryside? Go and visit the Irish
-                      greenhouse. Which plants from which region are your
-                      favourite? How do they make you feel? If you could travel
-                      anywhere in the world, where would you go?
-                    </p>
-                    <img
-                      src="images/local_exotic_plants.png"
-                      alt="Sensory Stop 4 is number of plants inside Stove House, the long greenhouse, there are local and exotic plants."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 5 - Aloe Vera -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 5<br />
-              Aloe Vera
-            </h5>
-            <img
-              src="images/aloe_vera.png"
-              alt="Sensory stop 5 is aloe vera."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image5Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-5-Aloe-Vera-Plant.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image5Modal"
-              tabindex="-1"
-              aria-labelledby="image5ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image5ModalLabel">
-                      Sensory Stop 5 - Aloe Vera
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Long Greenhouse | Map Marker #5</h5>
-                    <p> All Seasons - Glasshouse: <img src="images/glasshouse.png" width="150" height="150" alt="summer icon"/></p>
-                    <hr class="hr" />
-                    <p>
-                      In the Long House greenhouse you will find the collection
-                      of Aloe plants. One of these plants, the Aloe vera, has
-                      been designated to let visitors take a section of leaf
-                      from and explore the tactile sensory aspects of this
-                      plant. Do not take a leaf from the wrong aloe vera plant –
-                      if unsure always ask one of the staff! How does the liquid
-                      inside the leaf smell? Some describe it as a savoury
-                      smell, similar to garlic or an onion. Do you like the
-                      smell? Many people are aware that the sap inside this
-                      plant can soothe sunburn, but it’s also a very effective
-                      moisturiser for dry skin and a historical treatment for
-                      acne. Some people enjoy rubbing Aloe on their hands as a
-                      sensory stimulant for touch and smell. Please note: If you
-                      decide to use this as a moisturiser / spot treatment you
-                      do so at your own risk, allergic reactions are possible
-                      and if you get aloe vera in your eye it can be very
-                      painful! So approach this sensory station with caution and
-                      take care of yourself.
-                    </p>
-                    <img
-                      src="images/aloe_vera.png"
-                      alt="Sensory Stop 5 is aloe vera."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 6 - Teas & Trees -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 6<br />
-              Teas & Trees
-            </h5>
-            <img
-              src="images/teas_trees.png"
-              alt="Sensory Stop 6 is Teas and Trees and there is a Gingko tree."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image6Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-6-Teas-and-Trees.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image6Modal"
-              tabindex="-1"
-              aria-labelledby="image6ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image6ModalLabel">
-                      Sensory Stop 6 - Teas & Trees
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Arboretum | Map Marker #6</h5>
-                    <hr class="hr" />
-                    <p>
-                      Herbal teas have many different flavours and tastes but
-                      they also have many other properties such as boosting the
-                      immune system, aiding digestion and hydration. Many of the
-                      plants and trees in the gardens have historically been
-                      used to brew different herbal teas. Mulberry tea for
-                      example has properties which reduce inflammation, regulate
-                      blood sugar and improve heart health. Tea made from pine
-                      needles is high in vitamins C and A which aid your immune
-                      system, eyesight and skin and hair regeneration. Gingko
-                      tea is high in antioxidants and some research shows that
-                      tea made from Gingko trees reduces symptoms of psychiatric
-                      disorders and dementia. Gingko tea may also improve brain
-                      function and reduce anxiety and / or depression. If you
-                      are feeling curious, there are plenty of simple recipes
-                      online for you to research how to brew tea from these
-                      plants. You are welcome to harvest a few leaves to try
-                      making your own tea at home.
-                    </p>
-                    <img
-                      src="images/teas_trees.png"
-                      alt="Sensory Stop 6 is Teas and Trees and there is a Gingko tree."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 7 - Fiddleheads on Ferns -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 7<br />
-              Fiddleheads on Ferns
-            </h5>
-            <img
-              src="images/fiddleheads.png"
-              alt="Sensory Stop 7 is Fiddleheads on Ferns in the Stove House Greenhouse."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image7Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-7-Fiddleheads-on-Ferns.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image7Modal"
-              tabindex="-1"
-              aria-labelledby="image7ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image7ModalLabel">
-                      Sensory Stop 7 - Fiddleheads on Ferns
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Stove House | Map Marker #7</h5>
-                    <hr class="hr" />
-                    <p>
-                      In the Stove House and Long House glass houses you can
-                      sometimes see fiddleheads growing on the ferns. These are
-                      very young fronds that haven't unfurled yet and they look
-                      completely different to the rest of the plant. What do
-                      they remind you of? How do they feel to touch?
-                    </p>
-                    <img
-                      src="images/fiddleheads.png"
-                      alt="Sensory Stop 7 is Fiddleheads on Ferns in the Stove House Greenhouse."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 8 - Catnip -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 8<br />
-              Catnip
-            </h5>
-            <img
-              src="images/catnip.png"
-              alt="Sensory Stop 8 is some catnip."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image8Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-8-Catnip.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image8Modal"
-              tabindex="-1"
-              aria-labelledby="image8ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image8ModalLabel">
-                      Sensory Stop 8 - Catnip
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>
-                      Location: Outside the Botanic Garden Office | Map Marker
-                      #8
-                    </h5>
-                    <hr class="hr" />
-                    <p>
-                      Catnip is not just for cats. While it won't have the same
-                      psychological effects on humans as it does on cats, it has
-                      a unique minty smell and pretty purple flowers in summer.
-                      Catnip and Lavender belong to the same family but they
-                      smell different. Do you like the smell? Rub some leaves
-                      between your fingers - can you tell the difference between
-                      lavender and catnip by smell alone?
-                    </p>
-                    <img
-                      src="images/catnip.png"
-                      alt="Sensory Stop 8 is some catnip."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 9 - Wintersweet -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 9<br />
-              Wintersweet
-            </h5>
-            <img
-              src="images/wintersweet.png"
-              alt="Sensory Stop 9 is some Wintersweet."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image9Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-9-Wintersweet.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image9Modal"
-              tabindex="-1"
-              aria-labelledby="image9ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image1ModalLabel">
-                      Sensory Stop 9 - Wintersweet
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Walled Garden | Map Marker #9</h5>
-                    <hr class="hr" />
-                    <p>
-                      Chimonanthus praecox (wintersweet) flowers in January and
-                      February. Look out for the pretty yellow flowers blooming
-                      on the tree near the Irish House in the middle of winter.
-                      The flowers smell quite strongly, so you are likely to
-                      smell it before you see it! What do they smell like to
-                      you?
-                    </p>
-                    <img
-                      src="images/wintersweet.png"
-                      alt="Sensory Stop 9 is some Wintersweet."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 10 - Witch Hazel -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 10<br />
-              Witch Hazel
-            </h5>
-            <img
-              src="images/witch_hazel.png"
-              alt="Sensory Stop 10 is some colourful With Hazel."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image10Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-10-Witch-Hazel.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade justify-content-center align-items-cente"
-              id="image10Modal"
-              tabindex="-1"
-              aria-labelledby="image10ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image10ModalLabel">
-                      Sensory Stop 10 - Witch Hazel
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Walled Garden | Map Marker #10</h5>
-                    <hr class="hr" />
-                    <p>
-                      Throughout history witch hazel has been used as a
-                      treatment for many skin conditions such as stretch marks
-                      and acne, due to its exceptional anti-inflammatory
-                      properties. Break off a leaf and sniff it. Some describe
-                      it as fresh and lemon scented. Witch hazel concoctions are
-                      available to purchase commercially, however if you are
-                      unable to afford it, you can research online how to forage
-                      and prepare acne treatments from witch hazel you have
-                      foraged yourself.
-                    </p>
-                    <img
-                      src="images/witch_hazel.png"
-                      alt="Sensory Stop 10 is some colourful With Hazel."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 11 - Frost on Grass -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 11<br />
-              Frost on Grass
-            </h5>
-            <img
-              src="images/frost_on_grass.png"
-              alt="Sensory Stop 11 is frost on grass showing some grass and fallen leaves covered in frost."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image11Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-11-Frost-on-Grass.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image11Modal"
-              tabindex="-1"
-              aria-labelledby="image11ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image1ModalLabel">
-                      Sensory Stop 11 - Frost on Grass
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Aboretum | Map Marker #11</h5>
-                    <hr class="hr" />
-                    <p>
-                      Listen to the crunch sound as you walk on grass, admire
-                      the crystals and colour.
-                    </p>
-                    <img
-                      src="images/frost_on_grass.png"
-                      alt="Sensory Stop 11 is frost on grass showing some grass and fallen leaves covered in frost."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 12 - Summer Storms -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 12<br />
-              Summer Storms
-            </h5>
-            <img
-              src="images/summer_storms.png"
-              alt="Sensory Stop 12 is summer storms shows the roof of one of the glasshouses in the Trinity Botanic Gardens, where trees and leaves can be see through the glass."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image12Modal"
-              loading="lazy"
-            />
-            
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-12-Shelter-from-Summer-Storms.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image12Modal"
-              tabindex="-1"
-              aria-labelledby="image12ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image12ModalLabel">
-                      Sensory Stop 12 - Summer Storms
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Irish House | Map Marker #12</h5>
-                    <hr class="hr" />
-                    <p>
-                      The Irish House, the Long House and the Australia House
-                      are coolest in the summer, making them an ideal space to
-                      spend time in during rainy days. One plant in the Irish
-                      House, Equisetum hyemale (horsetail), is a living fossil
-                      which evolved tens of millions of years ago. Equisetum has
-                      tiny leaves that are joined at the colourful stripes on
-                      the stem. Take a moment and look at how differently shaped
-                      this plant is to many others at the gardens. Most plants
-                      have curves created by the stem and leaf shapes, this
-                      plant is linear and vertical. What do the contrasting
-                      colours remind you of? Stroke the stem. Does it feel rough
-                      or smooth? Does this plant remind you of any other plants
-                      at the Gardens? You will find tree stump seats in the Long
-                      House where you can sit and wait for the storm to pass
-                      while you smell the rain and listen to the sound on the
-                      roof.
-                    </p>
-                    <img
-                      src="images/summer_storms.png"
-                      alt="Sensory Stop 12 is summer storms shows the roof of one of the glasshouses in the Trinity Botanic Gardens, where trees and leaves can be see through the glass."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 13 - Tree Canopies -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 13<br />
-              Tree Canopies
-            </h5>
-            <img
-              src="images/tree_canopy.png"
-              alt="Sensory Stop 13 shows a tree canopy of a Black Walnut tree."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image13Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-13-Tree-Canopies.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image13Modal"
-              tabindex="-1"
-              aria-labelledby="image13ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image1Modal3Label">
-                      Sensory Stop 13 - Tree Canopies
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The South Arboretum | Map Marker #13</h5>
-                    <hr class="hr" />
-                    <p>
-                      The South Arboretum is full of trees and is a cool shady
-                      spot, ideal for hiding from the sun on a hot summer day.
-                      If it is warm and dry try lying on the grass under the
-                      Black Walnut tree and looking up at the canopy, watching
-                      the leaves move in the wind across this sky. This activity
-                      can be a very grounding exercise, so if you feel like your
-                      head is spinning, your thoughts are racing or you are
-                      struggling to concentrate then it is worth trying this.
-                      When you are lying on the grass pay careful attention to
-                      the sensory information around you. What does the ground
-                      feel like on your back? Can you hear the birds or the
-                      leaves rustling in the breeze? What colour is the sky
-                      today? Can you smell the wild garlic?
-                    </p>
-                    <img
-                      src="images/tree_canopy.png"
-                      alt="Sensory Stop 13 shows a tree canopy of a Black Walnut tree."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 14 - Wild Garlic -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 14<br />
-              Wild Garlic
-            </h5>
-            <img
-              src="images/wild_garlic.png"
-              alt="Sensory Stop 14 shows some wild garlic in the Botanic Gardens."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image14Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-14-Wild-Garlic.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image14Modal"
-              tabindex="-1"
-              aria-labelledby="image14ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image14ModalLabel">
-                      Sensory Stop 14 - Wild Garlic
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The South Arboretum | Map Marker #14</h5>
-                    <hr class="hr" />
-                    <p>
-                      In spring and early summer you will find wild garlic
-                      growing in the South Arboretum. Search for it in the
-                      spring under the trees near the bluebells. What does the
-                      smell remind you of? Garlic contains Allicin, a sulphur
-                      compound, and some find the smell relaxing and, whilst not
-                      proven, an old remedy for insomnia is to put a garlic
-                      clove under your pillow as the smell is said to relax
-                      people. Why not sit down on the bench in the corner of the
-                      Arboretum while you decide if you like the smell from the
-                      wild garlic or not? When picked at the right time, the
-                      entire plant is edible including the leaves, stalks, bulbs
-                      and flowers. Past visitors to the gardens have harvested
-                      this and used it in a variety of recipes including pesto,
-                      lasagne, and as a herb in many other recipes. As well as
-                      being a sensory stimulant, eating garlic has other
-                      benefits for physical health as it boosts the immune
-                      system and can help reduce high blood pressure and high
-                      cholesterol. If you catch the common cold, eating garlic
-                      is thought to hasten the recovery time. Visitors are
-                      allowed to collect wild garlic if they wish, but please
-                      note if you decide to consume it you do so at your own
-                      risk and it is your responsibility to ensure that you are
-                      not allergic and that it is washed and prepared correctly.
-                    </p>
-                    <img
-                      src="images/wild_garlic.png"
-                      alt="Sensory Stop 14 shows some wild garlic in the Botanic Gardens."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 15 - Fruit Trees -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 15<br />
-              Fruit Trees
-            </h5>
-            <img
-              src="images/fruit_trees.png"
-              alt="Sensory Stop 15 shows some fruit trees with raspberries in the foreground."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image15Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-15-Fruit-Trees.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image15Modal"
-              tabindex="-1"
-              aria-labelledby="image15ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image15ModalLabel">
-                      Sensory Stop 15 - Fruit Trees
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>
-                      Location: Lawn and the Walled Garden| Map Marker #15
-                    </h5>
-                    <hr class="hr" />
-                    <p>
-                      Dotted around the lawn are fruit trees including a pear
-                      tree and two apple trees, one which produces exceptional
-                      eating apples, and the other exceptional cooking apples.
-                      In the spring these trees are filled with fragrant
-                      blossom, in the summer you can see baby apples beginning
-                      to grow and in the autumn the trees are full of fruit. We
-                      encourage you to visit these trees and engage with the
-                      visual and scented stimuli they provide across the
-                      seasons. No one will stop you harvesting fruit from these
-                      trees, stewed apples and poached pears are a delicious way
-                      to incorporate vitamin C and healthy fibre into your diet.
-                      Foraging local apples and pears has many benefits, both
-                      for individuals and the environment, but any food gathered
-                      is consumed at your own risk. Wash everything thoroughly
-                      before eating and do not consume anything unless you are
-                      100% sure the fruit is edible. TCD is not liable for any
-                      adverse effects from eating fruit grown at the Gardens.
-                    </p>
-                    <img
-                      src="images/fruit_trees.png"
-                      alt="Sensory Stop 15 shows some fruit trees with raspberries in the foreground."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 16 - Baby's Tears -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 16<br />
-              Baby's Tears
-            </h5>
-            <img
-              src="images/babys_tears.png"
-              alt="Sensory Stop 16 shows a green plant, commonly known as Baby's tears."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image16Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-16-Babys-Tears.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image16Modal"
-              tabindex="-1"
-              aria-labelledby="image16ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image1ModalLabel">
-                      Sensory Stop 16 - Baby's Tears
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Walled Garden | Map Marker #16</h5>
-                    <hr class="hr" />
-                    <p>
-                      In the east of the gardens, near Liz's bench, you will
-                      find instead of grass covering the ground here there is
-                      another plant, commonly known as Baby's tears. Soleirolia
-                      soleirolii is in the nettle family but it won't sting you,
-                      it is actually very soft to touch and cushiony to sit on.
-                      Can you see any flowers? This flowers between May and
-                      August but the flowers are so tiny you might not be able
-                      to see them. If it's a nice day, take your shoes off and
-                      walk around the Baby's Tears barefoot. Many people find
-                      walking outside with bare feet is a very grounding
-                      experience and soothes anxiety. Part of this is because
-                      when you are walking barefoot outside you watch carefully
-                      where you step meaning your eyes are absorbing a lot of
-                      green light waves. Green environments are soothing and
-                      research shows they can induce a reduction in the human
-                      heartrate which has a calming influence on the body. In
-                      addition to this, there are pressure points under your
-                      feet that connect with the eye nervous system, and
-                      pressure on these points can ease eyestrain. So sensory
-                      information received by walking around barefoot outside
-                      might actually improve another of your senses - eyesight.
-                    </p>
-                    <img
-                      src="images/babys_tears.png"
-                      alt="Sensory Stop 16 shows a green plant, commonly known as Baby's tears."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 17 - Snowdops -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 17<br />
-              Snowdrops
-            </h5>
-            <img
-              src="images/snowdrops.png"
-              alt="Sensory Stop 17 shows Snowdrops in the Botanic Gardens."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image17Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-17-Snowdrops.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image17Modal"
-              tabindex="-1"
-              aria-labelledby="image17ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image17ModalLabel">
-                      Sensory Stop 17 (same location as Sensory Stop 13) -
-                      Snowdrops
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>Location: The Arboretum | Map Marker #17</h5>
-                    <hr class="hr" />
-                    <p>
-                      Snowdrops contain a compound called galanthamine which is
-                      used in modern pharmaceuticals to manage Alzheimer’s
-                      disease and is also used to relieve traumatic injuries to
-                      the nervous system. A lectin (carbohydrate-binding
-                      protein) in common snowdrops called GNA is being studied
-                      for its potential use against HIV. The same lectin is an
-                      effective insecticide against a variety of pests,
-                      including beetles, butterflies, moths, and aphids.
-                      Research has suggested that the GNA gene could be
-                      engineered into crops such as rice and tomatoes to
-                      increase their resistance to pests. Snowdrops should not
-                      be eaten as they contain a poisonous compound, lycorine,
-                      which can cause diarrhoea, nausea, and vomiting.
-                    </p>
-                    <img
-                      src="images/snowdrops.png"
-                      alt="Sensory Stop 17 shows Snowdrops in the Botanic Gardens."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Stop 18 - Log Seat -->
-          <div class="col-md-4 mb-3">
-            <h5 class="text-center">
-              Sensory Stop 18<br />
-              Log Seat
-            </h5>
-            <img
-              src="images/log_seat.png"
-              alt="Sensory Stop 18 shows a single log seat inside the Longhouse Glasshouse in the Trinity College Botanic Garden. The log seat is surrounded by various plants and trees."
-              class="img-fluid lazyload"
-              data-bs-toggle="modal"
-              data-bs-target="#image18Modal"
-              loading="lazy"
-            />
-            <h6 class="text-center mt-2">Click on the image for a text description</h6>
-            <div class="container mt-5">
-              <h6 class="text-center">Listen to the Audio:</h6>
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 100px"
-              >
-                <audio controls="">
-                  <source
-                    src="audio/Stop-18-Log-Seat.mp3"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <!-- Image Modal -->
-            <div
-              class="modal fade"
-              id="image18Modal"
-              tabindex="-1"
-              aria-labelledby="image18ModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="image18ModalLabel">
-                      Sensory Stop 18 - Leaf Colour Changes
-                    </h5>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Close button at the top right of the modal body -->
-  <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" data-bs-dismiss="modal"></button>
-
-                    <h5>F
-                      Location: The Long House Glasshouse/Greenhouse | Map
-                      Marker #18
-                    </h5>
-                    <p> <img src="images/logseaticon.png" width="150" height="150" alt="logseat icon"/></p>
-                    <hr class="hr" />
-                    <p>
-                      While enjoying the colors, some may not know exactly why
-                      the leaves change their color. As temperatures cool, some
-                      plants stop making chlorophyll, the green pigment found in
-                      almost all plants. It acts like a solar panel, capturing
-                      energy from sunlight. The cells of the plant then use this
-                      energy to produce sugars to feed the plant. As days
-                      shorten from fall into winter, there is less sunlight for
-                      the chlorophyll to absorb. For example, it would take too
-                      much energy for trees to keep their leaves healthy, so in
-                      winter, deciduous trees drop their leaves and go into a
-                      state of dormancy.
-                    </p>
-                    <img
-                      src="images/log_seat.png"
-                      alt="Sensory Stop 18 shows a single log seat inside the Longhouse Glasshouse in the Trinity College Botanic Garden. The log seat is surrounded by various plants and trees."
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Back to top of page button -->
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            id="topButton"
+            aria-label="Go to top of page"
+            style="position: fixed; bottom: 20px; right: 20px; display: none"
+          >
+            <i class="bi bi-arrow-up-circle-fill"></i> Top
+          </button>
         </div>
       </section>
-          
-      <!-- Map Page -->
-      <section id="map_page" class="mt-4">
-        <h1>Sensory Trail Map</h1>
+    </div>
 
+    <!-- Footer -->
 
-        
-
-        <p>
-          This map shows the Sensory Trail Stops for Trinity College Botanic
-          Garden.
-        </p>
-        <p>
-          Click on the <b>Map Markers</b> to get a description of each the
-          Sensory Stops (numbered 1 to 18) , as well as an audio description.
-        </p>
-
-
- <!-- Tree Map Selection -->
- <section id="mapSelection" class="mt-4 mb-4">
-  <div class="container">
-    <h3>Alternatively you can select a Sensory Stop on the Map</h3>
-    <p>Use the dropdown to focus on a specific sensory stop the map.</p>
-    <select
-      class="form-select"
-      aria-label="Select Tree"
-      id="treeSelector"
+    <footer
+      class="text-center text-lg-start py-3"
+      style="background-color: black; color: white; width: 100%"
     >
-      <option selected>Choose a Sensory Stop ...</option>
-      <option value="marker1">
-        Sensory Stop 1 - Lavender
-      </option>
-      <option value="marker2">
-        Sensory Stop 2 - Bees
-      </option>
-      <option value="marker12">
-        Sensory Stop 3 - Ancient Plants
-      </option>
-      <option value="marker13">
-        Sensory Stop 4 - Exotic Plants
-      </option>
-      <option value="marker14">
-        Sensory Stop 5 - Aloe Vera
-      </option>
-      <option value="marker15">
-        Sensory Stop 6 - Teas & Trees
-      </option>
-      <option value="marker16">
-        Sensory Stop 7 - Fiddleheads on Ferns
-      </option>
-      <option value="marker17">
-        Sensory Stop 8 - Catnip
-      </option>
-      <option value="marker18">
-        Sensory Stop 9 - Wintersweet
-      </option>
-      <option value="marker19">
-        Sensory Stop 10 - Witch Hazel
-      </option>
-      <option value="marker20">
-        Sensory Stop 11 - Frost on Grass
-      </option>
-      <option value="marker21">
-        Sensory Stop 12 - Summer Storms
-      </option>
-      <option value="marker22">
-        Sensory Stop 13 - Tree Canopies
-      </option>
-      <option value="marker23">
-        Sensory Stop 14 - Wild Garlic
-      </option>
-      <option value="marker24">
-        Sensory Stop 15 - Fruit Trees
-      </option>
-      <option value="marker25">
-        Sensory Stop 16 - Baby's Tears
-      </option>
-      <option value="marker26">
-        Sensory Stop 17 - Snowdrops
-      </option>
-      <option value="marker27">
-        Sensory Stop 18 - Log Seat
-      </option>
-      <!-- Add more options for other markers here -->
-    </select>
-  </div>
-</section>
-
-        <div id="map" style="width: 100%; height: 1200px"></div>
-      </section>
-          
-          
-      <!-- Way Finding Video -->
-      <section id="sensory_video" class="mt-4 mb-4">
-        <h1>Sensory Trail Video</h1>
-        <p>
-          This is a a video of the Trinity College Botanic Garden Sensory Trail
-          Stops.
-        </p>
-        <div class="ratio ratio-16x9">
-          <iframe
-            src="https://youtube.com/embed/Ak0r6lwWcks"
-            title="YouTube - TCD Sense and Trinity College Botanic Garden Sensory Trail"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-
-      <section aria-labelledby="feedback-heading">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 id="feedback-heading">Feedback</h2>
-              <p>We value your feedback on the Trinity College Botanic Garden Sensory Trail. Please use the link below to access our feedback form and tell us about your experience.</p>
-              <a href="https://your-google-form-link" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Open feedback form for Trinity College Botanic Garden Sensory Trail in a new tab">
-                Provide Feedback
-              </a>
-            </div>
+      <div class="container">
+        <!-- Grid container -->
+        <div class="row">
+          <!-- Grid column for logo -->
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <!-- Image -->
+            <img
+              src="images/tcd-logo-white.png"
+              alt="Trinity College Dublin Logo"
+              class="img-fluid my-2"
+            />
+          </div>
+          <!-- Grid column for address -->
+          <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-normal mb-4">Trinity College Botanic Garden</h5>
+            <p>
+              Palmerston Park, Dartry, Dublin 6<br />
+              D06 W226, Ireland<br />
+              <a
+                href="mailto:botanicgarden@tcd.ie"
+                class="text-white"
+                style="text-decoration: none"
+                >botanicgarden@tcd.ie</a
+              >
+            </p>
+          </div>
+          <!-- Grid column for copyright text -->
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <p>© 2024 Trinity College Botanic Garden - Sensory Trail</p>
+          </div>
+          <!-- Grid column for social media -->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-normal mb-4">Follow Us on Social Media</h5>
+            <!-- Image -->
+            <a href="https://twitter.com/TCBotanicGarden" target="_blank">
+              <img src="images/twitter.png" alt="Twitter" class="img-fluid" />
+            </a>
           </div>
         </div>
-      </section>
-      
-
-      <!-- Back to top of page button -->
-      <button type="button" class="btn btn-primary btn-lg" id="topButton" aria-label="Go to top of page" style="position: fixed; bottom: 20px; right: 20px; display: none;">
-        <i class="bi bi-arrow-up-circle-fill"></i> Top
-    </button>
-    
-
-      
-    </div>
-
-<!-- Footer -->
-
-<footer class="text-center text-lg-start py-3" style="background-color: black; color: white; width:100%;">
-  <div class="container">
-    <!-- Grid container -->
-    <div class="row">
-      <!-- Grid column for logo -->
-      <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-        <!-- Image -->
-        <img src="images/tcd-logo-white.png" alt="Trinity College Dublin Logo" class="img-fluid my-2">
+        <!-- Grid container -->
       </div>
-      <!-- Grid column for address -->
-      <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-normal mb-4">Trinity College Botanic Garden</h5>
-        <p>
-          Palmerston Park, Dartry, Dublin 6<br>
-          D06 W226, Ireland<br>
-          <a href="mailto:botanicgarden@tcd.ie" class="text-white" style="text-decoration: none;">botanicgarden@tcd.ie</a>
-        </p>
-      </div>
-      <!-- Grid column for copyright text -->
-      <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-        <p>© 2024 Trinity College Botanic Garden - Sensory Trail</p>
-      </div>
-      <!-- Grid column for social media -->
-      <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-normal mb-4">Follow Us on Social Media</h5>
-        <!-- Image -->
-        <a href="https://twitter.com/TCBotanicGarden" target="_blank">
-          <img src="images/twitter.png" alt="Twitter" class="img-fluid">
-        </a>
-      </div>
-    </div>
-    <!-- Grid container -->
-  </div>
-</footer>
+    </footer>
 
-
-
-
-        
-            
     <!--  
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -2187,37 +2468,38 @@
     </script>
   -->
 
-<!-- JS script for top of page button -->
+    <!-- JS script for top of page button -->
 
-<script>
-  document.addEventListener("scroll", function() {
-    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    var button = document.getElementById("topButton");
-    if (scrollPosition > 100) {
-        button.style.display = "block"; // Show the button
-    } else {
-        button.style.display = "none"; // Hide the button
-    }
-});
+    <script>
+      document.addEventListener("scroll", function () {
+        var scrollPosition =
+          window.scrollY || document.documentElement.scrollTop;
+        var button = document.getElementById("topButton");
+        if (scrollPosition > 100) {
+          button.style.display = "block"; // Show the button
+        } else {
+          button.style.display = "none"; // Hide the button
+        }
+      });
 
-document.getElementById("topButton").addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Optional: for smooth scrolling
-    });
-});
+      document
+        .getElementById("topButton")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Optional: for smooth scrolling
+          });
+        });
+    </script>
 
-</script>
-
-<script>
-  try {
-    console.log("loaded ally.js in version", ally.version);
-    console.log("focusable elements", ally.query.focusable());
-  } catch (error) {
-    console.error("Error loading or executing ally.js functions", error);
-  }
-</script>
-
+    <script>
+      try {
+        console.log("loaded ally.js in version", ally.version);
+        console.log("focusable elements", ally.query.focusable());
+      } catch (error) {
+        console.error("Error loading or executing ally.js functions", error);
+      }
+    </script>
 
     <!-- Script for selecting the tree numbers and tree species from drop down options -->
     <script>
@@ -2227,7 +2509,7 @@ document.getElementById("topButton").addEventListener("click", function() {
           var selectedMarker = e.target.value;
 
           // Logic to zoom in and open the popup for the selected marker
-          
+
           // 1. Lavender (marker1)
           if (selectedMarker === "marker1") {
             map.setView(marker1.getLatLng(), 20); // Zoom into the marker. Adjust zoom level as necessary.
@@ -2321,24 +2603,22 @@ document.getElementById("topButton").addEventListener("click", function() {
         });
     </script>
 
+    <!-- Accessibility buttons -->
+    <script>
+      // Function to toggle high contrast
+      function toggleHighContrast() {
+        document.body.classList.toggle("high-contrast");
+      }
 
-<!-- Accessibility buttons -->
-<script>
-  // Function to toggle high contrast
-  function toggleHighContrast() {
-    document.body.classList.toggle('high-contrast');
-  }
-
-  // Function to increase font size
-  function increaseFontSize() {
-    // Get the current font size
-    let currentSize = parseInt(window.getComputedStyle(document.body).fontSize);
-    // Increase font size
-    document.body.style.fontSize = `${currentSize + 1}px`;
-  }
-</script>
-
-    
-    
+      // Function to increase font size
+      function increaseFontSize() {
+        // Get the current font size
+        let currentSize = parseInt(
+          window.getComputedStyle(document.body).fontSize
+        );
+        // Increase font size
+        document.body.style.fontSize = `${currentSize + 1}px`;
+      }
+    </script>
   </body>
 </html>
