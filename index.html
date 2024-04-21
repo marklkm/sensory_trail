@@ -695,16 +695,15 @@
                 </h6>
                 <div class="container mt-5">
                   <h6 class="text-center">Listen to the Audio:</h6>
-                  <div
-                    class="d-flex justify-content-center align-items-center"
-                    style="height: 100px"
-                  >
-                  <audio controls aria-label="Lavender audio description">
-                    <source src="audio/Stop-1-Lavender.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element. <!-- This message is for browsers that do not support the audio tag -->
-                  </audio>
-                  
-                  </div>
+                  <div class="d-flex justify-content-center align-items-center" style="height: 100px;">
+                    <!-- Accessible audio player with proper ARIA labels -->
+                    <audio controls aria-label="Audio Description: Lavender">
+                        <source src="audio/Stop-1-Lavender.mp3" type="audio/mpeg">
+                        <!-- Fallback message for browsers that do not support the audio tag -->
+                        Your browser does not support the audio element. Please update your browser or download the audio file to listen.
+                    </audio>
+                </div>
+                
                 </div>
                 <!-- Image Modal -->
                 <div
