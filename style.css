@@ -170,3 +170,10 @@ h6 {
   outline: 2px solid #fff; /* White outline for high contrast on focus */
   outline-offset: -2px;
 }
+
+
+/* Leaflet map */
+a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
+  background-color: rgb(220, 220, 220); /* Slightly darker for hover and focus */
+  outline: 2px solid rgb(33, 37, 41); /* Adds an outline for focus that contrasts well */
+}
