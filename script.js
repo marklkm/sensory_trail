@@ -77,3 +77,11 @@ window.addEventListener("scroll", function () {
     backToTopButton.style.display = "none";
   }
 });
+
+/* audio controls */
+var audio = document.getElementById("myAudio");
+audio.onerror = function () {
+  alert(
+    "Audio file could not be loaded. Please try a different browser or download the file."
+  );
+};
