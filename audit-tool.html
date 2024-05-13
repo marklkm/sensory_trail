@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <title>Accessibility Audit Tool</title>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Trinity Audit Tool</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#report">Generate Report</a></li>
+        <li><a href="#" role="button">Logout</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>Building Accessibility Entry</h2>
+            <h3>Enter the details below</h3>
+          </hgroup>
+          <form>
+            <label for="buildingName">Building Name:</label>
+            <input
+              type="text"
+              id="buildingName"
+              name="buildingName"
+              placeholder="Enter building name"
+              required
+            />
+            <label for="accessibility">Accessibility Features:</label>
+            <textarea
+              id="accessibility"
+              name="accessibility"
+              placeholder="Describe accessibility features"
+              required
+            ></textarea>
+            <button type="submit" onclick="event.preventDefault()">
+              Submit
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="container">
+      <small><a href="#">Privacy Policy</a> • <a href="#">Contact Us</a></small>
+    </footer>
+  </body>
+</html>
