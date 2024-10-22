@@ -1,11 +1,26 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
 
+
+/* Default Styles */
+html, body {
+  font-family: "Arial", "Verdana", "Helvetica Neue", sans-serif;
+  font-size: 16px; /* Base font size in rem for scalability */
+  color: #000; /* Black text for high contrast */
+  background-color: #fff; /* White background for high contrast */
+  line-height: 1.25; /* Larger line-height for readability */
+  letter-spacing: .3px;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes up full viewport height */
 }
+
+/* Body Content Container */
+.content {
+  flex: 1; /* Makes the content expand and take up available space */
+}
+
+
 .leaflet-container {
     height: 800px;
     width: 1200px;
