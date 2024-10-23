@@ -211,25 +211,3 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
 }
 
 
-/* skip link */
-.skip-link {
-  position: absolute;
-  top: 10px; /* Adjust top margin */
-  left: 15px; /* Adjust left margin */
-  background-color: #007bff; /* High-contrast blue (Bootstrap primary) */
-  color: white;
-  padding: 8px;
-  z-index: 1000;
-  clip: rect(0, 0, 0, 0); /* Hide offscreen */
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.skip-link:focus {
-  clip: auto; /* Show the link when focused */
-  height: auto;
-  width: auto;
-  text-decoration: underline;
-  margin-left: 15px; /* Add margin on the left */
-}
