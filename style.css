@@ -25,6 +25,19 @@ html, body {
   color: #dc3545;
 }
 
+/* custom drop cap for The Sensory Trail headin */
+.custom-bg {
+  background-color: #dc3545; /* Custom color */
+}
+
+.custom-bg::first-letter {
+  float: left;
+  font-size: 2em; /* Adjust size as needed */
+  line-height: 0.9; /* Adjust line height to fit with the rest of the text */
+  padding-right: 5px; /* Space between the drop cap and the rest of the text */
+}
+
+
 .leaflet-container {
     height: 800px;
     width: 1200px;
