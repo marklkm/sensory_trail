@@ -22,14 +22,15 @@ html, body {
 
 /* h4 tag for Sensory Stop Headings */
 .red-text {
-  color: #dc3545;
+  color: #AC1B2C;
 }
 
-/* custom drop cap for The Sensory Trail headin */
+/* custom drop cap for The Sensory Trail heading */
 .custom-bg {
-  background-color: #dc3545; /* Custom color */
+  background-color: #AC1B2C; /* Custom color */
 }
 
+/* custom first letter */
 .custom-bg::first-letter {
   float: left;
   font-size: 2em; /* Adjust size as needed */
@@ -37,7 +38,7 @@ html, body {
   padding-right: 5px; /* Space between the drop cap and the rest of the text */
 }
 
-
+/* Leaflet map container */
 .leaflet-container {
     height: 800px;
     width: 1200px;
@@ -112,10 +113,18 @@ li,
   white-space: nowrap;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
   text-decoration: underline;
   color: #A0F551 !important;
+  outline: none; /* Remove default browser outline */
 }
+
+.navbar-nav .nav-link:focus-visible {
+  outline: 2px solid #A0F551; /* Add a custom visible focus indicator */
+  outline-offset: 3px; /* Add spacing around the link when focused */
+}
+
 
 .accordion-button {
   color: black !important;
@@ -211,3 +220,47 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
 }
 
 
+
+/* all other custom styling */
+/* ouTube video styling */
+
+  /* Optional: Adding a bit of custom styling to ensure the video looks good */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* custom top header image */
+  .custom-img {
+    width: 100%; /* Make the image take up 100% of the container's width */
+    max-width: none; /* Ensure there is no restriction on the width */
+  }
+
+
+/* CSS style for top of page button */
+
+  /* Optional: Hide the button by default and only show after scrolling down 100px */
+  #topButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed to the bottom right corner */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    z-index: 99; /* Makes sure it sits on top of other content */
+  }
+
+  /* Style modifications if needed */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
