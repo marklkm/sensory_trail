@@ -20,6 +20,10 @@ html, body {
   flex: 1; /* Makes the content expand and take up available space */
 }
 
+/* h4 tag for Sensory Stop Headings */
+.red-text {
+  color: #dc3545;
+}
 
 .leaflet-container {
     height: 800px;
