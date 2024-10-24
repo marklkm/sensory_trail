@@ -25,6 +25,11 @@ html, body {
   color: #AC1B2C;
 }
 
+/* a link */
+a {
+  color: #0256D4;
+}
+
 /* custom drop cap for The Sensory Trail heading */
 .custom-bg {
   background-color: #AC1B2C; /* Custom color */
