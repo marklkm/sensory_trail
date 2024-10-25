@@ -3117,16 +3117,16 @@
                 Botanic Garden.
               </p>
               <p>
-                Click on the <b>Map Markers</b> to get a description of each the
-                Sensory Stops (numbered 1 to 18) , as well as an audio
-                description.
+                Click on the <b>Map Markers</b> to view each the Sensory Stops
+                (numbered 1 to 18).
               </p>
 
-              <!-- Tree Map Selection -->
+              <!-- Map Selection -->
               <section id="mapSelection" class="mt-4 mb-4">
                 <div class="container">
                   <h2>
-                    Alternatively you can select a Sensory Stop on the Map
+                    Alternatively you can select a Sensory Stop on the Sensory
+                    Trail Map
                   </h2>
                   <p>
                     Use the dropdown to focus on a specific sensory stop the
@@ -3137,7 +3137,7 @@
                     aria-label="Select Tree"
                     id="treeSelector"
                   >
-                    <option selected>Choose a Sensory Stop ...</option>
+                    <option selected>Select a Sensory Stop ...</option>
                     <option value="marker1">Sensory Stop 1 - Lavender</option>
                     <option value="marker2">Sensory Stop 2 - Bees</option>
                     <option value="marker12">
@@ -3196,8 +3196,8 @@
                 type="button"
                 class="btn btn-sm btn-dark w-50"
                 id="reloadMapButton"
-                aria-label="Reload the map"
-                onclick="location.reload()"
+                aria-label="Reload the map and scroll to the map section"
+                onclick="reloadAndScroll()"
               >
                 <i class="bi bi-arrow-clockwise" aria-hidden="true"></i> Reload
                 the Map
@@ -3501,6 +3501,17 @@
         );
         // Increase font size
         document.body.style.fontSize = `${currentSize + 1}px`;
+      }
+    </script>
+
+    <!-- Reload Map Button -->
+    <script>
+      // Function to reload the page and scroll to the map section
+      function reloadAndScroll() {
+        // Append the fragment to the URL and reload the page
+        window.location.href =
+          window.location.origin + window.location.pathname + "#map";
+        window.location.reload(); // Reload the page
       }
     </script>
 
