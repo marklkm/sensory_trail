@@ -269,3 +269,17 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
     background-color: #007bff;
     border-color: #007bff;
   }
+
+
+  /* nav bar settings for mobile / small devices */
+  /* Mobile adjustments */
+@media (max-width: 767px) {
+  /* Align brand text to the left and reduce font size */
+  .navbar-brand {
+    margin-right: auto;
+  }
+  .brand-text {
+    font-size: 0.9em; /* Adjusted for smaller iPhone screens */
+    text-align: left;
+  }
+}
