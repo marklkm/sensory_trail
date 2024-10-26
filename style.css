@@ -272,14 +272,23 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
 
 
   /* nav bar settings for mobile / small devices */
+
+ 
   /* Mobile adjustments */
-@media (max-width: 767px) {
-  /* Align brand text to the left and reduce font size */
-  .navbar-brand {
-    margin-right: auto;
+  @media (max-width: 767px) {
+    /* Adjust logo size for smaller screens */
+    .logo-image {
+      width: 150px; /* Smaller width for mobile */
+      height: auto; /* Maintain aspect ratio */
+    }
+    
+    /* Navbar adjustments */
+    .navbar-brand {
+      margin-right: auto; /* Aligns logo to the left */
+    }
+
+    /* Adjust font size of nav links */
+    .navbar-nav .nav-link {
+      font-size: 0.9em; /* Slightly smaller font size on mobile */
+    }
   }
-  .brand-text {
-    font-size: 0.9em; /* Adjusted for smaller iPhone screens */
-    text-align: left;
-  }
-}

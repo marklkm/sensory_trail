@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta charset="UTF-8" />
     <title>Trinity College Botanic Garden - Sensory Trail</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -14,8 +14,6 @@
       name="description"
       content="Explore the Trinity College Botanic Garden Sensory Trail, designed to engage visitors with nature through sight, smell, and sound. Perfect for all ages, this trail offers a unique botanical experience in Dublin, enhancing well-being through an immersive sensory journey."
     />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
@@ -33,47 +31,39 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
       rel="stylesheet"
     />
-
-    <!-- JS Scripts -->
     <script src="mapScript.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"
       async
     ></script>
-
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/a11y.js@2.2.1"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- JS ally -->
     <script src="https://cdn.jsdelivr.net/ally.js/1.4.1/ally.min.js"></script>
     <script>
       console.log("loaded ally.js in version", ally.version);
       console.log("focusable elements", ally.query.focusable());
     </script>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <!-- Navbar with Logo -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <div class="container">
+        <!-- Logo image that adjusts based on screen size -->
         <a class="navbar-brand" href="#home">
           <img
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
             data-src="images/TCBG-main-logo.png"
-            class="lazyload img-fluid"
+            class="lazyload img-fluid logo-image"
             alt="Botanic Garden logo"
             width="300"
             height="300"
           />
-
-          <!-- Sensory Trail -->
         </a>
-        <!-- Toggle button for mobile menu -->
+
+        <!-- Toggle button for mobile menu, aligned to the right on smaller screens -->
         <button
-          class="navbar-toggler mb-3"
+          class="navbar-toggler ms-auto mb-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -83,6 +73,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="navbarNav" role="navigation">
           <ul class="navbar-nav ms-auto">
@@ -99,16 +90,10 @@
         </div>
       </div>
     </nav>
-
-    <!-- main content -->
     <main id="maincontent" tabindex="0" class="container" role="main">
-      <!-- Pages Container -->
       <div class="container mt-5 mb-4" role="banner">
-        <!-- About Page -->
         <section id="about">
           <h1 class="red-text">Sensory Trail</h1>
-
-          <!-- Main top image -->
           <div class="container-fluid p-0 mt-3">
             <div class="bg-image" style="position: relative">
               <img
@@ -119,12 +104,10 @@
               />
             </div>
           </div>
-
-          <!-- Sensory Trail Page -->
           <section class="mt-4" id="sensorytrail">
             <p>
-              <span class="custom-bg text-white p-1">The Sensory Trail</span>
-              is the work of one student's summer internship project at Trinity
+              <span class="custom-bg text-white p-1">The Sensory Trail</span> is
+              the work of one student's summer internship project at Trinity
               Botanic Garden to create a guide to some of the Garden's sensory
               elements for the benefit and well-being of students and staff. The
               trail currently has 18 stops: locations, plants and aspects at
@@ -155,7 +138,6 @@
               the gardens and glasshouses easily accessible to everyone.
             </p>
           </section>
-
           <h2>Inclusive Trinity</h2>
           <p>
             In 2023 Trinity College Botanic Garden (TCBG) collaborated with
@@ -163,9 +145,8 @@
               href="https://www.tcd.ie/disability/"
               target="_blank"
               rel="nonopener"
+              >Trinity disAbility Service</a
             >
-              Trinity disAbility Service
-            </a>
             (opens in a new tab) on a student project to have the Garden
             included in its new map of campus: the
             <a href="https://tcdsensemap.ie/" target="_blank" rel="nonopener"
@@ -187,7 +168,6 @@
             well as tips on physical access, availability of power points,
             seating, and more.
           </p>
-
           <h2>Partnership and Possibility</h2>
           <p>
             'The Sensory Trail' is the result of the collaboration between TCBG
@@ -213,23 +193,21 @@
               href="https://tcdsensemap.ie/?highlight=botanic-gardens"
               target="_blank"
               rel="nonopener"
-              >TCD Sense Map </a
-            >(opens in a new tab).
+              >TCD Sense Map</a
+            >
+            (opens in a new tab).
           </p>
-
           <p>
             Or you can view the
             <a
               href="https://beacons.ai/tcdsense"
               target="_blank"
               rel="nonopener"
-            >
-              TCD Sense Beacons page</a
+              >TCD Sense Beacons page</a
             >
             (opens in a new tab) to learn more about the TCD Sense Project and
             the TCD Sense Map.
           </p>
-
           <p>
             As well as a teaching and research facility, the Garden provides a
             unique off-campus resource of quiet, reflective space for students
@@ -237,11 +215,10 @@
             the principle that everyone is entitled to open space, so our gates
             are open to everyone, free of charge.
           </p>
-
-          <!-- Accordion Dropdown Menu -->
           <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
-              <h2 class="accordion-header text-dark">
+              <h2 class="accordion-header text-dark"></h2>
+              <h3>
                 <button
                   class="accordion-button"
                   type="button"
@@ -250,9 +227,9 @@
                   aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseOne"
                 >
-                  <h3>General Information</h3>
+                  General Information
                 </button>
-              </h2>
+              </h3>
               <div
                 id="panelsStayOpen-collapseOne"
                 class="accordion-collapse collapse show"
@@ -264,9 +241,8 @@
                   </p>
                   <p>
                     Click on the
-                    <span class="visually-hidden">dropdown icon</span
-                    ><i class="bi bi-chevron-down" aria-hidden="true"></i> to
-                    get more information.
+                    <span class="visually-hidden">dropdown icon</span> to get
+                    more information.
                   </p>
                 </div>
               </div>
@@ -285,13 +261,13 @@
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
-                    fill="currentColor"
+                    fill="currentcolor"
                     class="bi bi-person-wheelchair"
-                    viewBox="0 0 16 16"
+                    viewbox="0 0 16 16"
                   >
                     <path
                       d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z"
-                    />
+                    ></path>
                   </svg>
                   &nbsp; Physical Access
                 </button>
@@ -345,9 +321,7 @@
                   </p>
                   <div class="container mt-4 mb-4">
                     <div class="row">
-                      <!-- Column for QR Code -->
                       <div class="col-md-5">
-                        <!-- Replace with your QR code image -->
                         <img
                           src="images/qr_code_botanic_gardens.png"
                           alt="QR Code icon"
@@ -355,7 +329,6 @@
                           loading="lazy"
                         />
                       </div>
-                      <!-- Column for Text -->
                       <div class="col-md-7 text-start">
                         <h4>Scan the QR Code</h4>
                         <p>
@@ -368,7 +341,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <h3 class="accordion-header text-dark">
                 <button
@@ -379,7 +351,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseThree"
                 >
-                  <i class="bi bi-heart"></i> &nbsp; Sensory Information
+                  &nbsp; Sensory Information
                 </button>
               </h3>
               <div
@@ -397,10 +369,10 @@
                     are welcome to walk the grounds, explore the glasshouses, or
                     rest, read, and relax with nature. Detailed sensory
                     information is included in the Sensory Trail of the
-                    Gardens.<br /><br />
-
-                    <strong>What is Sensory Processing?</strong>
-                    Sensory processing is the means by which individuals obtain
+                    Gardens.<br />
+                    <br />
+                    <strong>What is Sensory Processing?</strong> Sensory
+                    processing is the means by which individuals obtain
                     information about the world an their own bodies. (Brown,
                     Steffen-Sanchez, Nicholson, 2019). We all have different
                     sensory needs that can change depending on neurotype, energy
@@ -419,7 +391,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseFour"
                 >
-                  <i class="bi bi-battery-full"></i> &nbsp; Charging Points
+                  &nbsp; Charging Points
                 </button>
               </h3>
               <div
@@ -444,7 +416,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseFive"
                 >
-                  <i class="bi bi-people"></i> &nbsp; Seating Areas
+                  &nbsp; Seating Areas
                 </button>
               </h3>
               <div
@@ -470,7 +442,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseSix"
                 >
-                  <i class="bi bi-house"></i> &nbsp; Opening Hours
+                  &nbsp; Opening Hours
                 </button>
               </h3>
               <div
@@ -492,7 +464,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <h3 class="accordion-header text-dark">
                 <button
@@ -503,7 +474,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseSeven"
                 >
-                  <i class="bi bi-info-circle-fill"></i> &nbsp; Contact Info.
+                  &nbsp; Contact Info.
                 </button>
               </h3>
               <div
@@ -520,45 +491,31 @@
                           rel="noopener noreferrer"
                           aria-label="Follow TCBotanicGarden on Twitter"
                           class="d-inline-flex align-items-center"
+                          >@TCBotanicGarden</a
                         >
-                          <i class="bi bi-twitter me-2"></i>@TCBotanicGarden
-                        </a>
                       </li>
-
                       <li class="list-group-item">
-                        <i
-                          class="bi bi-telephone-fill me-2"
-                          aria-hidden="true"
-                        ></i>
                         <span class="flex-grow-1">Phone:</span>
                         <a href="tel:+0114972070" class="stretched-link"
                           >(01) 4972070</a
                         >
                       </li>
-
                       <li class="list-group-item">
                         <a
                           href="mailto:botanicgarden@tcd.ie"
                           class="d-flex align-items-center"
                           aria-label="Send email to botanicgarden@tcd.ie"
+                          >botanicgarden@tcd.ie</a
                         >
-                          <i class="bi bi-envelope-fill me-2"></i>
-                          botanicgarden@tcd.ie
-                        </a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Seasons Section -->
-            <!-- START -->
             <div class="container mt-5 mb-5">
               <div class="row justify-content-center text-center">
                 <h3 class="w-100 mb-4">Seasonal Icons</h3>
-
-                <!-- Each icon with overlay, centered using flexbox -->
                 <div class="col-6 col-md-2 d-flex justify-content-center">
                   <div class="icon-container position-relative">
                     <img
@@ -575,7 +532,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="col-6 col-md-2 d-flex justify-content-center">
                   <div class="icon-container position-relative">
                     <img
@@ -592,7 +548,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="col-6 col-md-2 d-flex justify-content-center">
                   <div class="icon-container position-relative">
                     <img
@@ -609,7 +564,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="col-6 col-md-2 d-flex justify-content-center">
                   <div class="icon-container position-relative">
                     <img
@@ -626,7 +580,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="col-6 col-md-2 d-flex justify-content-center">
                   <div class="icon-container position-relative">
                     <img
@@ -645,22 +598,16 @@
                 </div>
               </div>
             </div>
-            <!-- END -->
-
-            <!-- Sensory Stops Page -->
             <section id="stops" class="mt-4">
               <h3 class="red-text">Sensory Stops</h3>
-
               <p>
                 Click on the each of the images to get a full description of the
                 Sensory Stops.
               </p>
-
               <p>
                 <strong>NOTE:</strong> Be mindful that some of the sensory stops
                 are seasonal, and will be updated from time to time.
               </p>
-
               <p>
                 The link below downloads a PDF document that contains the full
                 transcript of the Sensory Trail stops. If you need an accessible
@@ -670,26 +617,21 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Read the HTML transcript of the Sensory Trail in a new tab"
+                  >Read the HTML transcript</a
                 >
-                  Read the HTML transcript
-                </a>
                 (opens in a new tab).
               </p>
-
               <a
-                href="Sensory Trail Transcript.pdf"
+                href="Sensory%20Trail%20Transcript.pdf"
                 class="btn btn-success mt-3 mb-3"
                 style="color: #ffffff; background-color: #12633d"
                 download="Sensory Trail Transcript.pdf"
                 aria-label="Download the full sensory trail transcript as an accessible PDF. This will open in a new tab."
                 target="_blank"
+                >Download Sensory Trail Transcript as an Accessible PDF (opens
+                in new tab)</a
               >
-                Download Sensory Trail Transcript as an Accessible PDF (opens in
-                new tab)
-              </a>
-
               <div class="row mt-5">
-                <!-- Stop 1 - Lavender -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 1<br />
@@ -712,10 +654,8 @@
                       class="d-flex justify-content-center align-items-center"
                       style="height: 100px"
                     >
-                      <!-- Accessible audio player with proper ARIA labels -->
-                      <!-- Accessible Audio Player -->
                       <audio
-                        controls
+                        controls=""
                         aria-labelledby="lavender-audio-description"
                         class="w-100"
                       >
@@ -724,21 +664,17 @@
                           type="audio/mpeg"
                         />
                         Your browser does not support the audio element. Please
-                        <a href="audio/Stop-1-Lavender.mp3" download
+                        <a href="audio/Stop-1-Lavender.mp3" download=""
                           >download the audio file</a
                         >
                         to listen.
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <!-- Accessible Description -->
                     <p id="lavender-audio-description" class="mt-2">
                       For a full transcript, see below.
                     </p>
-
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -750,7 +686,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop1Transcript" class="collapse hide">
                       <div class="card card-body">
                         As you walk through the front gate, on your left you
@@ -768,8 +703,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image1Modal"
@@ -785,14 +718,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Rockery | Map Marker #1</h4>
                           <p>
                             Summer:
@@ -824,7 +749,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 2 - Bees -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 2<br />
@@ -848,24 +772,18 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Bees audio description. Transcript is provided below."
                       >
                         <source src="audio/Stop-2-Bees.mp3" type="audio/mpeg" />
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                      For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -877,7 +795,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop2Transcript" class="collapse hide">
                       <div class="card card-body">
                         Located in a small hut in the Walled Garden, you can
@@ -898,7 +815,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image2Modal"
@@ -914,14 +830,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Walled Garden | Map Marker #2</h4>
                           <p>
                             Summer:
@@ -957,7 +865,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 3 - Ancient Plants -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 3<br />
@@ -981,7 +888,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Ancient plants audio description. Transcript is provided below."
                       >
                         <source
@@ -991,17 +898,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                      For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1013,7 +914,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop3Transcript" class="collapse hide">
                       <div class="card card-body">
                         Cycad house is filled with living fossils and some of
@@ -1039,7 +939,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image3Modal"
@@ -1055,14 +954,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Cycad House | Map Marker #3</h4>
                           <p>
                             All Seasons:
@@ -1102,7 +993,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 4 - Local and Exotic Plants -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 4<br />
@@ -1126,7 +1016,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Exotic plants audio description. Transcript is provided below."
                       >
                         <source
@@ -1136,17 +1026,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This comment is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                     For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1158,7 +1042,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop4Transcript" class="collapse hide">
                       <div class="card card-body">
                         The Gardens contain approximately 4,000 plant species
@@ -1181,7 +1064,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image4Modal"
@@ -1197,14 +1079,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Irish House | Map Marker #4</h4>
                           <p>
                             All Seasons:
@@ -1241,7 +1115,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 5 - Aloe Vera -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 5<br />
@@ -1264,7 +1137,10 @@
                       class="d-flex justify-content-center align-items-center"
                       style="height: 100px"
                     >
-                      <audio controls aria-label="Aloe vera audio description">
+                      <audio
+                        controls=""
+                        aria-label="Aloe vera audio description"
+                      >
                         <source
                           src="audio/Stop-5-Aloe-Vera-Plant.mp3"
                           type="audio/mpeg"
@@ -1272,17 +1148,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                   For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1294,7 +1164,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop5Transcript" class="collapse hide">
                       <div class="card card-body">
                         In the Long House greenhouse you will find the
@@ -1318,7 +1187,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image5Modal"
@@ -1334,14 +1202,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Long Greenhouse | Map Marker #5</h4>
                           <p>
                             All Seasons:
@@ -1380,7 +1240,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 6 - Teas & Trees -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 6<br />
@@ -1404,7 +1263,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Teas and trees audio description. Transcript is provided below."
                       >
                         <source
@@ -1414,17 +1273,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                      For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1436,7 +1289,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop6Transcript" class="collapse hide">
                       <div class="card card-body">
                         Herbal teas have many different flavours and tastes but
@@ -1460,7 +1312,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image6Modal"
@@ -1476,16 +1327,7 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Arboretum | Map Marker #6</h4>
-
                           <p>
                             Spring:
                             <img
@@ -1522,7 +1364,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 7 - Fiddleheads on Ferns -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 7<br />
@@ -1546,7 +1387,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Fiddleheads on ferns audio description. Transcript is provided below."
                       >
                         <source
@@ -1556,16 +1397,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                     For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1577,7 +1413,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop7Transcript" class="collapse hide">
                       <div class="card card-body">
                         In the Stove House and Long House glass houses you can
@@ -1588,7 +1423,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image7Modal"
@@ -1604,14 +1438,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Stove House | Map Marker #7</h4>
                           <p>
                             All Seasons:
@@ -1636,7 +1462,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 8 - Catnip -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 8<br />
@@ -1660,7 +1485,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Catnip audio description. Transcript is provided below."
                       >
                         <source
@@ -1670,17 +1495,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                   For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1692,7 +1511,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop8Transcript" class="collapse hide">
                       <div class="card card-body">
                         Catnip is not just for cats. While it won't have the
@@ -1705,7 +1523,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image8Modal"
@@ -1721,14 +1538,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>
                             Location: Outside the Botanic Garden Office | Map
                             Marker #8
@@ -1758,7 +1567,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 9 - Wintersweet -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 9<br />
@@ -1782,7 +1590,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Wintersweet audio description. Transcript is provided below."
                       >
                         <source
@@ -1792,17 +1600,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                      For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1814,7 +1616,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop9Transcript" class="collapse hide">
                       <div class="card card-body">
                         Chimonanthus praecox (wintersweet) flowers in January
@@ -1826,7 +1627,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image9Modal"
@@ -1842,14 +1642,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Walled Garden | Map Marker #9</h4>
                           <p>
                             Winter:
@@ -1874,7 +1666,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 10 - Witch Hazel -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 10<br />
@@ -1898,7 +1689,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Witch hazel audio description. Transcript is provided below."
                       >
                         <source
@@ -1908,17 +1699,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -1930,7 +1715,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop10Transcript" class="collapse hide">
                       <div class="card card-body">
                         Throughout history witch hazel has been used as a
@@ -1945,8 +1729,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- Image Modal -->
                   <div
                     class="modal fade justify-content-center align-items-cente"
                     id="image10Modal"
@@ -1962,14 +1744,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Walled Garden | Map Marker #10</h4>
                           <p>
                             Summer:
@@ -1998,7 +1772,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 11 - Frost on Grass -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 11<br />
@@ -2022,7 +1795,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Frost on grass audio description. Transcript is provided below."
                       >
                         <source
@@ -2032,17 +1805,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -2054,7 +1821,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop11Transcript" class="collapse hide">
                       <div class="card card-body">
                         Listen to the crunch sound as you walk on grass, admire
@@ -2062,7 +1828,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image11Modal"
@@ -2078,14 +1843,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Aboretum | Map Marker #11</h4>
                           <p>
                             Winter:
@@ -2106,7 +1863,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 12 - Summer Storms -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 12<br />
@@ -2120,7 +1876,6 @@
                     data-bs-target="#image12Modal"
                     loading="lazy"
                   />
-
                   <h4 class="text-center mt-2">
                     Click on the image for a text description
                   </h4>
@@ -2131,7 +1886,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Shelter from storms audio description. Transcript is provided below."
                       >
                         <source
@@ -2141,17 +1896,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                   For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -2163,7 +1912,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop12Transcript" class="collapse hide">
                       <div class="card card-body">
                         The Irish House, the Long House and the Australia House
@@ -2185,7 +1933,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image12Modal"
@@ -2201,14 +1948,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Irish House | Map Marker #12</h4>
                           <p>
                             All Seasons:
@@ -2244,7 +1983,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 13 - Tree Canopies -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 13<br />
@@ -2268,7 +2006,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Tree canopies audio description. Transcript is provided below."
                       >
                         <source
@@ -2278,17 +2016,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                     For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -2300,7 +2032,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop13Transcript" class="collapse hide">
                       <div class="card card-body">
                         The South Arboretum is full of trees and is a cool shady
@@ -2320,7 +2051,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image13Modal"
@@ -2336,14 +2066,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>
                             Location: The South Arboretum | Map Marker #13
                           </h4>
@@ -2379,7 +2101,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 14 - Wild Garlic -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 14<br />
@@ -2403,7 +2124,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Wild garlic audio description. Transcript is provided below."
                       >
                         <source
@@ -2413,17 +2134,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                  For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -2435,7 +2150,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop14Transcript" class="collapse hide">
                       <div class="card card-body">
                         In spring and early summer you will find wild garlic
@@ -2465,7 +2179,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image14Modal"
@@ -2481,14 +2194,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>
                             Location: The South Arboretum | Map Marker #14
                           </h4>
@@ -2535,7 +2240,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 15 - Fruit Trees -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 15<br />
@@ -2559,7 +2263,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Fruit trees audio description. Transcript is provided below."
                       >
                         <source
@@ -2569,17 +2273,11 @@
                         Your browser does not support the audio element. Please
                         update your browser or download the audio file to
                         listen.
-                        <!-- This message is for browsers that do not support the audio tag -->
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                      For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -2591,7 +2289,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop15Transcript" class="collapse hide">
                       <div class="card card-body">
                         Dotted around the lawn are fruit trees including a pear
@@ -2615,7 +2312,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image15Modal"
@@ -2631,18 +2327,9 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>
                             Location: Lawn and the Walled Garden| Map Marker #15
                           </h4>
-
                           <p>
                             Summer:
                             <img
@@ -2679,7 +2366,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 16 - Baby's Tears -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 16<br />
@@ -2703,7 +2389,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Audio description of Baby's Tears. Transcript is provided below."
                       >
                         <source
@@ -2716,13 +2402,8 @@
                       </audio>
                     </div>
                   </div>
-
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                  For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -2734,7 +2415,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop16Transcript" class="collapse hide">
                       <div class="card card-body">
                         In the east of the gardens, near Liz's bench, you will
@@ -2762,7 +2442,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image16Modal"
@@ -2778,14 +2457,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Walled Garden | Map Marker #16</h4>
                           <p>
                             Summer:
@@ -2828,7 +2499,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 17 - Snowdops -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 17<br />
@@ -2852,7 +2522,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Audio description of Snowdrops. Transcript is provided below."
                       >
                         <source
@@ -2865,12 +2535,8 @@
                       </audio>
                     </div>
                   </div>
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-                    <p>
-                 For a full transcript, see below.
-                    </p>
-
+                    <p>For a full transcript, see below.</p>
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -2882,7 +2548,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop17Transcript" class="collapse hide">
                       <div class="card card-body">
                         Snowdrops contain a compound called galanthamine which
@@ -2901,7 +2566,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image17Modal"
@@ -2918,14 +2582,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>Location: The Arboretum | Map Marker #17</h4>
                           <p>
                             Summer:
@@ -2959,7 +2615,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Stop 18 - Log Seat -->
                 <div class="col-md-4 mb-3">
                   <h4 class="text-center red-text">
                     Sensory Stop 18<br />
@@ -2983,7 +2638,7 @@
                       style="height: 100px"
                     >
                       <audio
-                        controls
+                        controls=""
                         aria-label="Audio description of Log Seat. Transcript is provided below."
                       >
                         <source
@@ -2996,11 +2651,8 @@
                       </audio>
                     </div>
                   </div>
-                  <!-- Transcript -->
                   <div class="container mt-3 text-center">
-             For a full transcript, see below.
-                    </p>
-
+                    For a full transcript, see below.
                     <button
                       class="btn btn-primary mt-3 mb-3"
                       type="button"
@@ -3012,7 +2664,6 @@
                     >
                       Show/Hide Transcript
                     </button>
-
                     <div id="stop18Transcript" class="collapse hide">
                       <div class="card card-body">
                         While enjoying the colors, some may not know exactly why
@@ -3029,7 +2680,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Image Modal -->
                   <div
                     class="modal fade"
                     id="image18Modal"
@@ -3045,14 +2695,6 @@
                           </h4>
                         </div>
                         <div class="modal-body">
-                          <!-- Close button at the top right of the modal body -->
-                          <button
-                            type="button"
-                            class="btn-close position-absolute top-0 end-0"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
-                          ></button>
-
                           <h4>
                             Location: The Long House Glasshouse/Greenhouse | Map
                             Marker #18
@@ -3088,11 +2730,8 @@
                 </div>
               </div>
             </section>
-
-            <!-- Map Page -->
             <section id="map_page" class="mt-4">
               <h1 class="red-text">Sensory Trail Map</h1>
-
               <p>
                 This map shows the Sensory Trail Stops for Trinity College
                 Botanic Garden.
@@ -3101,8 +2740,6 @@
                 Click on the <b>Map Markers</b> to view each the Sensory Stops
                 (numbered 1 to 18).
               </p>
-
-              <!-- Map Selection -->
               <section id="mapSelection" class="mt-4 mb-4">
                 <div class="container">
                   <h2>
@@ -3163,15 +2800,11 @@
                       Sensory Stop 17 - Snowdrops
                     </option>
                     <option value="marker27">Sensory Stop 18 - Log Seat</option>
-                    <!-- Add more options for other markers here -->
                   </select>
                 </div>
               </section>
-
               <div id="map" style="width: 100%; height: 1200px"></div>
             </section>
-
-            <!-- Reload Map Button -->
             <div class="col-12 col-md-auto mt-4 mb-4 text-center">
               <button
                 type="button"
@@ -3180,11 +2813,9 @@
                 aria-label="Reload the map and scroll to the map section"
                 onclick="reloadAndScroll()"
               >
-                <i class="bi bi-arrow-clockwise" aria-hidden="true"></i> Reload
-                the Map
+                Reload the Map
               </button>
             </div>
-
             <div class="container mt-5">
               <section aria-labelledby="video-section">
                 <h2 id="video-section" class="text-left red-text">
@@ -3198,7 +2829,7 @@
                       aria-label="This YouTube video contains only music, no voice or speech"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen=""
+                      allowfullscreen
                     ></iframe>
                     <figcaption
                       style="
@@ -3219,7 +2850,6 @@
                 </p>
               </section>
             </div>
-
             <section aria-labelledby="feedback-heading">
               <div class="container">
                 <div class="row">
@@ -3238,54 +2868,41 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Open feedback form for Trinity College Botanic Garden Sensory Trail in a new tab"
+                        >Provide Feedback</a
                       >
-                        Provide Feedback
-                      </a>
                       (Opens in a new tab).
                     </p>
                   </div>
                 </div>
               </div>
             </section>
-
-            <!-- Back to top of page button -->
             <button
               type="button"
               class="btn btn-primary btn-lg"
               id="topButton"
               aria-label="Go to top of page"
               style="position: fixed; bottom: 20px; right: 20px; display: none"
-            >
-              <i class="bi bi-arrow-up-circle-fill"></i>
-            </button>
+            ></button>
           </div>
         </section>
       </div>
     </main>
-
-    <!-- Footer -->
-
     <footer
       class="text-center text-lg-start py-3"
       style="background-color: black; color: white; width: 100%"
     >
       <div class="container" role="contentinfo">
-        <!-- Grid container -->
         <div class="row">
-          <!-- Grid column for logo -->
           <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-            <!-- Image -->
             <img
               src="images/tcd-logo-white.png"
               alt="Trinity College Dublin Logo"
               class="img-fluid my-2"
             />
           </div>
-          <!-- Grid column for address -->
           <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
             <h3 class="text-normal mb-4">Trinity College Botanic Garden</h3>
             <h4 class="text-normal mb-4">Sensory Trail</h4>
-
             <p>
               Palmerston Park, Dartry, Dublin 6<br />
               D06 W226, Ireland<br />
@@ -3297,23 +2914,18 @@
               >
             </p>
           </div>
-          <!-- Grid column for copyright text -->
           <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
             <p>© 2024 Trinity College Botanic Garden</p>
           </div>
-          <!-- Grid column for social media -->
           <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
             <h3 class="text-normal mb-4">Social Media</h3>
-            <!-- Image -->
-            <a href="https://twitter.com/TCBotanicGarden" target="_blank">
-              <img src="images/twitter.png" alt="Twitter" class="img-fluid" />
-            </a>
+            <a href="https://twitter.com/TCBotanicGarden" target="_blank"
+              ><img src="images/twitter.png" alt="Twitter" class="img-fluid"
+            /></a>
           </div>
         </div>
-        <!-- Grid container -->
       </div>
     </footer>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         a11y.initialize();
@@ -3331,9 +2943,6 @@
         });
       });
     </script>
-
-    <!-- JS script for top of page button -->
-
     <script>
       document.addEventListener("scroll", function () {
         var scrollPosition =
@@ -3355,7 +2964,6 @@
           });
         });
     </script>
-
     <script>
       try {
         console.log("loaded ally.js in version", ally.version);
@@ -3364,8 +2972,6 @@
         console.error("Error loading or executing ally.js functions", error);
       }
     </script>
-
-    <!-- Script for selecting the tree numbers and tree species from drop down options -->
     <script>
       document
         .getElementById("treeSelector")
@@ -3466,8 +3072,6 @@
           }
         });
     </script>
-
-    <!-- Accessibility buttons -->
     <script>
       // Function to toggle high contrast
       function toggleHighContrast() {
@@ -3484,8 +3088,6 @@
         document.body.style.fontSize = `${currentSize + 1}px`;
       }
     </script>
-
-    <!-- Reload Map Button -->
     <script>
       // Function to reload the page and scroll to the map section
       function reloadAndScroll() {
@@ -3495,14 +3097,19 @@
         window.location.reload(); // Reload the page
       }
     </script>
-
-    <!-- Bootstrap 5 JavaScript and Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-
+    <!-- Bootstrap JavaScript and Popper.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBogG3CJmQBwzY4eL4wrH5Ld3yYfR7xCTf+yhsxCZp6IiyBr"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oJ+e9eT+Evn8fmAHF6PDaKC5w7wE5go9zO9e+O6JDZpWfndZS4Wb6znQB2pFQU"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   </body>
 </html>
