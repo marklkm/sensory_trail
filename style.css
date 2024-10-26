@@ -257,11 +257,18 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
 
   /* Optional: Hide the button by default and only show after scrolling down 100px */
   #topButton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed to the bottom right corner */
-    bottom: 20px; /* 20px from the bottom */
-    right: 20px; /* 20px from the right */
-    z-index: 99; /* Makes sure it sits on top of other content */
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    z-index: 1000; /* Keeps the button on top */
   }
 
   /* Style modifications if needed */
