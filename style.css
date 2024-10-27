@@ -299,3 +299,12 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
       font-size: 0.9em; /* Slightly smaller font size on mobile */
     }
   }
+
+
+/* opacity for sensory stop image - hover */
+.hover-opacity {
+  transition: opacity 0.3s ease;
+}
+.hover-opacity:hover {
+  opacity: 0.8; /* Adjust this value as needed */
+}
