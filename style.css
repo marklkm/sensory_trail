@@ -30,6 +30,16 @@ a {
   color: #0256D4;
 }
 
+
+/* image hover over opacity */
+/* opacity for sensory stop image - hover */
+.hover-opacity {
+  transition: opacity 0.3s ease;
+}
+.hover-opacity:hover {
+  opacity: 0.8; /* Adjust this value as needed */
+}
+
 /* custom drop cap for The Sensory Trail heading */
 .custom-bg {
   background-color: #AC1B2C; /* Custom color */
@@ -67,12 +77,6 @@ a {
   height: 50vh; /* Adjust based on your needs */
 }
 
-/* Example media query for devices with a max-width of 600px */
-@media (max-width: 600px) {
-  #map {
-    height: 30vh; /* Smaller height on small devices */
-  }
-}
 
 
 /* General Styles */
@@ -278,8 +282,16 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
   }
 
 
-  /* nav bar settings for mobile / small devices */
+/* All media adjustments */
 
+/* Example media query for devices with a max-width of 600px */
+@media (max-width: 600px) {
+  #map {
+    height: 30vh; /* Smaller height on small devices */
+  }
+}
+
+  /* nav bar settings for mobile / small devices */
  
   /* Mobile adjustments */
   @media (max-width: 767px) {
@@ -301,10 +313,3 @@ a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-in:focus {
   }
 
 
-/* opacity for sensory stop image - hover */
-.hover-opacity {
-  transition: opacity 0.3s ease;
-}
-.hover-opacity:hover {
-  opacity: 0.8; /* Adjust this value as needed */
-}
