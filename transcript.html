@@ -41,21 +41,21 @@
     <!-- Navbar with Logo -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <!-- Logo image that adjusts based on screen size -->
+        <a class="navbar-brand" href="#home">
           <img
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
             data-src="images/TCBG-main-logo.png"
-            class="lazyload img-fluid"
+            class="lazyload img-fluid logo-image"
             alt="Botanic Garden logo"
             width="300"
             height="300"
           />
-
-          <!-- Sensory Trail -->
         </a>
-        <!-- Toggle button for mobile menu -->
+
+        <!-- Toggle button for mobile menu, aligned to the right on smaller screens -->
         <button
-          class="navbar-toggler mb-3"
+          class="navbar-toggler ms-auto mb-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -65,15 +65,18 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="navbarNav" role="navigation">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://marklkm.github.io/sensory_trail/"
-                >Sensory Trail</a
-              >
+              <a class="nav-link" href="#sensorytrail">Sensory Trail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stops">Sensory Stops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map_page">Sensory Trail Map</a>
             </li>
           </ul>
         </div>
@@ -551,45 +554,34 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        a11y.setup({
-          reportMode: "console", // 'console', 'dom', or 'alert'
-          highlightIssues: true,
-          autoFix: true,
-          ruleset: "WCAG2.1_AA",
-          ignoreRules: ["color-contrast"], // Example of ignoring specific rules
-          focusTracking: true,
-          contrastRatio: 4.5,
-          fontSize: "14px",
-          roleAssignment: true,
-          liveRegionMonitoring: true,
-        });
-      });
-    </script>
-
     <!-- JS script for top of page button -->
 
     <script>
-      document.addEventListener("scroll", function () {
-        var scrollPosition =
-          window.scrollY || document.documentElement.scrollTop;
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check for the button's existence once the DOM is loaded
         var button = document.getElementById("topButton");
-        if (scrollPosition > 100) {
-          button.style.display = "block"; // Show the button
-        } else {
-          button.style.display = "none"; // Hide the button
+
+        if (button) {
+          // Add scroll event to show/hide button based on scroll position
+          document.addEventListener("scroll", function () {
+            var scrollPosition =
+              window.scrollY || document.documentElement.scrollTop;
+            if (scrollPosition > 100) {
+              button.style.display = "block"; // Show the button
+            } else {
+              button.style.display = "none"; // Hide the button
+            }
+          });
+
+          // Add click event to scroll to the top smoothly
+          button.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth", // Optional: for smooth scrolling
+            });
+          });
         }
       });
-
-      document
-        .getElementById("topButton")
-        .addEventListener("click", function () {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth", // Optional: for smooth scrolling
-          });
-        });
     </script>
 
     <!-- Accessibility buttons -->
