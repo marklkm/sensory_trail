@@ -351,21 +351,24 @@ var marker21 = L.marker([53.311998984, -6.259321055], {
 
 /* #22 DESCRIPTION */
 
-var descriptions22 = ["<h5>Sensory Stop 13 - Tree Canopies</h5>"];
+var descriptions22 = [
+  `<div style="text-align: center;">
+  <h5>Sensory Stop 13 - Tree Canopies</h5>
+  <p>Listen to the sounds associated with the tree canopies:</p>
+  <audio controls>
+    <source src="audio/Stop-13-Tree-Canopies.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  </div>`,
+];
 
 var marker22 = L.marker([53.31188889, -6.260222222], {
   icon: thirteenIcon,
 })
   .addTo(map)
-  .bindPopup(
-    createPopup(
-      descriptions22,
-      "images/tree_canopy.png",
-      "audio/Sensory Stop 13 Tree Canopies.mp3"
-    ),
-    { className: "custom-popup" }
-  )
-
+  .bindPopup(createPopup(descriptions22, "images/tree_canopy.png"), {
+    className: "custom-popup",
+  })
   .on("mouseout", function (e) {
     e.target.closeTooltip();
   });
